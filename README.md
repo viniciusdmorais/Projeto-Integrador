@@ -18,9 +18,9 @@ Assim temos 2 principais serviços:
 
 ## Construção Visual
 
-* Paleta de cores (Coolors) - https://cutt.ly/aM3166s
-* Logo (Canvas) - https://cutt.ly/4M30fTZ
-* Layout (Figma) - https://cutt.ly/RM30Qsl
+* Paleta de cores (Coolors) - <a href="https://cutt.ly/aM3166s" target="_blank">https://cutt.ly/aM3166s</a>
+* Logo (Canvas) - <a href="https://cutt.ly/4M30fTZ" target="_blank">https://cutt.ly/4M30fTZ</a>
+* Layout (Figma) - <a href="https://cutt.ly/RM30Qsl" target="_blank">https://cutt.ly/RM30Qsl</a>
 
 ---
 
