@@ -13,16 +13,15 @@ Assim temos 2 principais serviços:
 2- Procurar aquela receitinha pra calar de vez as lombrigas, pra impressionar alguém e até pra aprender a fazer seu primeiro ovo frito
 
 
----
 
 
 ## Construção Visual
 
-* Paleta de cores - [Coolors.co](https://cutt.ly/aM3166s){:target="_blank" rel="noopener"}
-* Logo - [Canvas](https://cutt.ly/4M30fTZ){:target="_blank" rel="noopener"}
-* Layout - [Figma](https://cutt.ly/RM30Qsl){:target="_blank" rel="noopener"}
+* Paleta de cores - [Coolors.co](https://cutt.ly/aM3166s)
+* Logo - [Canvas](https://cutt.ly/4M30fTZ)
+* Layout - [Figma](https://cutt.ly/RM30Qsl)
 
----
+
 
 ## Equipe
 
