@@ -1,4 +1,4 @@
-<h1 align='center'> Go Vegan </h1>
+<h1 align='center'> Bora Comer </h1>
 
 ## Descrição
 
