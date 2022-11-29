@@ -19,7 +19,7 @@ Assim temos 2 principais serviços:
 
 * Paleta de cores - [Coolors.co](https://cutt.ly/aM3166s)
 * Logo - [Canvas](https://cutt.ly/4M30fTZ)
-* Layout - [Figma](https://cutt.ly/RM30Qsl)
+* Layout - [Figma](https://cutt.ly/A1bVEfo)
 
 
 
