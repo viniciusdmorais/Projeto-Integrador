@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/load_component.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/teste.css">
     <title>Bora Comer</title>
 </head>
 <body>
-    <header>
-        <img src="assets/images/logo_gb_claro.png" alt="Bora Comer Logo">
-        <a href="#">LOCAIS</a>         | 
-        <a href="#">RECEITAS</a>
-        <a href="#"><img src="assets/images/lupa-pesquisa.png" alt="lupa de pesquisa"></a>
-    </header>
+    <header></header>
     <main>
-        <section>
-            <ul>
-                <li>
+        <section class="slider_section">
+            <ul id="sliders">
+                <li class="slider-active">
                     <a href="#" rel="next">
-                        <img src="assets/images/gastronomia-de-natal.jpg" alt="slideshow galeria imagem 1">
+                        <img src="assets/images/slider-01.jpg" alt="slideshow galeria imagem 1" >
                     </a>
                 </li>
                 <li>
                     <a href="#" rel="next">
-                        <img src="assets/images/location-restaurante.webp" alt="slideshow galeria imagem 2">
+                        <img src="assets/images/slider-02.webp" alt="slideshow galeria imagem 2">
                     </a>
                 </li>
                 <li>
                     <a href="#" rel="next">
-                        <img src="assets/images/receitas.webp" alt="slideshow galeria imagem 3">
+                        <img src="assets/images/slider-03.webp" alt="slideshow galeria imagem 3">
                     </a>
                 </li>
-            </ul>
+            </ul>    
+            <!--Chama o arquivo slider.js-->
+	        <script src="assets/js/slider.js"></script>
         </section>
-        <section>
+        <section class="section_main">
             <h2>
                 BATEU AQUELA FOME?
             </h2>
@@ -45,35 +46,18 @@
                 encontrar para fazer do seu Natal mais feliz
             </p>
         </section>
-        <section>
-            <tr>
-                <td>
-                    <a href="#">
-                        <img src="assets/images/Ravióli-de-Ricota-com-espinafre.jpg" alt="1ª imagem de postagem" width="400px">
-                        <span>
-                            Ravióli de Ricota com Espinafre no Chalezinho Morumbi
-                        </span>
-                    </a>
-                </td>
-                <td>
-                    <a href="#">
-                        <img src="assets/images/receita-peru-crosta-amendoa.webp" alt="2ª imagem de postagem" width="400px">
-                        <span>
-                            Peito de peru em crosta de amêndoas no Così
-                        </span>
-                    </a>
-                </td>
-                <td>
-                    <a href="#">
-                        <img src="assets/images/panetone-de-chocolate-com-sorvete.jpg" alt="3ª imagem de postagem" width="400px">
-                        <span>
-                            Panetone de chocolate com sorvete no Fasano
-                        </span>
-                    </a>
-                </td>
-            </tr>
+        <section class="section_main_2">
+            <a href="#">
+                <img src="assets/images/Ravióli-de-Ricota-com-espinafre.jpg" alt="1ª imagem de postagem" width="400px">
+            </a>
+            <a href="#">
+                <img src="assets/images/receita-peru-crosta-amendoa.webp" alt="2ª imagem de postagem" width="400px">
+            </a>
+            <a href="#">
+                <img src="assets/images/panetone-de-chocolate-com-sorvete.jpg" alt="3ª imagem de postagem" width="400px">
+            </a>
         </section>
-        <section>
+        <section class="section_main">
             <h2>
                 Quer conhecer os melhores restaurantes da gastronomia natalina?
             </h2>
@@ -86,97 +70,18 @@
                 os nossos lugares selecionados para você passar um fim de ano inesquecível.
             </p>
         </section>
-        <section>
-            <tr>
-                <td>
-                    <a href="#">
-                        <img src="assets/images/chalezinho.jpg" alt="4ª imagem de postagem">
-                        <span>
-                            Chalezinho Fondue e outros pratos
-                        </span>
-                    </a>
-                </td>
-               <td>
-                    <a href="#">
-                        <img src="assets/images/cosi.jpg" alt="5ª imagem de postagem">
-                        <span>
-                            Così comida italiana em Santa Cecília 
-                        </span>
-                    </a>
-                </td>
-                <td>
-                    <a href="#">
-                        <img src="assets/images/fasano.jpg" alt="6ª imagem de postagem">
-                        <span>
-                            Fasano: ceia com pratos italianos
-                        </span>
-                    </a>
-                </td>
-            </tr>
+        <section class="section_main_2">        
+            <a href="#">
+                <img src="assets/images/chalezinho.jpg" alt="4ª imagem de postagem">
+            </a>
+            <a href="#">
+                <img src="assets/images/cosi.jpg" alt="5ª imagem de postagem">
+            </a>
+            <a href="#">
+                <img src="assets/images/fasano.jpg" alt="6ª imagem de postagem">
+            </a>
         </section>
     </main>
-    <footer>
-        <section>
-            <ul>
-                <li>
-                    <span>
-                        Bora Comer
-                    </span>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/images/icon-instagram.png" alt="Link para Instagram Logo">
-                    </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="index.htm">
-                        HOME
-                    </a>
-                </li>
-                <li>
-                    <a href="quemsomos.html">
-                        QUEM SOMOS
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        LOCAIS
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        RECEITAS
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        CONTATOS
-                    </a>
-                </li>
-            </ul>
-            <span>
-                APOIO
-            </span>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="assets/images/PROZ-logo.png" alt="logo Proz">
-                    </a>
-                </li>
-                <li></li>
-                    <a href="#">
-                        <img src="assets/images/AWS-logo.png" alt="logo AWS">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/images/Meta-Logo.png" alt="logo Meta">
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </footer>
+    <footer></footer>
 </body>
 </html>
