@@ -1,0 +1,66 @@
+body > .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    background-color: #17c3b2;
+
+    width: 20%;
+    min-width: 130px;
+    padding: 5vh 3vh;
+}
+
+aside,
+aside > * {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+main {
+    width: 73%;
+    padding: 5vh 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main article {
+    border: 3px dashed #fe6d73;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    width: 25%;
+    margin: 2vh 0;
+    padding: 2%;
+}
+
+main article img {
+    width: 100%;
+}
+
+#ckb_veg + label {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(../images/icon_vegan-off.png) no-repeat center top;
+    background-size: 100%;
+}
+
+#ckb_veg:checked + label {
+    background-image: url(../images/icon_vegan-on.png);
+}
+
+#ckb_glutem + label {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(../images/icon_no-eggs-off.png) no-repeat center top;
+    background-size: 100%;
+}
+
+#ckb_glutem:checked + label {
+    background-image: url(../images/icon_no-eggs-on.png);
+}

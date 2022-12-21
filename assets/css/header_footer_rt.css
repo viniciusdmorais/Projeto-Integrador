@@ -1,0 +1,80 @@
+/************** HEADER **************/
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    width: 100%;
+    padding: 1vh;
+
+    border-bottom: 3px solid #fe6d73;
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+}
+
+header nav {
+    gap: 20px;
+    font-weight: bold;
+}
+
+header .logo_bora_comer {
+    height: 45px;
+}
+
+.icon_header {
+    height: 30px;
+    width: 30px;
+}
+
+#header_imput_search {
+    transition: 0.4s;
+    width: 0px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    float: left;
+    border: none;
+}
+
+li:hover > #header_imput_search,
+#header_imput_search:focus {
+    width: 240px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/************** FOOTER **************/
+
+footer {
+    background: #fef9ef;
+    mix-blend-mode: multiply;
+    
+    padding: 5vh;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .logo_bora_comer {
+    height: 100px;
+}
