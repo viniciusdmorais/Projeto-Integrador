@@ -5,34 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="assets/js/load_component.js"></script>
+    <script src="assets/js/load_component.js" defer></script>
+    <script defer src="assets/js/slider.js" ></script>
     
-    <link rel="stylesheet" href="assets/css/teste.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/header_footer_rt.css">
     <title>Bora Comer</title>
 </head>
 <body>
     <header></header>
     <main>
         <section class="slider_section">
+            <img src="assets/images/flecha-esquerda.png" alt="flecha-esquerda" class="flechas-slider">
             <ul id="sliders">
                 <li class="slider-active">
-                    <a href="#" rel="next">
+                    <a href="receitas.html" rel="next">
                         <img src="assets/images/slider-01.jpg" alt="slideshow galeria imagem 1" >
                     </a>
                 </li>
                 <li>
-                    <a href="#" rel="next">
+                    <a href="restaurantes_indicados.html" rel="next">
                         <img src="assets/images/slider-02.webp" alt="slideshow galeria imagem 2">
                     </a>
                 </li>
                 <li>
-                    <a href="#" rel="next">
-                        <img src="assets/images/slider-03.webp" alt="slideshow galeria imagem 3">
+                    <a href="receitas_prontas.html" rel="next">
+                        <img src="assets/images/slider-03.jpg" alt="slideshow galeria imagem 3">
                     </a>
                 </li>
             </ul>    
-            <!--Chama o arquivo slider.js-->
-	        <script src="assets/js/slider.js"></script>
+            <img src="assets/images/flecha-direita.png" alt="flecha-direita" class="flechas-slider">
         </section>
         <section class="section_main">
             <h2>
@@ -71,13 +73,13 @@
             </p>
         </section>
         <section class="section_main_2">        
-            <a href="#">
+            <a href="restaurantes_indicados.html">
                 <img src="assets/images/chalezinho.jpg" alt="4ª imagem de postagem">
             </a>
-            <a href="#">
+            <a href="restaurantes_indicados.html">
                 <img src="assets/images/cosi.jpg" alt="5ª imagem de postagem">
             </a>
-            <a href="#">
+            <a href="restaurantes_indicados.html">
                 <img src="assets/images/fasano.jpg" alt="6ª imagem de postagem">
             </a>
         </section>
