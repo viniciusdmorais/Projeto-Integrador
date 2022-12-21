@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="assets/css/rec_rest.css">
     <title>Bora Comer - Receitas</title>
 </head>
 <body>
@@ -16,63 +16,103 @@
         <a href="#"><img src="assets/images/lupa-pesquisa.png" alt=""></a>
     </header>
     <main>
-        <section>
-            <img src="assets/images/image-post-receita.png" alt="foto_prato_receita">
-                <h1>Nome da Receita</h1>
-                <p>
-                    Pequena introdução, falando sobre o prato da receita, tempo de preparo e rendimento.
-                </p>
-        </section>
-        <section>
-            <h2>Ingredientes:</h2>
-            <nav>
-                <ul>
-                    <li>ingrediente 1</li>
-                    <li>ingrediente 2</li>
-                    <li>ingrediente 3</li>
-                    <li>ingrediente 4</li>
-                    <li>ingrediente 5</li>
-                </ul>
-            </nav>
-            <h2>Modo de preparo:</h2>
-            <p>
-                Descrição de todo o modo de preparo da receita.
-            </p>
-        </section>
-        <section>
-            <h2>O que você achou dessa Receita?</h2>
-            <h3>Deixe sua avaliação:</h3>
-           
-            <form>
-                <label for="name">Nome</label>
-                <input type="text" id="fullname" class="input-standard" required placeholder="Nome ou Apelido">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" class="input-standard" required placeholder="seuemail@domínio.com">
-                            
-                <p>Deixe uma Nota:</p>
-                <img src="assets/images/stars_mini.jpg" alt="avaliações_improvisada_com_imagem">
 
-                <br>
-                <br>
-                <div style="text-align:left">
-                <label for="comentario">Deixe um comentário: </label>
+        <section>
+            <div class="fundo">
+                <img class ="imagem_1" src="assets/images/image-post-receita.png" alt="foto_prato_receita">
+                <div class="texto_1">
+                    <h1>Nome da Receita</h1>
+                    <p>Pequena introdução, falando sobre o prato da receita, tempo de preparo e rendimento.</p>
                 </div>
-                <textarea cols="60" rows="5" id="comentario" class="input-standard" required placeholder="O que você achou dessa receita?"></textarea>
-                <br>
-                <br>
-                <label class="checkbox"><input type="checkbox" checked>Concordo com condições e termos da <a target= "_blank" href="#">Política de Privacidade</a></label>
-                <br>       
-                <label class="checkbox"><input type="checkbox" checked>Quer receber nossas novidades por email?</label>
-                <input type="submit" value="Enviar Avaliação" class="send">
-            </form>
-            <form>
-                <h2>Gostaria de nos enviar uma receita?</h2>
-                <textarea cols="60" rows="15" id="comentario" class="input-standard" required placeholder="Digite aqui sua receita"></textarea>
-                <br>
-                <input type="submit" value="Enviar Receita" class="send">
-            </form>
+            </div>
+        </section>
+
+        <section class="section_1">
+            <div class="fundo">
+                <div class="lista_ingredientes">
+                    <h2>Ingredientes:</h2>
+                    <nav>
+                        <ul>
+                            <li>ingrediente 1</li>
+                            <li>ingrediente 2</li>
+                            <li>ingrediente 3</li>
+                            <li>ingrediente 4</li>
+                            <li>ingrediente 5</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="texto_1">
+                    <h2>Modo de preparo:</h2>
+                    <p>Descrição de todo o modo de preparo da receita.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="fundo_form">
+                <div>
+                    <h2>O que você achou dessa Receita?</h2>
+                    <h3>Deixe sua avaliação:</h3>
+                </div>
+            
+                <form>
+                    <div class="div_form">
+                        <label for="name">Nome</label>
+                        <input class="preencher_campo" type="text" id="fullname" class="input-standard" required placeholder="Nome ou Apelido">
+
+                        <label for="email">E-mail</label>
+                        <input class="preencher_campo" type="email" id="email" class="input-standard" required placeholder="seuemail@domínio.com">
+                    </div>                     
+
+                    <div>
+                        <label for="comentario">Deixe um comentário: </label>              
+                    </div>  
+
+                    <div>
+                        <textarea class="preencher_campo" cols="60" rows="5" id="comentario" class="input-standard" required placeholder="O que você achou dessa receita?"></textarea>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label>
+                                <input type="checkbox" checked>Concordo com condições e termos da <a target= "_blank" href="em_construcao.html">Política de Privacidade</a>
+                            </label>
+                        </div>
+
+                        <div class="div_form">    
+                            <label>
+                                <input type="checkbox" checked>Gostaria de receber nossas novidades por email?
+                            </label>
+                            <input class="botao" type="submit" value="Enviar Avaliação" class="send">
+                        </div>
+
+                        <div class="div_form">           
+                            <p>Que nota você dá pra esta receita?</p>
+                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
+                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
+                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
+                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
+                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
+                        </div>  
+
+                    </div>
+                </form>
+
+                <form>
+                    <div>
+                        <h2>Gostaria de nos enviar uma receita?</h2>
+                        <textarea class="preencher_campo" cols="60" rows="15" id="comentario" class="input-standard" required placeholder="Digite aqui sua receita"></textarea>
+                    </div>
+
+                    <div>
+                        <input class="botao" type="submit" value="Enviar Receita" class="send">
+                    </div>                    
+                </form>
+            </div>
         </section>
     </main>
+
     <footer>
         <br>
         <br>

@@ -1,0 +1,86 @@
+/************* DEFAULT *****************/
+
+html,
+body,
+header {
+  background: #FEF9EF;
+  color: #0D3B66;
+}
+
+
+/*********Começo do meu********/
+
+
+section {
+    display:flex;
+    justify-content: center;
+}
+
+.fundo {
+    display:flex;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 100px;
+}
+
+.texto_1 {
+    width: 550px;
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem_1 {
+    align-self: center;
+    width:376px;
+    height:275px;
+}
+
+.lista_ingredientes {
+    width: 376px;
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista_ingredientes nav {
+    display: flex;
+    align-items: center;
+}
+
+form{
+    margin: 0 0 75px 0;
+}
+
+.fundo_form {
+    display:flex;    
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.fundo_form h2, p {
+    margin: 0;
+}
+
+.fundo_form h3 {
+    margin: 20px 0 20px 0;
+}
+
+.div_form {
+    margin: 0 0 20px 0;    
+}
+
+.preencher_campo {
+    border-radius: 7px;
+}
+
+.botao {
+    border-radius: 7px;
+}
