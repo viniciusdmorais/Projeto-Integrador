@@ -58,11 +58,20 @@
             
                 <form>
                     <div class="div_form">
+                        <div class="div_form">           
+                            <p>Que nota você dá pra esta receita?</p>
+                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
+                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
+                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
+                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
+                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
+                        </div>  
+
                         <label for="name">Nome</label>
-                        <input class="preencher_campo" type="text" id="fullname" class="input-standard" required placeholder="Nome ou Apelido">
+                        <input class="preencher_campo"  maxlength="50" type="text" id="fullname" class="input-standard" required placeholder="Nome ou Apelido">
 
                         <label for="email">E-mail</label>
-                        <input class="preencher_campo" type="email" id="email" class="input-standard" required placeholder="seuemail@domínio.com">
+                        <input class="preencher_campo"  maxlength="50" type="email" id="email" class="input-standard" required placeholder="seuemail@domínio.com">
                     </div>                     
 
                     <div>
@@ -70,7 +79,7 @@
                     </div>  
 
                     <div>
-                        <textarea class="preencher_campo" cols="60" rows="5" id="comentario" class="input-standard" required placeholder="O que você achou dessa receita?"></textarea>
+                        <textarea class="preencher_mensagem"  maxlength="650" cols="60" rows="5" id="comentario" class="input-standard" required placeholder="O que você achou dessa receita?"></textarea>
                     </div>
 
                     <div>
@@ -84,25 +93,18 @@
                             <label>
                                 <input type="checkbox" checked>Gostaria de receber nossas novidades por email?
                             </label>
-                            <input class="botao" type="submit" value="Enviar Avaliação" class="send">
                         </div>
-
-                        <div class="div_form">           
-                            <p>Que nota você dá pra esta receita?</p>
-                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
-                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
-                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
-                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
-                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
-                        </div>  
+                        <div class="div_botao">
+                            <input class="botao" maxlength="1000" type="submit" value="Enviar Avaliação" class="send">
+                        </div>
 
                     </div>
                 </form>
 
                 <form>
-                    <div>
+                    <div class="div_form">
                         <h2>Gostaria de nos enviar uma receita?</h2>
-                        <textarea class="preencher_campo" cols="60" rows="15" id="comentario" class="input-standard" required placeholder="Digite aqui sua receita"></textarea>
+                        <textarea class="preencher_mensagem" cols="60" rows="15" id="comentario" class="input-standard" required placeholder="Digite aqui sua receita"></textarea>
                     </div>
 
                     <div>

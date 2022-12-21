@@ -53,7 +53,7 @@ section {
     align-items: center;
 }
 
-form{
+form {
     margin: 0 0 75px 0;
 }
 
@@ -74,13 +74,33 @@ form{
 }
 
 .div_form {
-    margin: 0 0 20px 0;    
+    margin: 0 0 20px 0; 
 }
 
 .preencher_campo {
     border-radius: 7px;
+    width: 200px;
+    height: 20px;
+}
+
+.preencher_mensagem {
+    border-radius: 7px;
+    width: 510px;
+    height: 100px;
+ 
+}
+
+.div_botao {
+    display: flex;
+    align-items: center;
+
 }
 
 .botao {
-    border-radius: 7px;
+    border-radius: 50px;
+    background-color: #FE6D73;
+    color: #0D3B66;
+    width: 200px;
+    height: 30px;
+    align-self: center;
 }
