@@ -16,7 +16,7 @@ section {
 }
 
 .fundo {
-    /*background-color: #B9E9DD;*/
+    /*background-color: #17C3B2;*/
     border-radius: 7px;
     display:flex;
     width: 100%;
@@ -73,7 +73,6 @@ form {
 }
 
 .fundo_form {
-    /*background-color: rgb(0, 200, 255);*/
     display:flex;    
     justify-content: center;
     flex-direction: column;
