@@ -7,6 +7,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="assets/js/load_component.js"></script>
+    <script src="assets/js/load_receitas.js"></script>
 
     <script src="assets/js/rec_rest.js"></script>
 
@@ -15,55 +16,79 @@
 
     <link rel="stylesheet" href="assets/css/rec_rest.css" />
 
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg">
+
     <title>Bora Comer - Receitas</title>
   </head>
   <body>
     <header></header>
     <div class="container">
       <main>
+        
         <section>
-          <div class="fundo">
-            <img
-              class="imagem_receita"
-              src="assets/images/image-post-receita.png"
-              alt="foto_receita"
-            />
-            <div class="total">
-                <div class="texto_receita">
-                    <h1>Nome da Receita</h1>
-                    <p>
-                        Pequena introdução, falando sobre o prato da receita, tempo de
-                        preparo e rendimento.
-                    </p>
-                </div>
-
-                <div class="dados_receita">
-                    <p><strong>Autor:</strong> Bora Comer</p>
-                    <p><strong>Tempo de Preparo:</strong> 30 min</p>
-                    <p><strong>Rendimento:</strong> 6 porções</p>
-                </div>
-            </div>
+          <div class="fundo_barra">
+            <p><b><u>Receitas que combinam</u></b></p>
           </div>
-        </section>
 
-        <section>
-          <div class="fundo">
-            <div class="lista_ingredientes">
-              <h2>Ingredientes:</h2>
-              <nav>
-                <ul>
-                  <li>ingrediente 1</li>
-                  <li>ingrediente 2</li>
-                  <li>ingrediente 3</li>
-                  <li>ingrediente 4</li>
-                  <li>ingrediente 5</li>
-                </ul>
-              </nav>
+          <div class="dois_fundos">
+            <div class="fundo">
+              <img class="imagem_receita" src="assets/images/bolocacau.jpg" alt="foto_receita"/>
+              <div class="descricao_receita">
+                
+                  <div class="texto_receita">
+                      <h1>Bolo de Chocolate</h1>
+                      <p>
+                        Bolo de chocolate feito com cacau 100%, vegano, extremamente fofinho e gostoso!
+                      </p>
+                  </div>
+
+                  <div class="dados_receita">
+                      <p><strong>Autor:</strong> Rodrigo Tormente</p>
+                      <p><strong>Tempo de Preparo:</strong> 40 min</p>
+                      <p><strong>Rendimento:</strong> 12 porções</p>
+                  </div>
+              </div>
             </div>
 
-            <div class="texto_modo_preparo">
-              <h2>Modo de preparo:</h2>
-              <p>Descrição de todo o modo de preparo da receita.</p>
+            <div class="fundo">
+              <div class="lista_ingredientes">
+                <h2>Ingredientes:</h2>
+                <nav>
+                  <ul>
+                    <li>Secos:</li>
+                    <li>2 xícaras de farinha de trigo</li>
+                    <li>1/4 xícaras de amido de milho</li>
+                    <li>1/2 xícaras de cacau em pó</li>
+                    <li>1+1/2 xícaras de açucar</li>
+                    <li>1 colher de sopa de bicarbonato de sódio</li>
+                    <li>1/2 colher de sopa de fermento quimico</li>
+                    <li>1 pitada sal; </li>
+                    <li>Molhados:</li>
+                    <li>1+1/2 xicaras de agua</li>
+                    <li>1/2 xicara de óleo</li>
+                    <li>1/4 xícara de café</li>
+                    <li>1 colher de sopa de vinagre</li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="texto_modo_preparo">
+                <h2>Modo de preparo:</h2>
+                <p>Coloque o forno para pré aquecer em 200ºC.</p>
+                <p>Unte uma forma com óleo e polvilhe amido de milho ou farinha.</p>
+                <p>Em uma vasilha misture todos os secos peneirados.</p>
+                <p>Em outro recipiente coloque todos os molhados e os despeje sobre os secos.</p>
+                <p>Misture todos os ingredientes até obter uma massa homogênea.</p>
+                <p>Despeje a massa na forma e a coloque no forno.</p>
+                <p>Após 10 minutos reduzir a temperatura para 180ºC.</p>
+                <p>Após assado retirar do forno.</p>
+                <p>Desenformar com o bolo frio ou morno mais para frio.</p>
+                <p>Dicas:</p>
+                <p>Dê preferência a óleos neutros, como os de: girassol, canola e milho.</p>
+                <p>Caso não possua amido de milho basta usar a mesma quantidade de farinha de trigo, o amido de milho serve para deixar o bolo mais fofinho ainda.</p>
+                <p>Ao fazer o café faça ele forte, independente se é coado ou expresso, afinal, ele serve para destacar o sabor do cacau.</p>
+                <p>O vinagre de preferência para o de álcool ou de maçã, porém outros não costumam deixar sabor residual, ele serve para auxiliar no crescimento da massa.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -111,12 +136,7 @@
                 </div>
     
                 <div class="div_botao">
-                  <input
-                    class="botao"                    
-                    type="submit"
-                    value="Enviar Avaliação"
-                    class="send"
-                  />
+                  <button class="botao">Enviar Avaliação</button>
                 </div>
           
             </form>            
