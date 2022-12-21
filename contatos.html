@@ -1,102 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bora Comer</title>
-</head>
-<body>
-    
-<header>
-    <img src="assets/images/logo_gb_claro.png" alt="Bora Comer Logo">
-  
-</header>
-<main>
-    <section>
-        <form action="">
-            <fieldset>
-            
-                <input type="text" id="name" placeholder="Nome Completo" name="name">
-                
-                <input type="email" id="email" placeholder="E-mail" name="email" >
-                
-                <input type="text" id="assunto" placeholder="Assunto" name="assunto">
-                
-                <textarea cols="70" rows="10" id="message" placeholder="Mensagem"></textarea>
-                
-                <button type="submit"> Enviar</button>
-                
-            </fieldset>
-                
-        </form>
-</section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/load_component.js"></script>
 
-</main>
-<footer>
-    <section>
-        <ul>
-            <li>
-                <span>
-                    Bora Comer
-                </span>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="assets/images/icon-instagram.png" alt="Link para Instagram Logo">
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="index.htm">
-                    HOME
-                </a>
-            </li>
-            <li>
-                <a href="quemsomos.html">
-                    QUEM SOMOS
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    LOCAIS
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    RECEITAS
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    CONTATOS
-                </a>
-            </li>
-        </ul>
-        <span>
-            APOIO
-        </span>
-        <ul>
-            <li>
-                <a href="#">
-                    <img src="assets/images/PROZ-logo.png" alt="logo Proz">
-                </a>
-            </li>
-            <li></li>
-                <a href="#">
-                    <img src="assets/images/AWS-logo.png" alt="logo AWS">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="assets/images/Meta-Logo.png" alt="logo Meta">
-                </a>
-            </li>
-        </ul>
-    </section>
-</footer>
+    <link rel="stylesheet" href="assets/css/defaut_rt.css" />
+    <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
+    <link rel="stylesheet" href="assets/css/login_contatos.css" />
+    <title>Bora Comer/Contatos</title>
+  </head>
+  <div class="container">
+  <body>
+    <header></header>
+    <div class="container">
+      <main>
+        <section class="form_contato">
+        <div>
+          <div class="form_contato_div">
+            <input
+              type="text"
+              id="name"
+              placeholder="Nome Completo"
+              name="name"
+              required
+            />
+          </div>
+            <div class="form_contato_div">
+                <input
+                type="email"
+                id="email"
+                placeholder="E-mail"
+                name="email"
+                required
+                />
+            </div>
+            <div class="form_contato_div">
+                <input
+                type="text"
+                id="assunto"
+                placeholder="Assunto"
+                name="assunto"
+                required
+                />
+            </div>
+            <div class="form_contato_div">
+                <textarea
+                cols="30"
+                rows="15"
+                id="msg"
+                placeholder="Mensagem"
+                required
+                ></textarea>
+            </div>
+            <div>
+                <button class="button_enviar" type=" submit">Enviar</button>
+            </div>
+        </div>
+        </section>
+      </main>
+    </div>
 
-    
-</body>
+    <footer>
+
+    </footer>
+  </body>
 </html>

@@ -10,3 +10,10 @@ window.setInterval(function() {                         /*  Executaremos uma fun
 	sliders[current].className  = 'slider-active';      /*Adiciona a classe no elemento atual*/
 	current = current >= total ? 0 : current+1; 	    /*Calcular a posição do próximo elemento que será exibido*/
 }, 4000);
+
+function mudaSlider(){
+	let index =  current ? current - 1 : total;         /*	 a variavel index será responsável pela	 posição do elemento que iremos remover a classe	*/
+	sliders[index].className  = '';                     /*Pega o elemento pra remover a classe*/	
+	sliders[current].className  = 'slider-active';      /*Adiciona a classe no elemento atual*/
+	current = current >= total ? 0 : current+1; 	    /*Calcular a posição do próximo elemento que será exibido*/
+}

@@ -1,130 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/load_component.js"></script>
+
+    <link rel="stylesheet" href="assets/css/defaut_rt.css" />
+    <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
+    <link rel="stylesheet" href="assets/css/login_contatos.css" />
     <title>Bora Comer/ Login</title>
-</head>
-<body> 
+  </head>
+  <body>
     <header>
-        <img src="assets/images/logo_gb_claro.png" alt="Bora Comer Logo">
+        
     </header>
-   <main>
-    <section class="Area-login">
-        <div class="login">
-            <span>LOGIN</span>
-            <form action="">
-                <fieldset>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" placeholder="exemplo@provedor.com" name="email">
-                    
-                    <label for="senha"> Senha:</label>
-                    <input type="password" id="senha" placeholder="Digite sua senha" name="passoword">
-                    
-                    <button type="submit"> Entrar</button>
-                
-                </fieldset>
+    <div class="container">
+      <main>
+        <section class="login-page">
+          <form action="" class="Area-login">
+            <div class="login-header">
+              <h2>LOGIN</h2>
+            </div>
+            <div class="login-content">
+              <div class="login-content-area">
+                <label for="email">E-mail:</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="exemplo@provedor.com"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="login-content-area">
+                <label for="senha"> Senha:</label>
+                <input
+                  type="password"
+                  id="senha"
+                  placeholder="Digite sua senha"
+                  name="passoword"
+                  required
+                />
+              </div>
+            </div>
 
-            </form>
-        <a href="">Esqueci minha senha</a>
+            <div class="login-footer">
+              <a href="#" class="ls-login-forgot">Esqueceu a senha?</a>
+              <button class="button_login" type="submit">Entrar</button>
+            </div>
+          </form>
+        </section>
+        <section class="Area-Sign-up">
+          <form action="" class="Area-login">
+            <div class="login-header">
+              <h2>SIGN UP</h2>
+            </div>
 
-        </div>
-    </section>
+            <div class="login-content">
+              <div class="login-content-area">
+                <label for="name">Nome:</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Nome Completo"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="login-content-area">
+                <label for="email">E-mail:</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="exemplo@provedor.com"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="login-content-area">
+                <label for="senha1"> Senha:</label>
+                <input
+                  type="password"
+                  id="senha1"
+                  autocomplete="new-password"
+                  placeholder="Digite sua senha"
+                  name="passoword"
+                  required
+                />
+              </div>
+              <div class="login-content-area">
+                <label for="senha2">Comfirmar Senha:</label>
+                <input
+                  type="password"
+                  id="senha2"
+                  autocomplete="new-password"
+                  placeholder="Digite sua senha"
+                  name="passoword"
+                  required
+                />
+              </div>
+              <div class="login-content-area">
+                <label
+                  ><input type="checkbox" checked />Concordo com condições e
+                  termos da
+                  <a target="_blank" href="#">Política de Privacidade</a></label
+                >
+              </div>
+            </div>
+            <div>
+              <button class="button_login" type="submit">Inscrever-se</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
 
-    <section class="Area-Sign-up">
-        <div class="Sign-up">
-            <span>SIGN UP </span>
-            <form action="">
-                <fieldset>
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" placeholder="Nome Completo" name="name">
-
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" placeholder="exemplo@provedor.com" name="email">
-                    
-                    <label for="senha1"> Senha:</label>
-                    <input type="password" id="senha1" placeholder="Digite sua senha" name="passoword">
-                    
-                    <label for="senha2">Comfirmar Senha:</label>
-                    <input type="password" id="senha2" placeholder="Digite sua senha" name="passoword">
-                    
-                    <button type="submit"> Inscrever-se </button>
-                
-                </fieldset>
-
-            </form>
-        </div>
-    </section>
-
-
-
-   </main>
-   
-   <footer>
-    <section>
-        <ul>
-            <li>
-                <span>
-                    Bora Comer
-                </span>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="assets/images/icon-instagram.png" alt="Link para Instagram Logo">
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="index.htm">
-                    HOME
-                </a>
-            </li>
-            <li>
-                <a href="quemsomos.html">
-                    QUEM SOMOS
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    LOCAIS
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    RECEITAS
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    CONTATOS
-                </a>
-            </li>
-        </ul>
-        <span>
-            APOIO
-        </span>
-        <ul>
-            <li>
-                <a href="#">
-                    <img src="assets/images/PROZ-logo.png" alt="logo Proz">
-                </a>
-            </li>
-            <li></li>
-                <a href="#">
-                    <img src="assets/images/AWS-logo.png" alt="logo AWS">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="assets/images/Meta-Logo.png" alt="logo Meta">
-                </a>
-            </li>
-        </ul>
-    </section>
-</footer>
-
-    
-</body>
+    <footer></footer>
+  </body>
 </html>

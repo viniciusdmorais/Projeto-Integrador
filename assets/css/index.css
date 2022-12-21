@@ -93,6 +93,9 @@ nav {
     height: 40px;
     padding: 200px 140px
 }
+.flechas-slider:hover {
+    cursor: pointer;
+} 
 
 /*** SECTIONS ***/
 
