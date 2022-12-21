@@ -1,179 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/rec_rest.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/load_component.js"></script>
+
+    <link rel="stylesheet" href="assets/css/defaut_rt.css" />
+    <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
+
+    <link rel="stylesheet" href="assets/css/rec_rest.css" />
+
     <title>Bora Comer - Receitas</title>
-</head>
-<body>
-    <header>
-        <img src="assets/images/logo_gb_claro.png" alt="Bora Comer Logo">
-        <a href="#">LOCAIS</a>
-         | 
-        <a href="#">RECEITAS</a>
-        <a href="#"><img src="assets/images/lupa-pesquisa.png" alt=""></a>
-    </header>
-    <main>
-
+  </head>
+  <body>
+    <header></header>
+    <div class="container">
+      <main>
         <section>
-            <div class="fundo">
-                <img class ="imagem_1" src="assets/images/image-post-receita.png" alt="foto_prato_receita">
-                <div class="texto_1">
+          <div class="fundo">
+            <img
+              class="imagem_receita"
+              src="assets/images/image-post-receita.png"
+              alt="foto_receita"
+            />
+            <div class="total">
+                <div class="texto_receita">
                     <h1>Nome da Receita</h1>
-                    <p>Pequena introdução, falando sobre o prato da receita, tempo de preparo e rendimento.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section_1">
-            <div class="fundo">
-                <div class="lista_ingredientes">
-                    <h2>Ingredientes:</h2>
-                    <nav>
-                        <ul>
-                            <li>ingrediente 1</li>
-                            <li>ingrediente 2</li>
-                            <li>ingrediente 3</li>
-                            <li>ingrediente 4</li>
-                            <li>ingrediente 5</li>
-                        </ul>
-                    </nav>
+                    <p>
+                        Pequena introdução, falando sobre o prato da receita, tempo de
+                        preparo e rendimento.
+                    </p>
                 </div>
 
-                <div class="texto_1">
-                    <h2>Modo de preparo:</h2>
-                    <p>Descrição de todo o modo de preparo da receita.</p>
+                <div class="dados_receita">
+                    <p><strong>Autor:</strong> Bora Comer</p>
+                    <p><strong>Tempo de Preparo:</strong> 30 min</p>
+                    <p><strong>Rendimento:</strong> 6 porções</p>
                 </div>
             </div>
+          </div>
         </section>
 
         <section>
-            <div class="fundo_form">
-                <div>
-                    <h2>O que você achou dessa Receita?</h2>
-                    <h3>Deixe sua avaliação:</h3>
-                </div>
-            
-                <form>
-                    <div class="div_form">
-                        <div class="div_form">           
-                            <p>Que nota você dá pra esta receita?</p>
-                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
-                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
-                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
-                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
-                            <img width=40px src="assets/images/star.png" alt="avaliações_improvisada_com_imagem">
-                        </div>  
-
-                        <label for="name">Nome</label>
-                        <input class="preencher_campo"  maxlength="50" type="text" id="fullname" class="input-standard" required placeholder="Nome ou Apelido">
-
-                        <label for="email">E-mail</label>
-                        <input class="preencher_campo"  maxlength="50" type="email" id="email" class="input-standard" required placeholder="seuemail@domínio.com">
-                    </div>                     
-
-                    <div>
-                        <label for="comentario">Deixe um comentário: </label>              
-                    </div>  
-
-                    <div>
-                        <textarea class="preencher_mensagem"  maxlength="650" cols="60" rows="5" id="comentario" class="input-standard" required placeholder="O que você achou dessa receita?"></textarea>
-                    </div>
-
-                    <div>
-                        <div>
-                            <label>
-                                <input type="checkbox" checked>Concordo com condições e termos da <a target= "_blank" href="em_construcao.html">Política de Privacidade</a>
-                            </label>
-                        </div>
-
-                        <div class="div_form">    
-                            <label>
-                                <input type="checkbox" checked>Gostaria de receber nossas novidades por email?
-                            </label>
-                        </div>
-                        <div class="div_botao">
-                            <input class="botao" maxlength="1000" type="submit" value="Enviar Avaliação" class="send">
-                        </div>
-
-                    </div>
-                </form>
-
-                <form>
-                    <div class="div_form">
-                        <h2>Gostaria de nos enviar uma receita?</h2>
-                        <textarea class="preencher_mensagem" cols="60" rows="15" id="comentario" class="input-standard" required placeholder="Digite aqui sua receita"></textarea>
-                    </div>
-
-                    <div>
-                        <input class="botao" type="submit" value="Enviar Receita" class="send">
-                    </div>                    
-                </form>
+          <div class="fundo">
+            <div class="lista_ingredientes">
+              <h2>Ingredientes:</h2>
+              <nav>
+                <ul>
+                  <li>ingrediente 1</li>
+                  <li>ingrediente 2</li>
+                  <li>ingrediente 3</li>
+                  <li>ingrediente 4</li>
+                  <li>ingrediente 5</li>
+                </ul>
+              </nav>
             </div>
-        </section>
-    </main>
 
-    <footer>
-        <br>
-        <br>
-        <br>
-        <section>
-            <span>
-                Bora Comer
-            </span>
-            <a href="#">
-                <img src="assets/images/icon-instagram.png" alt="Link para Instagram Logo">
-            </a>
-            <ul>
-                <li>
-                    <a href="index.html">
-                        HOME
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        QUEM SOMOS
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        LOCAIS
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        RECEITAS
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        CONTATOS
-                    </a>
-                </li>
-            </ul>
-            <span>
-                APOIO
-            </span>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="assets/images/PROZ-logo.png" alt="logo Proz">
-                    </a>
-                </li>
-                <li></li>
-                    <a href="#">
-                        <img src="assets/images/AWS-logo.png" alt="logo AWS">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/images/Meta-Logo.png" alt="logo Meta">
-                    </a>
-                </li>
-            </ul>
+            <div class="texto_modo_preparo">
+              <h2>Modo de preparo:</h2>
+              <p>Descrição de todo o modo de preparo da receita.</p>
+            </div>
+          </div>
         </section>
-    </footer>
-</body>
+
+        <section class="section_form">
+          <div class="fundo_form">
+
+            <form>
+              <div class="div_form">
+                <div class="div_avalie">
+                  <h3>Avalie essa receita</h3>
+                </div>
+                <div class="div_stars">
+                  <img
+                    width="40px"
+                    src="assets/images/star.png"
+                    alt="avaliações_improvisada_com_imagem"
+                  />
+                  <img
+                    width="40px"
+                    src="assets/images/star.png"
+                    alt="avaliações_improvisada_com_imagem"
+                  />
+                  <img
+                    width="40px"
+                    src="assets/images/star.png"
+                    alt="avaliações_improvisada_com_imagem"
+                  />
+                  <img
+                    width="40px"
+                    src="assets/images/star.png"
+                    alt="avaliações_improvisada_com_imagem"
+                  />
+                  <img
+                    width="40px"
+                    src="assets/images/star.png"
+                    alt="avaliações_improvisada_com_imagem"
+                  />
+                </div>
+
+              <div>
+                <h3>Deixe um comentário</h3>
+              </div>
+
+              <div>
+                <textarea
+                  class="preencher_mensagem"
+                  maxlength="650"
+                  cols="60"
+                  rows="5"             
+                  required
+                  placeholder=" O que você achou dessa receita?"
+                ></textarea>
+              </div>
+
+                <div class="div_form">
+                  <label>
+                    <input type="checkbox" checked />Concordo com condições e
+                    termos da
+                    <a target="_blank" href="em_construcao.html"
+                      >Política de Privacidade</a
+                    >
+                  </label>
+                </div>
+    
+                <div class="div_botao">
+                  <input
+                    class="botao"                    
+                    type="submit"
+                    value="Enviar Avaliação"
+                    class="send"
+                  />
+                </div>
+          
+            </form>            
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer></footer>
+  </body>
 </html>
