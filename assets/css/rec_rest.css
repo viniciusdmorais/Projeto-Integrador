@@ -16,7 +16,7 @@ section {
 }
 
 .fundo {
-    background-color: #b9e9dd;
+    /*background-color: #17C3B2;  <-- Estou na duvida de deixo com ou sem esse fundo */
     border-radius: 7px;
     display:flex;
     width: 100%;
@@ -92,11 +92,6 @@ form {
 
 .div_avalie {
     display: flex;
-}
-
-.div_stars {
-    display: flex;
-    margin: 0 0 20px 0;
 }
 
 .preencher_mensagem {
