@@ -8,7 +8,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="assets/js/load_component.js"></script>
-    <script src="assets/js/load_receitas.js" defer></script>
+    <script src="assets/js/load_receitas.js"></script>
 
 
     <link rel="stylesheet" href="assets/css/defaut_rt.css" />
@@ -36,19 +36,19 @@
                     <label for="ckb_glutem"></label>
 
                     <input type="checkbox" name="ckb_soja" id="ckb_soja">
-                    <label for="ckb_soja">Sem Soja</label>
+                    <label for="ckb_soja"></label>
 
                     <input type="checkbox" name="ckb_amendoim" id="ckb_amendoim">
-                    <label for="ckb_amendoim">Sem Amendoim</label>
+                    <label for="ckb_amendoim"></label>
 
                     <input type="checkbox" name="ckb_ovo" id="ckb_ovo">
-                    <label for="ckb_ovo">Sem Ovo</label>
+                    <label for="ckb_ovo"></label>
 
                     <input type="checkbox" name="ckb_leite" id="ckb_leite">
-                    <label for="ckb_leite">Sem Leite</label>
+                    <label for="ckb_leite"></label>
 
                     <input type="checkbox" name="ckb_crustaceos" id="ckb_crustaceos">
-                    <label for="ckb_crustaceos">Sem Crustáceos</label>
+                    <label for="ckb_crustaceos"></label>
 
                     <label for="tmp_min">Tempo</label>
                     <input type="number" name="tmp_min" id="tmp_min"><span>min até </span>
@@ -64,6 +64,10 @@
     </div>
 
     <footer></footer>
+
+    <script>
+        creatCardReceitas();
+    </script>
 </body>
 
 </html>

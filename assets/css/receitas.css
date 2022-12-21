@@ -3,6 +3,10 @@ body > .container {
     justify-content: space-between;
 }
 
+
+/********************** ASIDE **********************/
+
+
 aside {
     background-color: #17c3b2;
 
@@ -16,29 +20,6 @@ aside > * {
     display: flex;
     flex-direction: column;
     gap: 50px;
-}
-
-main {
-    width: 73%;
-    padding: 5vh 0;
-
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-main article {
-    border: 3px dashed #fe6d73;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-
-    width: 25%;
-    margin: 2vh 0;
-    padding: 2%;
-}
-
-main article img {
-    width: 100%;
 }
 
 #ckb_veg + label {
@@ -63,4 +44,96 @@ main article img {
 
 #ckb_glutem:checked + label {
     background-image: url(../images/icon_no-eggs-on.png);
+}
+
+#ckb_soja + label {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(../images/icon_no-soy-off.png) no-repeat center top;
+    background-size: 100%;
+}
+
+#ckb_soja:checked + label {
+    background-image: url(../images/icon_no-soy-on.png);
+}
+
+#ckb_amendoim + label {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(../images/icon_no-peanut-off.png) no-repeat center top;
+    background-size: 100%;
+}
+
+#ckb_amendoim:checked + label {
+    background-image: url(../images/icon_no-peanut-on.png);
+}
+
+#ckb_ovo + label {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(../images/icon_no-eggs-off.png) no-repeat center top;
+    background-size: 100%;
+}
+
+#ckb_ovo:checked + label {
+    background-image: url(../images/icon_no-eggs-on.png);
+}
+
+#ckb_leite + label {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(../images/icon_no-milk-off.png) no-repeat center top;
+    background-size: 100%;
+}
+
+#ckb_leite:checked + label {
+    background-image: url(../images/icon_no-milk-on.png);
+}
+
+#ckb_crustaceos + label {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(../images/icon_no-seafood_off.png) no-repeat center top;
+    background-size: 100%;
+}
+
+#ckb_crustaceos:checked + label {
+    background-image: url(../images/icon_no-seafood_on.png);
+}
+
+input[type="number"] {
+    width: 4rem;
+}
+
+
+
+/********************** MAIN **********************/
+
+
+main {
+    width: 73%;
+    padding: 5vh 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main article {
+    border: 3px dashed #fe6d73;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    width: 25%;
+    margin: 2vh 0;
+    padding: 2%;
+}
+
+main article img {
+    width: 100%;
 }
