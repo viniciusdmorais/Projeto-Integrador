@@ -8,6 +8,8 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="assets/js/load_component.js"></script>
 
+    <script src="assets/js/rec_rest.js"></script>
+
     <link rel="stylesheet" href="assets/css/defaut_rt.css" />
     <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
 
@@ -73,35 +75,16 @@
               <div class="div_form">
                 <div class="div_avalie">
                   <h3>Avalie essa receita</h3>
-                </div>
-                <div class="div_stars">
-                  <img
-                    width="40px"
-                    src="assets/images/star.png"
-                    alt="avaliações_improvisada_com_imagem"
-                  />
-                  <img
-                    width="40px"
-                    src="assets/images/star.png"
-                    alt="avaliações_improvisada_com_imagem"
-                  />
-                  <img
-                    width="40px"
-                    src="assets/images/star.png"
-                    alt="avaliações_improvisada_com_imagem"
-                  />
-                  <img
-                    width="40px"
-                    src="assets/images/star.png"
-                    alt="avaliações_improvisada_com_imagem"
-                  />
-                  <img
-                    width="40px"
-                    src="assets/images/star.png"
-                    alt="avaliações_improvisada_com_imagem"
-                  />
-                </div>
+                </div>               
 
+                  <ul class="avaliacao">        
+                    <li class="star-icon ativo" data-avaliacao="1"></li>
+                    <li class="star-icon" data-avaliacao="2"></li>
+                    <li class="star-icon" data-avaliacao="3"></li>
+                    <li class="star-icon" data-avaliacao="4"></li>
+                    <li class="star-icon" data-avaliacao="5"></li>
+                  </ul>          
+                
               <div>
                 <h3>Deixe um comentário</h3>
               </div>
@@ -122,7 +105,7 @@
                     <input type="checkbox" checked />Concordo com condições e
                     termos da
                     <a target="_blank" href="em_construcao.html"
-                      >Política de Privacidade</a
+                      ><u>Política de Privacidade</u></a
                     >
                   </label>
                 </div>

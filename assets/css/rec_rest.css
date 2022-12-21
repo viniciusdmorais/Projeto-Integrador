@@ -8,7 +8,7 @@ header {
 }
 
 
-/*********Começo do meu********/
+/********* PARA PÁGINA DE RECEITAS PRONTAS *********/
 
 
 section {
@@ -16,7 +16,7 @@ section {
 }
 
 .fundo {
-    /*background-color: #17C3B2;*/
+    /*background-color: #17C3B2;  <-- Estou na duvida de deixo com ou sem esse fundo */
     border-radius: 7px;
     display:flex;
     width: 100%;
@@ -94,11 +94,6 @@ form {
     display: flex;
 }
 
-.div_stars {
-    display: flex;
-    margin: 0 0 20px 0;
-}
-
 .preencher_mensagem {
     border-radius: 7px;
     width: 510px;
@@ -116,4 +111,36 @@ form {
     background-color: #FE6D73;
     width: 250px;
     height: 35px;
+}
+
+
+
+/********* PARA AVALIAÇÃO COM ESTRELINHAS *********/
+
+.avaliacao {
+    display: flex;
+}
+
+.star-icon {
+    list-style-type: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 45px;
+}
+
+.star-icon::before {
+    content: "\2605";
+}
+
+.star-icon.ativo ~ .star-icon::before {
+    content: "\2606";
+}
+
+.avaliacao:hover .star-icon::before {
+    content: "\2605";
+}
+
+.star-icon:hover ~ .star-icon::before {
+    content: "\2606";
 }
