@@ -8,161 +8,60 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="assets/js/load_component.js"></script>
+    <script src="assets/js/load_receitas.js" defer></script>
 
-    <link rel="stylesheet" href="assets/css/teste.css">
 
+    <link rel="stylesheet" href="assets/css/defaut_rt.css" />
+    <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
+    <link rel="stylesheet" href="assets/css/receitas.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg">
     <title>Bora Comer - Receitas</title>
 </head>
 
 <body>
     <header></header>
 
-    <aside>
-        <input type="search" name="search_receita" id="search_receita">
-        <form action="#">
-            <fieldset>
-                <legend>Filtros</legend>
+    <div class="container">
+        <aside>
+            <input type="search" name="search_receita" id="search_receita">
+            <form action="#">
+                <fieldset>
+                    <legend>Filtros</legend>
 
-                <input type="checkbox" name="ckb_veg" id="ckb_veg">
-                <label for="ckb_veg">Vegano</label>
+                    <input type="checkbox" name="ckb_veg" id="ckb_veg">
+                    <label for="ckb_veg"></label>
 
-                <input type="checkbox" name="ckb_glutem" id="ckb_glutem">
-                <label for="ckb_glutem">Sem Glutem</label>
+                    <input type="checkbox" name="ckb_glutem" id="ckb_glutem">
+                    <label for="ckb_glutem"></label>
 
-                <input type="checkbox" name="ckb_soja" id="ckb_soja">
-                <label for="ckb_soja">Sem Soja</label>
+                    <input type="checkbox" name="ckb_soja" id="ckb_soja">
+                    <label for="ckb_soja">Sem Soja</label>
 
-                <input type="checkbox" name="ckb_amendoim" id="ckb_amendoim">
-                <label for="ckb_amendoim">Sem Amendoim</label>
+                    <input type="checkbox" name="ckb_amendoim" id="ckb_amendoim">
+                    <label for="ckb_amendoim">Sem Amendoim</label>
 
-                <input type="checkbox" name="ckb_ovo" id="ckb_ovo">
-                <label for="ckb_ovo">Sem Ovo</label>
+                    <input type="checkbox" name="ckb_ovo" id="ckb_ovo">
+                    <label for="ckb_ovo">Sem Ovo</label>
 
-                <input type="checkbox" name="ckb_leite" id="ckb_leite">
-                <label for="ckb_leite">Sem Leite</label>
+                    <input type="checkbox" name="ckb_leite" id="ckb_leite">
+                    <label for="ckb_leite">Sem Leite</label>
 
-                <input type="checkbox" name="ckb_crustaceos" id="ckb_crustaceos">
-                <label for="ckb_crustaceos">Sem Crustáceos</label>
+                    <input type="checkbox" name="ckb_crustaceos" id="ckb_crustaceos">
+                    <label for="ckb_crustaceos">Sem Crustáceos</label>
 
-                <label for="tmp_min">Tempo</label>
-                <input type="number" name="tmp_min" id="tmp_min"><span>min até </span>
-                <input type="number" name="tmp_max" id="tmp_max"><span>min</span>
+                    <label for="tmp_min">Tempo</label>
+                    <input type="number" name="tmp_min" id="tmp_min"><span>min até </span>
+                    <input type="number" name="tmp_max" id="tmp_max"><span>min</span>
 
-                <button type="reset">Limpar</button>
-                <button type="submit">Aplicar</button>
-            </fieldset>
-        </form>
-    </aside>
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Aplicar</button>
+                </fieldset>
+            </form>
+        </aside>
 
-    <main>
-        <section>
-            <img src="#" alt="Foto da receita">
-            <h2>nome da receita</h2>
-            <p>Temo medio de preparo: 30min - 300 views</p>
-            <ul>
-                <li><img src="#" alt="Icone sem glutem"></li>
-                <li><img src="#" alt="Icone sem soja"></li>
-                <li><img src="#" alt="Icone sem amendoin"></li>
-                <li><img src="#" alt="Icone vegano"></li>
-            </ul>
-        </section>
-
-        <section>
-            <img src="#" alt="Foto da receita">
-            <h2>nome da receita</h2>
-            <p>Temo medio de preparo: 30min - 300 views</p>
-            <ul>
-                <li><img src="#" alt="Icone sem glutem"></li>
-                <li><img src="#" alt="Icone sem soja"></li>
-                <li><img src="#" alt="Icone sem amendoin"></li>
-                <li><img src="#" alt="Icone vegano"></li>
-            </ul>
-        </section>
-
-        <section>
-            <img src="#" alt="Foto da receita">
-            <h2>nome da receita</h2>
-            <p>Temo medio de preparo: 30min - 300 views</p>
-            <ul>
-                <li><img src="#" alt="Icone sem glutem"></li>
-                <li><img src="#" alt="Icone sem soja"></li>
-                <li><img src="#" alt="Icone sem amendoin"></li>
-                <li><img src="#" alt="Icone vegano"></li>
-            </ul>
-        </section>
-
-        <section>
-            <img src="#" alt="Foto da receita">
-            <h2>nome da receita</h2>
-            <p>Temo medio de preparo: 30min - 300 views</p>
-            <ul>
-                <li><img src="#" alt="Icone sem glutem"></li>
-                <li><img src="#" alt="Icone sem soja"></li>
-                <li><img src="#" alt="Icone sem amendoin"></li>
-                <li><img src="#" alt="Icone vegano"></li>
-            </ul>
-        </section>
-
-        <section>
-            <img src="#" alt="Foto da receita">
-            <h2>nome da receita</h2>
-            <p>Temo medio de preparo: 30min - 300 views</p>
-            <ul>
-                <li><img src="#" alt="Icone sem glutem"></li>
-                <li><img src="#" alt="Icone sem soja"></li>
-                <li><img src="#" alt="Icone sem amendoin"></li>
-                <li><img src="#" alt="Icone vegano"></li>
-            </ul>
-        </section>
-
-        <section>
-            <img src="#" alt="Foto da receita">
-            <h2>nome da receita</h2>
-            <p>Temo medio de preparo: 30min - 300 views</p>
-            <ul>
-                <li><img src="#" alt="Icone sem glutem"></li>
-                <li><img src="#" alt="Icone sem soja"></li>
-                <li><img src="#" alt="Icone sem amendoin"></li>
-                <li><img src="#" alt="Icone vegano"></li>
-            </ul>
-        </section>
-
-        <section>
-            <img src="#" alt="Foto da receita">
-            <h2>nome da receita</h2>
-            <p>Temo medio de preparo: 30min - 300 views</p>
-            <ul>
-                <li><img src="#" alt="Icone sem glutem"></li>
-                <li><img src="#" alt="Icone sem soja"></li>
-                <li><img src="#" alt="Icone sem amendoin"></li>
-                <li><img src="#" alt="Icone vegano"></li>
-            </ul>
-        </section>
-
-        <section>
-            <img src="#" alt="Foto da receita">
-            <h2>nome da receita</h2>
-            <p>Temo medio de preparo: 30min - 300 views</p>
-            <ul>
-                <li><img src="#" alt="Icone sem glutem"></li>
-                <li><img src="#" alt="Icone sem soja"></li>
-                <li><img src="#" alt="Icone sem amendoin"></li>
-                <li><img src="#" alt="Icone vegano"></li>
-            </ul>
-        </section>
-
-        <section>
-            <img src="#" alt="Foto da receita">
-            <h2>nome da receita</h2>
-            <p>Temo medio de preparo: 30min - 300 views</p>
-            <ul>
-                <li><img src="#" alt="Icone sem glutem"></li>
-                <li><img src="#" alt="Icone sem soja"></li>
-                <li><img src="#" alt="Icone sem amendoin"></li>
-                <li><img src="#" alt="Icone vegano"></li>
-            </ul>
-        </section>
-    </main>
+        <main></main>
+    </div>
 
     <footer></footer>
 </body>
