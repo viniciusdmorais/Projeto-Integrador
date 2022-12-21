@@ -129,6 +129,9 @@ form {
     height: 35px;
 }
 
+.botao:hover {
+    cursor: pointer;
+}
 
 
 /********* PARA AVALIAÇÃO COM ESTRELINHAS *********/
