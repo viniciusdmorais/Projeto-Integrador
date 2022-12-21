@@ -99,7 +99,7 @@ main {
   display: flex;
 
   flex-direction: column;
-  
+
 }
 
 
@@ -116,7 +116,7 @@ main {
   color: #0D3B66;
 
   margin: 10px 0;
-  
+
   border-radius: 30px;
 
 }
@@ -132,7 +132,7 @@ main {
 
   text-decoration: none;
   margin-top: 80px;
-  
+
 
 }
 
@@ -160,14 +160,52 @@ form {
 
 }
 
+.form_contato_div {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+
+}
+
+.form_contato_div input {
+  border-radius: 10px;
+
+
+}
+
 .form_contato {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
-  height: 100vh;
+  justify-content: center;
+  height: 80vh;
   margin-bottom: 30px;
 
 
 
+}
+
+.button_enviar {
+
+  width: 100%;
+
+  height: 40px;
+
+  background-color: #FE6D73;
+
+  border: none;
+
+  color: #0D3B66;
+
+  margin: 10px 0;
+
+  border-radius: 30px;
+
+}
+
+#msg {
+
+  height: 100px;
+  border-radius: 10px;
 }
