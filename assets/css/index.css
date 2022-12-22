@@ -1,5 +1,4 @@
 /************* DEFAULT *****************/
-
 html,
 body,
 header {
@@ -35,7 +34,7 @@ nav {
 .container {
   display: flex;
   justify-content: space-between;
-  width: 1366px;
+  width: 1200px;
   padding: 0px 7.1%;
 }
 
@@ -51,70 +50,17 @@ nav {
   color: gray;
 }
 
-/*********** HEADER *****************/
-
-header {
-  height: 83px;
-  width: 100%;
-  position: relative;
-  top: 0;
-  border-bottom: 3px solid #FE6D73;
-
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-  display: flex;
-  justify-content: space-between;
-}
-
-header>nav {
-  gap: 20px;
-  font-weight: bold;
-}
-
-
-.logo_bora_comer {
-  height: 80px;
-  width: 95px;
-}
-
-.icon_header {
-  height: 30px;
-  width: 30px;
-}
-
-#header_imput_search {
-  transition: 0.4s;
-  width: 0px;
-  height: 30px;
-  padding: 0px;
-  margin: 0px;
-  outline: none;
-  float: left;
-  border: none;
-}
-
-li:hover>#header_imput_search,
-#header_imput_search:focus {
-  width: 240px;
-  border: 1px solid black;
-  border-radius: 15px;
-  padding: 10px;
-}
-
 /************  SLIDER SECTION **************/
 
 .slider_section {
-  margin-top: 15px;
+  margin-top: 70px;
   display: flex;
   justify-content: center;
 }
 
 #sliders {   /**Definiremos as configurações do Container do slide **/	
-	list-style: none;          /*Remove o bullet*/
-	position: relative;	       /* Define que position:relative porque os * elementos filhos usarão absolute	 */
+  list-style: none;          /*Remove o bullet*/
+  position: relative;	       /* Define que position:relative porque os * elementos filhos usarão absolute	 */
   width: 800px;		           /*Define a largura*/
   height:500px;             /*Define uma altura*/
   margin:0 auto;	          /*Centralizar na horizontal*/
@@ -142,6 +88,15 @@ li:hover>#header_imput_search,
   height: 500px;
 }
 
+.flechas-slider {
+    width: 40px;
+    height: 40px;
+    padding: 200px 140px
+}
+.flechas-slider:hover {
+    cursor: pointer;
+} 
+
 /*** SECTIONS ***/
 
 .section_main {
@@ -168,45 +123,3 @@ li:hover>#header_imput_search,
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
 }
-
-
-/********* FOOTER  **********/
-
-.main_footer {
-  margin-top: 140px;
-  height: 83px;
-  width: 100%;
-  position: relative;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  z-index: 0;
-  
-}
-
-.logo_media_social_footer {
-  position: absolute;
-  padding: 50px 0px 0px 0px;
-  display: flex;
-  justify-content: flex-start;
-  align-self: flex-start;
-}
-
-.nav_footer {
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;  
-  padding: 0px 0px 0px 1050px;
-}
-
-.apoio_footer {
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;  
-  padding: 0px 0px 0px 1425px;
-}
-
-.apoio_imgs img {
-  padding: 5px;
-}
-

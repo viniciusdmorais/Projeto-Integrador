@@ -12,25 +12,40 @@ header {
 
 
 section {
-    display:flex;
+    display:flex;    
+}
+
+.dois_fundos {
+    display: flex;
+    flex-direction: column;
 }
 
 .fundo {
-    /*background-color: #17C3B2;  <-- Estou na duvida de deixo com ou sem esse fundo */
     border-radius: 7px;
     display:flex;
     width: 100%;
     height: 100%;
-    padding: 50px;
+    padding: 0 0 0 30px;
     justify-content: center;
     margin: 75px 0 0 0;
-    gap: 100px;
+    gap: 75px;
+}
+
+
+.fundo_barra {
+    background-color: #17C3B2;
+    border-radius: 7px;
+    display:flex;
+    justify-content: center;
+    width: 220px;
+    height: 900px;
+    padding: 20px;
+    margin: 75px 0 0 0;      
 }
 
 .imagem_receita {
     align-self: center;
-    width:376px;
-    height:275px;
+    width:400px;
 }
 
 .texto_receita, .texto_modo_preparo {
@@ -42,10 +57,11 @@ section {
     text-align: center;
 }
 
-.total{
+.descricao_receita{
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     flex-direction: column;
+    height: 100%;
 }
 
 .dados_receita {
@@ -82,7 +98,7 @@ form {
 .section_form {
     display: flex;
     justify-content:flex-start;
-    padding: 0 0 0 165px;
+    padding: 50px 0 0 350px;
 }
 
 
@@ -113,6 +129,9 @@ form {
     height: 35px;
 }
 
+.botao:hover {
+    cursor: pointer;
+}
 
 
 /********* PARA AVALIAÇÃO COM ESTRELINHAS *********/
