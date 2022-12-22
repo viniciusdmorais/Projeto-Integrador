@@ -3,6 +3,11 @@ body > .container {
     justify-content: space-between;
 }
 
+h6 {
+    font-weight: normal;
+}
+
+
 
 /********************** ASIDE **********************/
 
@@ -15,11 +20,26 @@ aside {
     padding: 5vh 3vh;
 }
 
-aside,
-aside > * {
+aside {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+}
+
+
+aside form input[type="checkbox"] {
+    visibility: hidden;
+}
+
+aside form label {
+    cursor: pointer;
+}
+
+#filterCkb {
+    margin: 4vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
 }
 
 #ckb_veg + label {
@@ -38,12 +58,12 @@ aside > * {
     display: inline-block;
     width: 60px;
     height: 60px;
-    background: url(../images/icon_no-eggs-off.png) no-repeat center top;
+    background: url(../images/icon_no-gluten-off.png) no-repeat center top;
     background-size: 100%;
 }
 
 #ckb_glutem:checked + label {
-    background-image: url(../images/icon_no-eggs-on.png);
+    background-image: url(../images/icon_no-gluten-on.png);
 }
 
 #ckb_soja + label {
@@ -134,6 +154,15 @@ main article {
     padding: 2%;
 }
 
-main article img {
+.photoReceita {
     width: 100%;
+}
+
+.iconAlerg {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconAlerg img {
+    width: 30px;
 }
