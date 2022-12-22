@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="assets/css/rec_rest.css" />
 
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
     <title>Bora Comer - Receitas</title>
 </head>
 
@@ -105,7 +106,8 @@
     <footer></footer>
 
     <script>
-        searchReceita(1);
+        const urlParams = new URLSearchParams(window.location.search);
+        searchReceita(urlParams.get('receitaID'));
     </script>
 </body>
 

@@ -4,7 +4,6 @@ html,
 body,
 header {
   background: #FEF9EF;
-  color: #0D3B66;
 }
 
 
@@ -15,41 +14,67 @@ section {
     display:flex;    
 }
 
+.fundo_barra {
+    background-color: #17C3B2;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    padding: 5vh 3vh;
+    margin: 0;      
+}
+
+.titulo_barra, .titulo_barra b {
+    margin: 0 0 50px 0;
+    font-size: 19px;
+}
+
+.box_barra a {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 0 50px 0;
+}
+
+.titulo_autor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.titulo_rec {
+    font-size: 17px;
+}
+
+.autor_rec {
+    font-size: 10px;
+}
+
 .dois_fundos {
     display: flex;
     flex-direction: column;
 }
 
 .fundo {
-    border-radius: 7px;
+    /*background-color: #1b8cf7;*/
     display:flex;
     width: 100%;
     height: 100%;
     padding: 0 0 0 30px;
     justify-content: center;
     margin: 75px 0 0 0;
-    gap: 75px;
-}
-
-
-.fundo_barra {
-    background-color: #17C3B2;
-    border-radius: 7px;
-    display:flex;
-    justify-content: center;
-    width: 220px;
-    height: 900px;
-    padding: 20px;
-    margin: 75px 0 0 0;      
+    gap: 50px;
 }
 
 .imagem_receita {
     align-self: center;
-    width:400px;
+    width:350px;
 }
 
 .texto_receita, .texto_modo_preparo {
-    width: 550px;
+    width: 450px;
     display:flex;
     justify-content:flex-start;
     flex-direction: column;
@@ -72,7 +97,7 @@ section {
 
 
 .lista_ingredientes {
-    width: 376px;
+    width: 350px;
     display:flex;
     justify-content:flex-start;
     flex-direction: column;
@@ -129,6 +154,9 @@ form {
     height: 35px;
 }
 
+.botao:hover {
+    cursor: pointer;
+}
 
 
 /********* PARA AVALIAÇÃO COM ESTRELINHAS *********/

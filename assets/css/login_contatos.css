@@ -34,7 +34,7 @@ main {
 
   justify-content: center;
   width: 360px;
-  height: 1057.280px;
+  min-height: 650px;
 
 }
 

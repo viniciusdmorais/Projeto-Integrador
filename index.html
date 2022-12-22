@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="assets/js/load_component.js" defer></script>
-    <script defer src="assets/js/slider.js" ></script>
-    
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/header_footer_rt.css">
+    <script defer src="assets/js/slider.js"></script>
+
+    <link rel="stylesheet" href="assets/css/defaut_rt.css" />
+    <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
     <title>Bora Comer</title>
 </head>
+
 <body>
     <header></header>
     <main>
         <section class="slider_section">
-            <img src="assets/images/flecha-esquerda.png" alt="flecha-esquerda" class="flechas-slider" onclick="mudaSlider()">
+            <img src="assets/images/flecha-esquerda.png" alt="flecha-esquerda" class="flechas-slider"
+                onclick="mudaSlider()">
             <ul id="sliders">
                 <li class="slider-active">
                     <a href="receitas.html" rel="next">
-                        <img src="https://img.itdg.com.br/tdg/images/recipes/000/163/173/125970/125970_original.jpg" alt="slideshow galeria imagem 1" >
+                        <img src="https://img.itdg.com.br/tdg/images/recipes/000/163/173/125970/125970_original.jpg"
+                            alt="slideshow galeria imagem 1">
                     </a>
                 </li>
                 <li>
                     <a href="restaurantes_indicados.html" rel="next">
-                        <img src="https://www.vaisefood.com/wp-content/uploads/2012/11/bolocacau.jpg" alt="slideshow galeria imagem 2">
+                        <img src="https://www.vaisefood.com/wp-content/uploads/2012/11/bolocacau.jpg"
+                            alt="slideshow galeria imagem 2">
                     </a>
                 </li>
                 <li>
@@ -33,57 +42,64 @@
                         <img src="assets/images/panetone-de-chocolate-com-sorvete.jpg" alt="slideshow galeria imagem 3">
                     </a>
                 </li>
-            </ul>    
-            <img src="assets/images/flecha-direita.png" alt="flecha-direita" class="flechas-slider" onclick="mudaSlider()">
+            </ul>
+            <img src="assets/images/flecha-direita.png" alt="flecha-direita" class="flechas-slider"
+                onclick="mudaSlider()">
         </section>
-        <section class="section_main">
-            <h2>
-                BATEU AQUELA FOME?
-            </h2>
-            <p>
-                Estamos na época de Natal e não existe coisa melhor do que comer, não é mesmo?
-                Por isso separamos aqui opções que se encaixam no seu bolso e nessa época
-                que é a mais linda do ano.
-                Vamos trazer opções deliciosas e irresistiveis para você comer e onde você pode 
-                encontrar para fazer do seu Natal mais feliz
-            </p>
-        </section>
-        <section class="section_main_2">
-            <a href="receitas.html">
-                <img src="https://img.itdg.com.br/tdg/images/recipes/000/163/173/125970/125970_original.jpg" alt="1ª imagem de postagem" width="400px">
-            </a>
-            <a href="receita_completa.html">
-                <img src="https://www.vaisefood.com/wp-content/uploads/2012/11/bolocacau.jpg" alt="2ª imagem de postagem" width="400px">
-            </a>
-            <a href="receitas.html">
-                <img src="assets/images/panetone-de-chocolate-com-sorvete.jpg" alt="3ª imagem de postagem" width="400px">
-            </a>
-        </section>
-        <section class="section_main">
-            <h2>
-                Quer conhecer os melhores restaurantes da gastronomia natalina?
-            </h2>
-            <h3>
-                Aproveite o nosso Foodvisor
-            </h3>
-            <p>
-                Um lugar onde você é bem recebido, com um atendimento diferenciado e que seja o melhor custo
-                benefício para levar a sua família, passeio de férias ou até mesmo aquele jantar romântico, são
-                os nossos lugares selecionados para você passar um fim de ano inesquecível.
-            </p>
-        </section>
-        <section class="section_main_2">        
-            <a href="restaurantes_indicados.html">
-                <img src="assets/images/chalezinho.jpg" alt="4ª imagem de postagem">
-            </a>
-            <a href="restaurantes_indicados.html">
-                <img src="assets/images/cosi.jpg" alt="5ª imagem de postagem">
-            </a>
-            <a href="restaurantes_indicados.html">
-                <img src="assets/images/fasano.jpg" alt="6ª imagem de postagem">
-            </a>
-        </section>
+        <div class="conteiner">
+            <section class="section_main">
+                <h2>
+                    BATEU AQUELA FOME?
+                </h2>
+                <p>
+                    Estamos na época de Natal e não existe coisa melhor do que comer, não é mesmo?
+                    Por isso separamos aqui opções que se encaixam no seu bolso e nessa época
+                    que é a mais linda do ano.
+                    Vamos trazer opções deliciosas e irresistiveis para você comer e onde você pode
+                    encontrar para fazer do seu Natal mais feliz
+                </p>
+            </section>
+            <section class="section_main_2">
+                <a href="receitas.html">
+                    <img src="https://img.itdg.com.br/tdg/images/recipes/000/163/173/125970/125970_original.jpg"
+                        alt="1ª imagem de postagem" width="400px">
+                </a>
+                <a href="receita_completa.html">
+                    <img src="https://www.vaisefood.com/wp-content/uploads/2012/11/bolocacau.jpg"
+                        alt="2ª imagem de postagem" width="400px">
+                </a>
+                <a href="receitas.html">
+                    <img src="assets/images/panetone-de-chocolate-com-sorvete.jpg" alt="3ª imagem de postagem"
+                        width="400px">
+                </a>
+            </section>
+            <section class="section_main">
+                <h2>
+                    Quer conhecer os melhores restaurantes da gastronomia natalina?
+                </h2>
+                <h3>
+                    Aproveite o nosso Foodvisor
+                </h3>
+                <p>
+                    Um lugar onde você é bem recebido, com um atendimento diferenciado e que seja o melhor custo
+                    benefício para levar a sua família, passeio de férias ou até mesmo aquele jantar romântico, são
+                    os nossos lugares selecionados para você passar um fim de ano inesquecível.
+                </p>
+            </section>
+            <section class="section_main_2">
+                <a href="restaurantes_indicados.html">
+                    <img src="assets/images/chalezinho.jpg" alt="4ª imagem de postagem">
+                </a>
+                <a href="restaurantes_indicados.html">
+                    <img src="assets/images/cosi.jpg" alt="5ª imagem de postagem">
+                </a>
+                <a href="restaurantes_indicados.html">
+                    <img src="assets/images/fasano.jpg" alt="6ª imagem de postagem">
+                </a>
+            </section>
+        </div>
     </main>
     <footer></footer>
 </body>
+
 </html>

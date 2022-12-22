@@ -235,23 +235,58 @@ const listReceitas = [
 
 function creatCardReceitas() {
     for (let i = 0; i <= listReceitas.length; i++) {
+        let alergIcons = "";
+
+        if (listReceitas[i].amendoim) {
+            alergIcons += `
+            <img src="assets/images/icon_peanut.png" alt="Contem Amendoim" />
+            `;
+        }
+        if (listReceitas[i].crustaceo) {
+            alergIcons += `
+            <img src="assets/images/icon_seafood.png" alt="Contem Crustáceos" />
+            `;
+        }
+        if (listReceitas[i].glutem) {
+            alergIcons += `
+            <img src="assets/images/icon_gluten.png" alt="Contem Glutem" />
+            `;
+        }
+        if (listReceitas[i].leite) {
+            alergIcons += `
+            <img src="assets/images/icon_milk.png" alt="Contem Leite" />
+            `;
+        }
+        if (listReceitas[i].ovo) {
+            alergIcons += `
+            <img src="assets/images/icon_eggs.png" alt="Contem Ovo" />
+            `;
+        }
+        if (listReceitas[i].soja) {
+            alergIcons += `
+            <img src="assets/images/icon_soy.png" alt="Contem Soja" />
+            `;
+        }
+        if (listReceitas[i].vagano) {
+            alergIcons += `
+            <img src="assets/images/icon_vegan-on.png" alt="Contem Vegano" />
+            `;
+        }
+
         const newArticle = document.createElement("article");
 
         newArticle.innerHTML = `
-            <img src="${listReceitas[i].imagem}" alt="Foto ${listReceitas[i].nomeReceita}">
-            <h2>${listReceitas[i].nomeReceita}</h2>
-            <p>Temo medio de preparo: ${listReceitas[i].tempoPreparo}min - 300 views</p>
-            <ul>
-                <li><img src="#" alt="Icone sem glutem"></li>
-                <li><img src="#" alt="Icone sem soja"></li>
-                <li><img src="#" alt="Icone sem amendoin"></li>
-                <li><img src="#" alt="Icone vegano"></li>
-            </ul>
+            <img src="${listReceitas[i].imagem}" alt="Foto ${listReceitas[i].nomeReceita}" class="photoReceita" />
+            <a href="receitas_prontas_tst.html?receitaID=${listReceitas[i].idReceita}">
+                <h2>${listReceitas[i].nomeReceita}</h2>
+            </a>
+            <h6>Temo medio de preparo: ${listReceitas[i].tempoPreparo}min - 300 views</h6>
+            <div class="iconAlerg"> ${alergIcons} </div>
             <p>${listReceitas[i].descricao}</p>
         `;
 
-        const baseMain = document.querySelector("main");
-        baseMain.appendChild(newArticle);
+        document.querySelector("main").appendChild(newArticle);
+        
     }
 }
 

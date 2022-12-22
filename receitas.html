@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
     <link rel="stylesheet" href="assets/css/receitas.css" />
 
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
     <title>Bora Comer - Receitas</title>
 </head>
 
@@ -24,11 +24,12 @@
 
     <div class="container">
         <aside>
-            <input type="search" name="search_receita" id="search_receita">
-            <form action="#">
-                <fieldset>
-                    <legend>Filtros</legend>
+            <h3>Filtros</h3>
 
+            <input type="search" name="search_receita" id="search_receita" placeholder="Busca..." />
+
+            <form action="#">
+                <div id="filterCkb">
                     <input type="checkbox" name="ckb_veg" id="ckb_veg">
                     <label for="ckb_veg"></label>
 
@@ -49,14 +50,13 @@
 
                     <input type="checkbox" name="ckb_crustaceos" id="ckb_crustaceos">
                     <label for="ckb_crustaceos"></label>
+                </div>
 
-                    <label for="tmp_min">Tempo</label>
-                    <input type="number" name="tmp_min" id="tmp_min"><span>min até </span>
-                    <input type="number" name="tmp_max" id="tmp_max"><span>min</span>
+                <p><label for="tmp_min">Tempo</label></p>
+                <p>De <input type="number" name="tmp_min" id="tmp_min"> até
+                <input type="number" name="tmp_max" id="tmp_max"> min</p>
 
-                    <button type="reset">Limpar</button>
-                    <button type="submit">Aplicar</button>
-                </fieldset>
+                <button type="reset">Limpar</button>
             </form>
         </aside>
 

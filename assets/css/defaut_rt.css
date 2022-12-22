@@ -38,6 +38,18 @@ h3 {
   font-size: 1.2rem;
 }
 
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.8rem;
+}
+
+h6 {
+    font-size: 0.6rem;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -45,7 +57,7 @@ nav {
 
 .container {
   width: 100vw;
-  max-width: 1366px;
+  max-width: 1200px;
   position: relative;
   margin: 0 auto;
 }
