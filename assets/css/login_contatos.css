@@ -152,6 +152,20 @@ main {
 
 /************CONTATOS***********/
 
+
+.form_contato {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  margin-bottom: 30px;
+
+
+
+}
+
 form {
 
   display: flex;
@@ -163,6 +177,8 @@ form {
 .form_contato_div {
   align-items: center;
   display: flex;
+  
+
   margin-bottom: 20px;
   justify-content: center;
 
@@ -174,17 +190,7 @@ form {
 
 }
 
-.form_contato {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-  margin-bottom: 30px;
 
-
-
-}
 
 .button_enviar {
 
