@@ -1,4 +1,4 @@
-/************* DEFAULT *****************/
+/***************** DEFAULT *****************/
 
 html,
 body,
@@ -14,13 +14,111 @@ section {
     display:flex;    
 }
 
+/** Receitas **/
+
+.section_backgrounds{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.dois_fundos {
+    display: flex;
+    flex-direction: column;
+}
+
+.fundo {
+    /*background-color: #1b8cf7;*/
+    display:flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px 0 0;
+    justify-content:flex-start;
+    margin: 75px 0 0 0;
+    gap: 50px;
+}
+
+.imagem_receita {
+    align-self: center;
+    width:350px;
+}
+
+.texto_descricao_receita, .texto_modo_preparo {
+    width: 450px;
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto_descricao_receita p {
+    font-size: 19px;
+    text-align: center;
+}
+
+.texto_descricao_receita h1, .lista_ingredientes h2, .texto_modo_preparo h2 {
+    margin: 0 0 8px 0;
+}
+
+.descricao_receita{
+    display:flex;
+    justify-content:space-around;
+    flex-direction: column;
+    height: 100%;
+}
+
+.dados_receita {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dados_receita p, .dados_receita strong {
+    font-size: 15px;
+}
+
+.lista_ingredientes {
+    width: 350px;
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto_modo_preparo li, .lista_ingredientes li {
+    font-size: 17.5px;
+    text-align:left;
+    padding: 0 0 2px 0;
+}
+
+.lista_ingredientes h3 {
+    text-align:left;
+    padding: 5px 0 10px 0;
+}
+
+.dicas h3 {
+    text-align: center;
+    padding: 5px 0 10px 0;
+}
+
+.dicas p {
+    font-size: 17.5px;
+    text-align:justify;
+    padding: 0 0 2px 0;
+}
+
+
+
+/** Barra lateral à direita **/
+
 .fundo_barra {
     background-color: #17C3B2;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
     display:flex;
     flex-direction: column;
     align-items: center;
     width: 20%;
-    height: 100%;
+    height: 800px;
     padding: 5vh 3vh;
     margin: 0;      
 }
@@ -28,13 +126,6 @@ section {
 .titulo_barra, .titulo_barra b {
     margin: 0 0 50px 0;
     font-size: 19px;
-}
-
-.box_barra a {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin: 0 0 50px 0;
 }
 
 .titulo_autor {
@@ -52,80 +143,36 @@ section {
     font-size: 10px;
 }
 
-.dois_fundos {
+.box_barra a {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 0 50px 0;  
+    cursor: pointer;  
 }
 
-.fundo {
-    /*background-color: #1b8cf7;*/
-    display:flex;
-    width: 100%;
-    height: 100%;
-    padding: 0 0 0 30px;
-    justify-content: center;
-    margin: 75px 0 0 0;
-    gap: 50px;
+.box_barra a:hover{
+    font-weight:lighter;
 }
 
-.imagem_receita {
-    align-self: center;
-    width:350px;
-}
-
-.texto_receita, .texto_modo_preparo {
-    width: 450px;
-    display:flex;
-    justify-content:flex-start;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.descricao_receita{
-    display:flex;
-    justify-content:space-around;
-    flex-direction: column;
-    height: 100%;
-}
-
-.dados_receita {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-
-.lista_ingredientes {
-    width: 350px;
-    display:flex;
-    justify-content:flex-start;
-    flex-direction: column;
-    align-items: center;
-}
-
-.lista_ingredientes nav {
-    display: flex;
-    align-items: center;
-}
+/** Form avaliação das receitas **/
 
 form {
     margin: 0 0 75px 0;
+}
+
+.section_form {
+    display: flex;
+    justify-content:flex-start;
+    padding: 50px 0 0 200px;
 }
 
 .fundo_form {
     display:flex;    
     justify-content: center;
     flex-direction: column;
-    padding: 50px 0 0 0;
+    padding: 50px 0 0 0px;
 }
-
-.section_form {
-    display: flex;
-    justify-content:flex-start;
-    padding: 50px 0 0 350px;
-}
-
 
 .div_form {
     margin: 0 0 20px 0; 
@@ -159,6 +206,7 @@ form {
 }
 
 
+
 /********* PARA AVALIAÇÃO COM ESTRELINHAS *********/
 
 .avaliacao {
@@ -166,10 +214,9 @@ form {
 }
 
 .star-icon {
-    list-style-type: none;
-    border: 1px solid #fff;
+    list-style-type: none;    
     cursor: pointer;
-    color: #ffe500;
+    color: #fccc53;
     font-size: 45px;
 }
 
