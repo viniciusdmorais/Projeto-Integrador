@@ -277,7 +277,9 @@ function creatCardReceitas() {
 
         newArticle.innerHTML = `
             <img src="${listReceitas[i].imagem}" alt="Foto ${listReceitas[i].nomeReceita}" class="photoReceita" />
-            <h2>${listReceitas[i].nomeReceita}</h2>
+            <a href="receitas_prontas_tst.html?receitaID=${listReceitas[i].idReceita}">
+                <h2>${listReceitas[i].nomeReceita}</h2>
+            </a>
             <h6>Temo medio de preparo: ${listReceitas[i].tempoPreparo}min - 300 views</h6>
             <div class="iconAlerg"> ${alergIcons} </div>
             <p>${listReceitas[i].descricao}</p>

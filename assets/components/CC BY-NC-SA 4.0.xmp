@@ -5,11 +5,6 @@
              xmlns:cc='http://creativecommons.org/ns#'xmlns:dc='http://purl.org/dc/elements/1.1/'>
         <rdf:Description rdf:about=''>
             <xapRights:Marked>True</xapRights:Marked>
-            <xapRights:Owner>
-                <rdf:Bag>
-                    <rdf:li>Rodrigo Tormente</rdf:li>
-                </rdf:Bag>
-            </xapRights:Owner>
             <xapRights:WebStatement rdf:resource='https://viniciusdmorais.github.io/Projeto-Integrador/'/>
             <xapRights:UsageTerms>
                 <rdf:Alt>

@@ -106,7 +106,8 @@
     <footer></footer>
 
     <script>
-        searchReceita(1);
+        const urlParams = new URLSearchParams(window.location.search);
+        searchReceita(urlParams.get('receitaID'));
     </script>
 </body>
 
