@@ -200,7 +200,8 @@ form {
     border-radius: 50px;
     background-color: #FE6D73;
     width: 250px;
-    height: 35px;
+    height: 40px;
+    border: none;
 }
 
 .botao:hover {
