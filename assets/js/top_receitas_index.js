@@ -1,4 +1,4 @@
-const listReceitas = [
+const rankReceitas = [
     {
         idReceita: 1,
         nomeReceita: "Bolo de Chocolate",
@@ -233,93 +233,23 @@ const listReceitas = [
     },
 ];
 
-function creatCardReceitas() {
-    for (let i = 0; i <= listReceitas.length; i++) {
-        let alergIcons = "";
+const rankMedia = [];
 
-        if (listReceitas[i].amendoim) {
-            alergIcons += `
-            <img src="assets/images/icon_peanut.png" alt="Contem Amendoim" />
-            `;
-        }
-        if (listReceitas[i].crustaceo) {
-            alergIcons += `
-            <img src="assets/images/icon_seafood.png" alt="Contem Crustáceos" />
-            `;
-        }
-        if (listReceitas[i].glutem) {
-            alergIcons += `
-            <img src="assets/images/icon_gluten.png" alt="Contem Glutem" />
-            `;
-        }
-        if (listReceitas[i].leite) {
-            alergIcons += `
-            <img src="assets/images/icon_milk.png" alt="Contem Leite" />
-            `;
-        }
-        if (listReceitas[i].ovo) {
-            alergIcons += `
-            <img src="assets/images/icon_eggs.png" alt="Contem Ovo" />
-            `;
-        }
-        if (listReceitas[i].soja) {
-            alergIcons += `
-            <img src="assets/images/icon_soy.png" alt="Contem Soja" />
-            `;
-        }
-        if (listReceitas[i].vagano) {
-            alergIcons += `
-            <img src="assets/images/icon_vegan-on.png" alt="Contem Vegano" />
-            `;
-        }
 
-        const newArticle = document.createElement("article");
-
-        newArticle.innerHTML = `
-            <img src="${listReceitas[i].imagem}" alt="Foto ${listReceitas[i].nomeReceita}" class="photoReceita" />
-            <a href="receitas_prontas_tst.html?receitaID=${listReceitas[i].idReceita}">
-                <h2>${listReceitas[i].nomeReceita}</h2>
-            </a>
-            <h6>Temo medio de preparo: ${listReceitas[i].tempoPreparo}min - 300 views</h6>
-            <div class="iconAlerg"> ${alergIcons} </div>
-            <p>${listReceitas[i].descricao}</p>
-        `;
-
-        document.querySelector("main").appendChild(newArticle);
-        
-    }
+function buscaMedia() {    
+    for (let i = 0 ; i <= rankReceitas.length ; i++ ) {
+        rankMedia.push(rankReceitas[i].mediaNota, rankReceitas[i].nomeReceita, rankReceitas[i].imagem);
+        rankMedia.sort((a,b)=> b - a);
+    }  
 }
 
-function searchReceita(numID) {
-    for (let i = 0; i <= listReceitas.length; i++) {
-
-        if (numID == listReceitas[i].idReceita) {
-            
-            document.querySelector(".imagem_receita").src = listReceitas[i].imagem;
-
-
-            const dados = document.createElement("div");
-            dados.className = "texto_receita"
-            dados.innerHTML = `
-                <h1>${listReceitas[i].nomeReceita}</h1>
-                <p>${listReceitas[i].descricao}</p>
-                <p>Temo medio de preparo: ${listReceitas[i].tempoPreparo}min - 300 views</p>
-            `;
-
-            const detalhes = document.createElement("div");
-            detalhes.className = "dados_receita"
-            detalhes.innerHTML = `
-                <p><strong>Autor:</strong> Bora Comer</p>
-                <p><strong>Tempo de Preparo:</strong> ${listReceitas[i].tempoPreparo} min</p>
-                <p><strong>Rendimento:</strong> 6 porções</p>
-            `;
-
-            const baseMain = document.querySelector(".total");
-            baseMain.appendChild(dados);
-            baseMain.appendChild(detalhes);
-
-        }
-
-    }
+function mostraRank() {   
+    rankMedia.length = 9;
+    for (let i = 9 ; i <= rankMedia.length ; i++ ) {
+        console.log(rankMedia);
+    }  
+    
 }
 
+
+buscaMedia();
