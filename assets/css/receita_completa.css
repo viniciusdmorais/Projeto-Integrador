@@ -7,7 +7,7 @@ header {
 }
 
 
-/********* PARA PÁGINA DE RECEITAS PRONTAS *********/
+/********* PARA PÁGINA DE RECEITAS COMPLETAS *********/
 
 
 section {
@@ -154,6 +154,8 @@ section {
 .box_barra a:hover{
     font-weight:lighter;
 }
+
+
 
 /** Form avaliação das receitas **/
 
