@@ -54,6 +54,11 @@ section {
     text-align: center;
 }
 
+.descricao_restaurante p{
+    font-size: 15px;
+    margin: 0 0 15px 0;
+}
+
 .img_botoes {
     display: flex;
     flex-direction: column;
@@ -63,24 +68,23 @@ section {
 .botoes_fotos {
     display: flex;
     position:relative;
-    bottom:46px;
+    bottom:65px;
     width: 100%;
     height: 0;
     justify-content: space-between;
 }
 
-.botoes {
+.botoes_seta {
     display: flex;
-    width: 70px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px;
-    background-color: #a7a3a3;
     align-items: center;
     justify-content: center;
     font-size: 25px;
     font-weight: bold;
     border: none;
-    opacity: 65%;
+    opacity: 60%;
     margin: 0 5px 0 5px;
     cursor: pointer;
 }
@@ -107,7 +111,7 @@ section {
 }
 
 .texto_descricao_restaurante p {
-    font-size: 19px;
+    font-size: 17px;
     justify-content: center;
     text-align:center;
 }
@@ -116,25 +120,26 @@ section {
     display: flex;
     flex-direction: column;
     width: 350px;
-    align-items: center;
+    height: 280px;
+    align-items:flex-start;
     justify-content: space-between;    
 }
 
 .outras_informacoes h2 {
-    margin: 0 0 20px 0;  
+    display: flex;
+    margin: 0 0 20px 0; 
+    width: 100%;
+    justify-content: center; 
 }
 
-.outras_informacoes p, .outras_informacoes strong, .endereco p, .descricao_restaurante p {
-    font-size: 17px;        
+.outras_informacoes p, .outras_informacoes strong, .endereco p {
+    font-size: 16px;     
 }
-.descricao_restaurante p {
-    margin: 0 0 15px 0;
-}
+
 
 
 .faixa_preco, .horario, .telefone, .whatsapp, .endereco {
     display: flex;
-    width: 100%;
     justify-content:flex-start;
     align-items: center;
     margin: 0 0 10px 0;
@@ -154,7 +159,7 @@ section {
     flex-direction: column;
     align-items: center;
     width: 20%;
-    height: 800px;
+    height: 850px;
     padding: 5vh 3vh;
     margin: 0;      
 }
@@ -178,13 +183,33 @@ section {
 .box_barra a {
     display: flex;
     flex-direction: row;
+    width: 240px;
+    height: 90px;
     gap: 10px;
     margin: 0 0 50px 0;  
     cursor: pointer;  
+    flex-direction: row-reverse;
 }
 
-.box_barra a:hover{
+.box_barra a:hover, .indicar_restaurante a:hover{
     font-weight:lighter;
+}
+
+.indicar_restaurante {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    text-align: center;
+    width: 172px;
+    height: 75px;
+    margin: 80px 0 0 0;
+}
+
+.indicar_restaurante a {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;  
+    flex-direction: row-reverse;
 }
 
 
