@@ -323,3 +323,4 @@ function searchReceita(numID) {
     }
 }
 
+//export default listReceitas;

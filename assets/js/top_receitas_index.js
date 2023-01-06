@@ -1,3 +1,6 @@
+//import listReceitas from './load_receitas.js';
+//const rankReceitas = listReceitas
+
 const rankReceitas = [
     {
         idReceita: 1,
@@ -233,23 +236,24 @@ const rankReceitas = [
     },
 ];
 
-const rankMedia = [];
+const secAntes = document.getElementById("section_main_2");
 
+function CriaTopReceitas() {
+    rankReceitas.sort((a,b) => b.mediaNota - a.mediaNota);
+    rankReceitas.length = 3;
+    for (let i = 0; i <= rankReceitas.length; i++) {
+        
+        const elemRank = document.createElement("article");
+        elemRank.innerHTML = 
+            `
+            <a href="receitas_prontas_tst.html?receitaID=${rankReceitas[i].idReceita}">
+                <img src="${rankReceitas[i].imagem}" alt="${rankReceitas[i].nomeReceita}">
+            </a>
+              
+            `;
+        
+        secAntes.appendChild(elemRank);
 
-function buscaMedia() {    
-    for (let i = 0 ; i <= rankReceitas.length ; i++ ) {
-        rankMedia.push(rankReceitas[i].mediaNota, rankReceitas[i].nomeReceita, rankReceitas[i].imagem);
-        rankMedia.sort((a,b)=> b - a);
-    }  
+    }
 }
-
-function mostraRank() {   
-    rankMedia.length = 9;
-    for (let i = 9 ; i <= rankMedia.length ; i++ ) {
-        console.log(rankMedia);
-    }  
-    
-}
-
-
-buscaMedia();
+CriaTopReceitas();
