@@ -67,11 +67,7 @@ section {
 
 .botoes_fotos {
     display: flex;
-    position:relative;
-    bottom:65px;
-    width: 100%;
-    height: 0;
-    justify-content: space-between;
+    
 }
 
 .botoes_seta {
