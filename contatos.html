@@ -16,11 +16,13 @@
   </head>
   <body>
     <header></header>
-    <div class="container">
-      <main>
-        <section class="form_contato">
-        <div>
-          <div class="form_contato_div">
+    <div class="container_contato">
+      <main class="main_contato">
+        <section class="section_contato">
+          <div class="foto">
+            <img src="assets/images/contatos-1.svg" alt="" />
+          </div>
+          <form class="form-contato" action="">
             <input
               type="text"
               id="name"
@@ -28,44 +30,35 @@
               name="name"
               required
             />
-          </div>
-            <div class="form_contato_div">
-                <input
-                type="email"
-                id="email"
-                placeholder="E-mail"
-                name="email"
-                required
-                />
-            </div>
-            <div class="form_contato_div">
-                <input
-                type="text"
-                id="assunto"
-                placeholder="Assunto"
-                name="assunto"
-                required
-                />
-            </div>
-            <div class="form_contato_div">
-                <textarea
-                cols="30"
-                rows="15"
-                id="msg"
-                placeholder="Mensagem"
-                required
-                ></textarea>
-            </div>
-            <div>
-                <button class="button_enviar" type=" submit">Enviar</button>
-            </div>
-        </div>
+
+            <input
+              type="email"
+              id="email"
+              placeholder="E-mail"
+              name="email"
+              required
+            />
+            <input
+              type="text"
+              id="assunto"
+              placeholder="Assunto"
+              name="assunto"
+              required
+            />
+            <textarea
+              cols="30"
+              rows="15"
+              id="msg"
+              placeholder="Mensagem"
+              required
+            ></textarea>
+
+            <button class="button_enviar" type=" submit">Enviar</button>
+          </form>
         </section>
       </main>
     </div>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
