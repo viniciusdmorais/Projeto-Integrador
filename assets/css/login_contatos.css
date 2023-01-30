@@ -133,15 +133,36 @@ body{
   background-color:#17C3B2;
   color:#FEF9EF;
 }
-/*                   Mensagem de erro */
+/*******************************  Mensagem de erro Login e Sign up *************************/
+
 span{
   
+  
   visibility: hidden;  /* --->>> Depois, na hora de aparecer com o span, basta usar o "visibility: visible", ao invés do "display: block" */
-  font-size:12px;
-  color: rgb(126, 0, 0);
-  text-align: right;
+   font-size:12px;
+   color: rgb(126, 1, 1);
+   text-align: right;
+ 
+ }
+
+
+input.error {
+  border: solid 2px rgb(204, 1, 1);
+  background-color:#FEF9EF;
+ 
+}
+
+input.correct {
+  background-color: #FEF9EF;
+  border: solid 2px #039f03cf;
+  color: #000;
+}
+
+.visible {
+  visibility: visible;
 
 }
+
 
 /***************************************************CONTATOS********************************************************************************************/
 
