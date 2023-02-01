@@ -26,9 +26,11 @@
         <aside>
             <h3>Filtros</h3>
 
-            <input type="search" name="search_receita" id="search_receita" placeholder="Busca..." />
+            <form class="busca_receita">
+                <input class="busca_receita" id="search_receita" type="search" placeholder="Busca...">
+            </form>
 
-            <form action="#">
+            <form id="filt" action="#">
                 <div id="filterCkb">
                     <input type="checkbox" name="ckb_veg" id="ckb_veg">
                     <label for="ckb_veg"></label>
@@ -66,7 +68,15 @@
     <footer></footer>
 
     <script>
-        creatCardReceitas();
+        let pagina = Number((new URLSearchParams(window.location.search)).get('pg'));
+        (pagina===0)?pagina=1:'';
+        
+        listReceitas(pagina);
+
+        document.getElementById('filt').addEventListener('change', (e) => {
+            document.querySelector('main').innerHTML = '';
+            listReceitas(pagina);
+        });
     </script>
 </body>
 
