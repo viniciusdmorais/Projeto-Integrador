@@ -7,116 +7,117 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="assets/js/load_component.js"></script>
+    <script src="assets/js/login-contato.js" defer></script>
 
     <link rel="stylesheet" href="assets/css/defaut_rt.css" />
     <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
     <link rel="stylesheet" href="assets/css/login_contatos.css" />
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
     <title>Bora Comer/ Login</title>
   </head>
   <body>
-    <header>
-        
-    </header>
-    <div class="container">
-      <main>
-        <section class="login-page">
-          <form action="" class="Area-login">
-            <div class="login-header">
-              <h2>LOGIN</h2>
-            </div>
-            <div class="login-content">
-              <div class="login-content-area">
-                <label for="email">E-mail:</label>
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="exemplo@provedor.com"
-                  name="email"
-                  required
-                />
-              </div>
-              <div class="login-content-area">
-                <label for="senha"> Senha:</label>
-                <input
-                  type="password"
-                  id="senha"
-                  placeholder="Digite sua senha"
-                  name="passoword"
-                  required
-                />
-              </div>
-            </div>
+    <header></header>
+    <div class="container-login">
+        <main class="main_login">
+            <section class="area_login">
+                <form action="" class="form_login">
+                    <div class="login-header">
+                        <h2>LOGIN</h2>
+                      </div>
+                      <div class="login_content">
+                        <div class="login-content-area">
+                            <label for="email">E-mail:</label>
+                            <input
+                              type="email"
+                              id="email"
+                              placeholder="exemplo@provedor.com"
+                              name="email"
+                            />
+                            <span id="email-helper" class="span-required"
+                              >Email Inválido
+                            </span>
+                        </div>
+                        <div class="login-content-area">
+                              <label for="senha"> Senha:</label>
+                              <input
+                                type="password"
+                                id="senha"
+                                placeholder="Digite sua senha"
+                                name="password"
+                              />
+                              <span id="senha-error" class="span-required">Senha inválida</span>
+                        </div>
+                    </div>
 
-            <div class="login-footer">
-              <a href="#" class="ls-login-forgot">Esqueceu a senha?</a>
-              <button class="button_login" type="submit">Entrar</button>
-            </div>
-          </form>
-        </section>
-        <section class="Area-Sign-up">
-          <form action="" class="Area-login">
-            <div class="login-header">
-              <h2>SIGN UP</h2>
-            </div>
+                    <a href="#" class="login_forgot">Esqueceu a senha?</a>
+                    <button class="button_login_entrar" type="submit" id="button_login_entrar">Entra </button>
+                </form>
 
-            <div class="login-content">
-              <div class="login-content-area">
-                <label for="name">Nome:</label>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="Nome Completo"
-                  name="name"
-                  required
-                />
-              </div>
-              <div class="login-content-area">
-                <label for="email">E-mail:</label>
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="exemplo@provedor.com"
-                  name="email"
-                  required
-                />
-              </div>
-              <div class="login-content-area">
-                <label for="senha1"> Senha:</label>
-                <input
-                  type="password"
-                  id="senha1"
-                  autocomplete="new-password"
-                  placeholder="Digite sua senha"
-                  name="passoword"
-                  required
-                />
-              </div>
-              <div class="login-content-area">
-                <label for="senha2">Comfirmar Senha:</label>
-                <input
-                  type="password"
-                  id="senha2"
-                  autocomplete="new-password"
-                  placeholder="Digite sua senha"
-                  name="passoword"
-                  required
-                />
-              </div>
-              <div class="login-content-area">
-                <label
-                  ><input type="checkbox" checked />Concordo com condições e
-                  termos da
-                  <a target="_blank" href="#">Política de Privacidade</a></label
-                >
-              </div>
-            </div>
-            <div>
-              <button class="button_login" type="submit">Inscrever-se</button>
-            </div>
-          </form>
-        </section>
-      </main>
+            </section>
+
+            <section class="area_sign_up">
+                <form action="" class="form_sign_up">
+                      <div class="login-header">
+                        <h2>SIGN UP</h2>
+                      </div>
+
+                      <div class="signup_content">
+                          <div class="login-content-area">
+                              <label for="name">Nome:</label>
+                              <input
+                                type="text"
+                                id="name"
+                                placeholder="Nome Completo"
+                                name="name"
+                              />
+                              <span id="username-error" class="span-required">Seu nome precisa ter 3 ou mais caracteres</span>
+                          </div>
+                          <div class="login-content-area">
+                              <label for="email" id="email-ins">E-mail:</label>
+                              <input
+                                type="email"
+                                id="email-Inscrever"
+                                placeholder="exemplo@provedor.com"
+                                name="email"
+                              />
+                              <span id="email-helper-ins" class="span-required">Digite um email valido</span>
+                          </div>
+                          <div class="login-content-area">
+                              <label for="senha1" id="senha1_ins"> Senha:</label>
+                              <input
+                                type="password"
+                                id="senha1"
+                                autocomplete="new-password"
+                                placeholder="Digite sua senha"
+                                name="password"
+                              />
+                              <span id="senha-helper-ins" class="span-required">Digite uma senha no minimo 8 caracteres</span>
+                          </div>
+                            <div class="login-content-area">
+                              <label for="senha2" id="senha_2">Confirmar Senha:</label>
+                              <input
+                                type="password"
+                                id="senha2-conf"
+                                autocomplete="new-password"
+                                placeholder="Digite sua senha"
+                                name="password"
+                                required
+                              />
+                              <span id="confirma-senha" class="span-required">As senhas devem ser iguais</span>
+                          </div>
+                          <div class="login-content-area">
+                              <label
+                                ><input type="checkbox" checked />Concordo com condições e
+                                termos da
+                                <a target="_blank" href="#">Política de Privacidade</a></label >
+                          </div>
+                      </div>
+
+                    <button class="button_login_inscrever"type="submit"id="submitButton">Inscrever-se</button>
+                </form>
+            </section>
+        </main>
     </div>
 
     <footer></footer>

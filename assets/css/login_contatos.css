@@ -1,4 +1,5 @@
-/******DEFAUT******/
+/*********************************DEFAUT****************************************/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300;1,700&display=swap");
 
 * {
@@ -9,203 +10,240 @@
   font-size: 16px;
 }
 
+/************************************LOGIN************************************************/     
+body{
+  height:100vh;
+  width:100%;
+}
+.container_login{
+  display:flex;
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.main_login {
+  width:100%;
+  height:100vh;
+  background-image:linear-gradient(to bottom right, #0D3B66, #0D3B66, #FEF9EF);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap: wrap;
 
-
-
-
-
-
-/***********LOGIN*******/
-
-main {
-  padding: 0;
+}
+.area_login,.area_sign_up{
+  display:flex;
+  justify-content: space-around;                 /*section*/
+  align-items:center;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 30px;
   margin: 0;
-  background-color: #0D3B66;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
+  padding: 5% 0 0 0;
 
 }
 
-.login-page {
-  display: flex;
-  align-items: center;
-
-  justify-content: center;
-  width: 360px;
-  min-height: 650px;
-
+.area_login{
+  padding-right: 10%;
+ 
 }
 
-.Area-login {
+
+ 
+.form_login,.form_sign_up{
+  display: flex;
+  justify-content: space-between;
+  flex-direction:column;
   background-color: #FEF9EF;
   border-style: none;
   padding: 40px;
   border-radius: 2px;
   width: 280px;
-  height: 500px;
+  height: 510px;
+  
 }
 
 
-.login-header {
-  padding-bottom: 50px;
-  opacity: 0.8;
-  color: #0D3B66;
+
+
+
+
+.login-header{
+  padding-bottom:30px;
+  opacity:0.8;
+}
+.login-header ::after{
+  background-color:#FE6D73;
+  content:"";
+  width:70px;
+  height:1px;
+  display:block;
+  margin-left:-5px;
+}
+.login_content,.signup_content label{
+  color:#000;
+  font-size:12px;
+  opacity:0.8;
+}
+.login-content-area{
+  display: flex;
+  flex-direction:column;
+  padding: 0 0 10px 0;
+}
+.login-content-area input{
+  margin-top:10px;
+  padding:0 5px;
+  background-color:transparent;
+  border:none;
+  border-bottom:1px solid #0D3B66;
+  outline:none;
+}
+.login-footer{
+ display:flex;
+ flex-direction:column;
+}
+.button_login_entrar,.button_login_inscrever{
+  width:100%;
+  height:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#FE6D73;
+  border:none;
+  font-size:15px;
+  color:#000;
+  margin:10px 0;
+  border-radius:30px;
+  cursor:grab;
+  position:relative;top:30px;bottom:30%;
+}
+.button_login_inscrever{
+  line-height:50px;
+  margin:10px 0;
+  position:relative;top:15px;bottom:40px;
+}
+.login_forgot{
+  text-align:left;
+  font-size:12px;
+  color: #000;
+  text-decoration:none;
+  position:relative;bottom: 50px;left:60%;
+}
+.button_login_entrar:focus,.button_login_inscrever:focus{
+  background-color:#17C3B2;
+  color:#FEF9EF;
+}
+/*******************************  Mensagem de erro Login e Sign up *************************/
+
+span{
+  
+  
+  visibility: hidden;  /* --->>> Depois, na hora de aparecer com o span, basta usar o "visibility: visible", ao invés do "display: block" */
+   font-size:12px;
+   color: rgb(126, 1, 1);
+   text-align: right;
+ 
+ }
+
+
+input.error {
+  border: solid 2px rgb(204, 1, 1);
+  background-color:#FEF9EF;
+ 
 }
 
-.login-header ::after {
-  background-color: #FE6D73;
-  content: "";
-  width: 70px;
-  height: 1px;
-  display: block;
-  margin-left: -5px;
+input.correct {
+  background-color: #FEF9EF;
+  border: solid 2px #039f03cf;
+  color: #000;
+}
+
+.visible {
+  visibility: visible;
 
 }
 
-.login-content label {
-  color: #0D3B66;
-  font-size: 12px;
-  opacity: 0.8;
+
+/***************************************************CONTATOS********************************************************************************************/
+
+.container_contato{
+  display:flex;
+  width:100%;
+  height:100vh;
+  align-items:center;
+  justify-content:space-around;
 }
 
-.login-content-area {
+.main_contato{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #0D3B66, #0D3B66, #FEF9EF);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.section_contato{
+  height:1000px;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+Div.foto {
+  width: 30%;
+  height: 50vw;
+
+}
+
+.foto img{
+  width: 100%;
+  height: 100%;
+}
+
+.form-contato{
+  background-color: #FEF9EF;
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
+  justify-content: space-around;
+  padding: 20px 20px;
+  border: none;
+  width: 30%;
+  height: 40%;
 }
 
-
-.login-content-area input {
-  margin-top: 10px;
-
-  padding: 0 5px;
-
-  background-color: transparent;
-
+form input{
+  display:flex;
+  justify-content:center;
+  list-style-position:inside;
+  border-radius:30px;
   border: none;
-  border-bottom: 1px solid #0D3B66;
-
   outline: none;
-
-
-
+  border-bottom: 1px solid #0D3B66;
+  padding: 15px 15px 15px;
+  margin-top: 10px;
 }
 
-.login-footer {
-
-  display: flex;
-
-  flex-direction: column;
-
+#msg{
+  outline: none;
+  border-color: #0D3B66;
+  border-radius: 40px;
+  padding: 15px 15px 15px;
+  margin-top: 10px;
+}
+.button_enviar{
+  width: 60%;
+  cursor: grab;
+  background-color:#FE6D73;
+  border:none;
+  color:#000;
+  padding:5px 15px 0px;
+  margin:20px 20% 0px ;
+  border-radius:30px;
 }
 
-
-.button_login {
-
-  width: 100%;
-
-  height: 40px;
-
-  background-color: #FE6D73;
-
-  border: none;
-
-  color: #0D3B66;
-
-  margin: 10px 0;
-
-  border-radius: 30px;
-
-}
-
-.ls-login-forgot {
-  text-align: left;
-
-  font-size: 12px;
-
-  opacity: 0.8;
-
-  color: rgb(11, 10, 10);
-
-  text-decoration: none;
-  margin-top: 80px;
-
-
-}
-
-
-
-
-
-.Area-Sign-up {
-  display: flex;
-  align-items: center;
-
-  height: 80vh;
-
-
-
-}
-
-/************CONTATOS***********/
-
-form {
-
-  display: flex;
-  flex-direction: column;
-  border: none;
-
-}
-
-.form_contato_div {
-  align-items: center;
-  display: flex;
-  margin-bottom: 20px;
-  justify-content: center;
-
-}
-
-.form_contato_div input {
-  border-radius: 10px;
-
-
-}
-
-.form_contato {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-  margin-bottom: 30px;
-
-
-
-}
-
-.button_enviar {
-
-  width: 100%;
-
-  height: 40px;
-
-  background-color: #FE6D73;
-
-  border: none;
-
-  color: #0D3B66;
-
-  margin: 10px 0;
-
-  border-radius: 30px;
-
-}
-
-#msg {
-
-  height: 100px;
-  border-radius: 10px;
+.button_enviar:focus{
+  background-color:#17C3B2;
+ color: #FEF9EF;
 }

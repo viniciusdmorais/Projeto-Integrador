@@ -10,12 +10,12 @@
     <script src="assets/js/load_component.js"></script>
     <script src="assets/js/load_receitas.js"></script>
 
-    <script src="assets/js/rec_rest.js"></script>
+    <script src="assets/js/avaliacao_star.js"></script>
 
     <link rel="stylesheet" href="assets/css/defaut_rt.css" />
     <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
 
-    <link rel="stylesheet" href="assets/css/rec_rest.css" />
+    <link rel="stylesheet" href="assets/css/receita_completa.css" />
 
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg">
     <title>Bora Comer - Receitas</title>
@@ -26,28 +26,46 @@
     <div class="container">
         <main>
 
-            <section>
-                <div class="fundo_barra">
-                    <p><b><u>Receitas que combinam</u></b></p>
-                </div>
+            <section class="section_backgrounds">                
 
                 <div class="dois_fundos">
                     <div class="fundo">
-                        <img class="imagem_receita" src="assets/images/bolocacau.jpg" alt="foto_receita" />
+                        <img class="imagem_receita" src="assets/images/img_reh/bolocacau.jpg" alt="foto_receita" title="Variavel com nome da receita"/>
                         <div class="descricao_receita">
 
-                            <div class="texto_receita">
+                            <div class="texto_descricao_receita">
                                 <h1>Bolo de Chocolate</h1>
                                 <p>
                                     Bolo de chocolate feito com cacau 100%, vegano, extremamente fofinho e gostoso!
                                 </p>
                             </div>
 
-                            <div class="dados_receita">
-                                <p><strong>Autor:</strong> Rodrigo Tormente</p>
-                                <p><strong>Tempo de Preparo:</strong> 40 min</p>
-                                <p><strong>Rendimento:</strong> 12 porções</p>
+                            <div class="dados_icones">
+
+                              <div class="dados_receita">
+                                  <p><strong>Autor:</strong> Rodrigo Tormente</p>
+                                  <p><strong>Tempo de Preparo:</strong> 40 min</p>
+                                  <p><strong>Rendimento:</strong> 12 porções</p>
+                                  <p><strong>Dificuldade:</strong> Fácil</p>
+                              </div>
+
+                              <div class="icones_restricao">
+
+                                <div class="icone1">
+                                  <img class="icone1" width="50px" height="50px" src="assets/images/icon_gluten.png" alt="glutem" title="Contém Glútem"/>
+                                </div>
+
+                                <div class="icone2">
+                                  <img class="icone2" width="50px" height="50px" src="assets/images/icon_vegan-on.png" alt="vegano" title="Vegano"/>
+                                </div>
+
+                                <div class="icone3"></div>
+                                <div class="icone4"></div>
+
+                              </div>
+
                             </div>
+
                         </div>
                     </div>
 
@@ -55,46 +73,117 @@
                         <div class="lista_ingredientes">
                             <h2>Ingredientes:</h2>
                             <nav>
-                                <ul>
-                                    <li>Secos:</li>
-                                    <li>2 xícaras de farinha de trigo</li>
-                                    <li>1/4 xícaras de amido de milho</li>
-                                    <li>1/2 xícaras de cacau em pó</li>
-                                    <li>1+1/2 xícaras de açucar</li>
-                                    <li>1 colher de sopa de bicarbonato de sódio</li>
-                                    <li>1/2 colher de sopa de fermento quimico</li>
-                                    <li>1 pitada sal; </li>
-                                    <li>Molhados:</li>
-                                    <li>1+1/2 xicaras de agua</li>
-                                    <li>1/2 xicara de óleo</li>
-                                    <li>1/4 xícara de café</li>
-                                    <li>1 colher de sopa de vinagre</li>
+                                <ul>                                  
+                                    <h3>Secos:</h3>
+                                    <li><img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/> 2 xícaras de farinha de trigo</li>
+                                    <li><img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/> 1/4 xícaras de amido de milho</li>
+                                    <li><img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/> 1/2 xícaras de cacau em pó</li>
+                                    <li><img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/> 1+1/2 xícaras de açucar</li>
+                                    <li><img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/> 1 colher de sopa de bicarbonato de sódio</li>
+                                    <li><img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/> 1/2 colher de sopa de fermento quimico</li>
+                                    <li><img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/> 1 pitada sal; </li>
+                                    <h3>Molhados:</h3>
+                                    <li><img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/> 1+1/2 xicaras de agua</li>
+                                    <li><img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/> 1/2 xicara de óleo</li>
+                                    <li><img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/> 1/4 xícara de café</li>
+                                    <li><img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/> 1 colher de sopa de vinagre</li>
                                 </ul>
                             </nav>
                         </div>
 
                         <div class="texto_modo_preparo">
                             <h2>Modo de preparo:</h2>
-                            <p>Coloque o forno para pré aquecer em 200ºC.</p>
-                            <p>Unte uma forma com óleo e polvilhe amido de milho ou farinha.</p>
-                            <p>Em uma vasilha misture todos os secos peneirados.</p>
-                            <p>Em outro recipiente coloque todos os molhados e os despeje sobre os secos.</p>
-                            <p>Misture todos os ingredientes até obter uma massa homogênea.</p>
-                            <p>Despeje a massa na forma e a coloque no forno.</p>
-                            <p>Após 10 minutos reduzir a temperatura para 180ºC.</p>
-                            <p>Após assado retirar do forno.</p>
-                            <p>Desenformar com o bolo frio ou morno mais para frio.</p>
-                            <p>Dicas:</p>
-                            <p>Dê preferência a óleos neutros, como os de: girassol, canola e milho.</p>
-                            <p>Caso não possua amido de milho basta usar a mesma quantidade de farinha de trigo, o amido
-                                de milho serve para deixar o bolo mais fofinho ainda.</p>
-                            <p>Ao fazer o café faça ele forte, independente se é coado ou expresso, afinal, ele serve
-                                para destacar o sabor do cacau.</p>
-                            <p>O vinagre de preferência para o de álcool ou de maçã, porém outros não costumam deixar
-                                sabor residual, ele serve para auxiliar no crescimento da massa.</p>
+                            <nav>
+                              <ul>
+                                <li><img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/> Coloque o forno para pré aquecer em 200ºC.</li>
+                                <li><img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/> Em uma vasilha misture todos os secos peneirados.</li>
+                                <li><img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/> Em outro recipiente coloque todos os molhados e os despeje sobre os secos.</li>
+                                <li><img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/> Misture todos os ingredientes até obter uma massa homogênea.</li>
+                                <li><img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/> Despeje a massa na forma e a coloque no forno.</li>
+                                <li><img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/> Após 10 minutos reduzir a temperatura para 180ºC.</li>
+                                <li><img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/> Após assado retirar do forno.</li>
+                                <li><img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/> Desenformar com o bolo frio ou morno mais para frio.</li>
+                              </ul>
+                            </nav>
+                            <div class="dicas">
+                                <h3>Dicas:</h3>
+                                <p>Dê preferência a óleos neutros, como os de: girassol, canola e milho.</p>
+                                <p>Caso não possua amido de milho basta usar a mesma quantidade de farinha de trigo, o amido
+                                    de milho serve para deixar o bolo mais fofinho ainda.</p>
+                                <p>Ao fazer o café faça ele forte, independente se é coado ou expresso, afinal, ele serve
+                                    para destacar o sabor do cacau.</p>
+                                <p>O vinagre de preferência para o de álcool ou de maçã, porém outros não costumam deixar
+                                    sabor residual, ele serve para auxiliar no crescimento da massa.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="fundo_barra">
+                  <div class="titulo_barra">
+                    <p><b>Receitas que combinam</b></p>
+                  </div>
+                  
+                  <nav>
+                    <ul>
+
+                      <div class="box_barra">
+                        <a title="Variavel com nome da receita">
+                          <img width=120px src="assets/images/img_reh/bolocacau.jpg" alt="foto_receita" />
+                          <div class="titulo_autor">
+                            <p class="titulo_rec"> Bolo de Chocolate</p>
+                            <p class="autor_rec">Por: Rodrigo Tormente</p>
+                          </div>
+                        </a>                        
+                      </div>
+
+                      <div class="box_barra">
+                        <a title="Variavel com nome da receita">
+                          <img width=120px src="assets/images/img_reh/bolocacau.jpg" alt="foto_receita" />
+                          <div class="titulo_autor">
+                            <p class="titulo_rec"> Bolo de Chocolate</p>
+                            <p class="autor_rec">Por: Rodrigo Tormente</p>
+                          </div>
+                        </a>                        
+                      </div>
+
+                      <div class="box_barra">
+                        <a title="Variavel com nome da receita">
+                          <img width=120px src="assets/images/img_reh/bolocacau.jpg" alt="foto_receita" />
+                          <div class="titulo_autor">
+                            <p class="titulo_rec"> Bolo de Chocolate</p>
+                            <p class="autor_rec">Por: Rodrigo Tormente</p>
+                          </div>
+                        </a>                        
+                      </div>
+
+                      <div class="box_barra">
+                        <a title="Variavel com nome da receita">
+                          <img width=120px src="assets/images/img_reh/bolocacau.jpg" alt="foto_receita" />
+                          <div class="titulo_autor">
+                            <p class="titulo_rec"> Bolo de Chocolate</p>
+                            <p class="autor_rec">Por: Rodrigo Tormente</p>
+                          </div>
+                        </a>                        
+                      </div>                      
+
+                    </ul>
+                  </nav>
+
+                  <div class="div_botao">
+                    <button class="botao">Ver mais Receitas</button>
+                  </div>
+
+                  <div class="enviar_receita">
+                    <a title="Envie uma Receita">
+                      <p>Envie <br>uma Receita</p>
+                      <img width="70px" height="70px" src="assets/images/img_reh/indiquereceita1.png" alt="enviar_receita"/>
+                    </a>
+                  </div>
+
+
+              </div>
+
             </section>
 
             <section class="section_form">
@@ -105,21 +194,22 @@
                             <div class="div_avalie">
                                 <h3>Avalie essa receita</h3>
                             </div>
-
-                            <ul class="avaliacao">
-                                <li class="star-icon ativo" data-avaliacao="1"></li>
-                                <li class="star-icon" data-avaliacao="2"></li>
-                                <li class="star-icon" data-avaliacao="3"></li>
-                                <li class="star-icon" data-avaliacao="4"></li>
-                                <li class="star-icon" data-avaliacao="5"></li>
-                            </ul>
+                            <nav>
+                              <ul class="avaliacao">
+                                  <li class="star-icon ativo" data-avaliacao="1"></li>
+                                  <li class="star-icon" data-avaliacao="2"></li>
+                                  <li class="star-icon" data-avaliacao="3"></li>
+                                  <li class="star-icon" data-avaliacao="4"></li>
+                                  <li class="star-icon" data-avaliacao="5"></li>
+                              </ul>
+                            </nav>
 
                             <div>
                                 <h3>Deixe um comentário</h3>
                             </div>
 
                             <div>
-                                <textarea class="preencher_mensagem" maxlength="650" cols="60" rows="5" required
+                                <textarea class="preencher_mensagem" style="resize: none" maxlength="1000" cols="60" rows="5" required
                                     placeholder=" O que você achou dessa receita?"></textarea>
                             </div>
 
@@ -127,7 +217,7 @@
                                 <label>
                                     <input type="checkbox" checked />Concordo com condições e
                                     termos da
-                                    <a target="_blank" href="em_construcao.html"><u>Política de Privacidade</u></a>
+                                    <a target="_blank" href="#"><u>Política de Privacidade</u></a>
                                 </label>
                             </div>
 
