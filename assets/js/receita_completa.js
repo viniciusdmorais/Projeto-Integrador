@@ -1,16 +1,3 @@
-/*
-const imagemReceita = document.querySelector("imagem_receita") //class
-const tituloReceita = document.querySelector("titulo-receita") //id
-const subTituloReceita = document.querySelector("sub-titulo-receita") //id
-const dadosReceita = document.querySelector("dados_receita") //class (div)
-const iconesRestricao = document.querySelector('')
-const listaIngredientes = document.querySelector('')
-const modoPreparo = document.querySelector('')
-const dicasReceita = document.querySelector('')
-
-
-*/
-
 const receita = [
     {
         imagem: 'assets/images/img_reh/bolocacau.jpg',
@@ -28,9 +15,13 @@ const receita = [
         iconeRestricao3: '',
         iconeRestricao4: '',
 
-        ingredientes: '',
-        preparo: '',
-        dicas: '',
+        ingredientes: ['2 xícaras de farinha de trigo', '1/4 xícaras de amido de milho', '1/2 xícaras de cacau em pó', '1+1/2 xícaras de açucar', '1 colher de sopa de bicarbonato de sódio', '1/2 colher de sopa de fermento quimico', '1 pitada sal;', ' 1+1/2 xicaras de agua', '1/2 xicara de óleo', '1/4 xícara de café', '1 colher de sopa de vinagre'],
+        bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
+
+        preparo: ['Coloque o forno para pré aquecer em 200ºC.', 'Em uma vasilha misture todos os secos peneirados.', 'Em outro recipiente coloque todos os molhados e os despeje sobre os secos.', 'Misture todos os ingredientes até obter uma massa homogênea.', 'Despeje a massa na forma e a coloque no forno.', 'Após 10 minutos reduzir a temperatura para 180ºC.', 'Após assado retirar do forno.', 'Desenformar com o bolo frio ou morno mais para frio.'],
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+        
+        dicas: ['Dê preferência a óleos neutros, como os de: girassol, canola e milho.', 'Caso não possua amido de milho basta usar a mesma quantidade de farinha de trigo, o amido de milho serve para deixar o bolo mais fofinho ainda.', 'Ao fazer o café faça ele forte, independente se é coado ou expresso, afinal, ele serve para destacar o sabor do cacau.', 'O vinagre de preferência para o de álcool ou de maçã, porém outros não costumam deixar sabor residual, ele serve para auxiliar no crescimento da massa.'],
        
     },    
     ]
@@ -137,3 +128,78 @@ const icone4 = Object.assign(document.createElement('div'), {
 
 
 // populando Ingredientes
+
+const ingredientes = document.createElement('div');
+
+ingredientes.innerHTML = `
+<h2>Ingredientes:</h2>
+<nav>
+    <ul>                                  
+        <h3>Secos:</h3>
+        <li>${receita[0].bolinha} ${receita[0].ingredientes[0]}</li>
+        <li>${receita[0].bolinha} ${receita[0].ingredientes[1]}</li>
+        <li>${receita[0].bolinha} ${receita[0].ingredientes[2]}</li>
+        <li>${receita[0].bolinha} ${receita[0].ingredientes[3]}</li>
+        <li>${receita[0].bolinha} ${receita[0].ingredientes[4]}</li>
+        <li>${receita[0].bolinha} ${receita[0].ingredientes[5]}</li>
+        <li>${receita[0].bolinha} ${receita[0].ingredientes[6]}</li>
+        <h3>Molhados:</h3>
+        <li>${receita[0].bolinha} ${receita[0].ingredientes[7]}</li>
+        <li>${receita[0].bolinha} ${receita[0].ingredientes[8]}</li>
+        <li>${receita[0].bolinha} ${receita[0].ingredientes[9]}</li>
+        <li>${receita[0].bolinha} ${receita[0].ingredientes[10]}</li>
+    </ul>
+</nav>
+`
+
+const listaIngredientes = document.querySelector('div[class="lista_ingredientes"]');
+
+listaIngredientes.appendChild(ingredientes);
+
+
+
+// populando modo de preparo
+
+const preparo = document.createElement('div');
+
+preparo.innerHTML = `
+<h2>Modo de preparo:</h2>
+<nav>
+    <ul>
+        <li>${receita[0].setinha} ${receita[0].preparo[0]}</li>
+        <li>${receita[0].setinha} ${receita[0].preparo[1]}</li>
+        <li>${receita[0].setinha} ${receita[0].preparo[2]}</li>
+        <li>${receita[0].setinha} ${receita[0].preparo[3]}</li>
+        <li>${receita[0].setinha} ${receita[0].preparo[4]}</li>
+        <li>${receita[0].setinha} ${receita[0].preparo[5]}</li>
+        <li>${receita[0].setinha} ${receita[0].preparo[6]}</li>
+        <li>${receita[0].setinha} ${receita[0].preparo[7]}</li>
+    </ul>
+</nav>
+`
+
+const textoModoPreparo = document.querySelector('div[class="preparo"]');
+
+textoModoPreparo.appendChild(preparo);
+
+
+
+// populando dicas
+
+const dicasRec = document.createElement('div');
+
+dicasRec.innerHTML = `
+<h3>Dicas:</h3>
+<nav>
+    <ul>
+        <li>${receita[0].dicas[0]}</li>
+        <li>${receita[0].dicas[1]}</li>
+        <li>${receita[0].dicas[2]}</li>
+        <li>${receita[0].dicas[3]}</li>
+    </ul>
+</nav>
+`
+
+const dicas = document.querySelector('div[class="dicas"]');
+
+dicas.appendChild(dicasRec);
