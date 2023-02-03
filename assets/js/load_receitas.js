@@ -337,20 +337,6 @@ function creatCardReceitas(listaReceita, i) {
     document.querySelector("main").appendChild(newArticle);
 }
 
-function filterRecipes(listaReceita, filters) {
-    return listaReceita.filter(recipe => {
-        let result = true;
-        Object.keys(filters).forEach(filter => {
-            if (recipe[filter] !== filters[filter]) {
-                result = false;
-            }
-        });
-        return result;
-    });
-}
-
-
-
 function listReceitas(pg) {
     let filter = {
         vegano: document.getElementById('ckb_veg').checked,
@@ -363,9 +349,6 @@ function listReceitas(pg) {
         minTmp: Number(document.getElementById('tmp_min').value),
         maxTmp: Number(document.getElementById('tmp_max').value)
     };
-
-    console.log("filter");
-    console.log(filter);
 
     let limit = 12 * pg;
     let i = limit - 12;
@@ -385,9 +368,6 @@ function listReceitas(pg) {
             objetoFiltro[key] = true
         }
     }
-
-    console.log("objetoFiltro:")
-    console.log(objetoFiltro)
 
     if(objetoFiltro.hasOwnProperty("vegano")){
         for(x = 0; x < listaReceita.length; x++){
