@@ -40,6 +40,7 @@ section {
 .imagem_receita {
     align-self: center;
     width:350px;
+    box-shadow: 7px 7px 11px #00000040;
 }
 
 .texto_descricao_receita, .texto_modo_preparo {
@@ -57,6 +58,7 @@ section {
 
 .texto_descricao_receita h1, .lista_ingredientes h2, .texto_modo_preparo h2 {
     margin: 0 0 8px 0;
+    text-shadow: 0px 2px 4px #00000040;
 }
 
 .descricao_receita{
@@ -138,6 +140,7 @@ section {
 .titulo_barra, .titulo_barra b {
     margin: 0 0 50px 0;
     font-size: 19px;
+    text-shadow: 0px 2px 4px #00000040;
 }
 
 .titulo_autor {
@@ -145,29 +148,36 @@ section {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    
 }
 
 .titulo_rec {
     font-size: 17px;
+    width: 130px;
 }
 
 .autor_rec {
-    font-size: 10px;
+    font-size: 11px;
+}
+
+.imagem_box{
+    box-shadow: 4px 4px 9px #00000040;
 }
 
 .box_barra a {
     display: flex;
     flex-direction: row;
-    width: 240px;
+    width: 255px;
     height: 90px;
-    gap: 10px;
+    gap: 7px;
     margin: 0 0 50px 0;  
     cursor: pointer;  
     flex-direction: row-reverse;
 }
 
-.box_barra a:hover, .enviar_receita a:hover {
-    font-weight:lighter;
+.box_barra a:hover, .enviar_receita a:hover {    
+    font-weight:bolder;
+    text-shadow: 0px 1px 4px #00000040;
 }
 
 .enviar_receita {

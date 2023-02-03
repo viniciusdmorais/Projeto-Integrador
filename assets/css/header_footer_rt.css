@@ -19,6 +19,7 @@ header {
 header .container {
     display: flex;
     justify-content: space-between;
+    height: 51.4px;
 }
 
 header ul {
@@ -34,7 +35,8 @@ header nav {
 }
 
 header .logo_bora_comer {
-    height: 45px;
+    height: 52px;
+    
 }
 
 .icon_header {

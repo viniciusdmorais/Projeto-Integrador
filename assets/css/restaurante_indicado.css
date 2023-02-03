@@ -54,9 +54,17 @@ section {
     text-align: center;
 }
 
+.descricao_restaurante h1, .google_maps_restaurante h1, .outras_informacoes h2 {
+    text-shadow: 0px 2px 4px #00000040;
+}
+
 .descricao_restaurante p{
     font-size: 15px;
     margin: 0 0 15px 0;
+}
+
+.imagem_restaurante {
+    box-shadow: 7px 7px 11px #00000040; 
 }
 
 .img_botoes {
@@ -64,6 +72,7 @@ section {
     flex-direction: column;
     align-items: center;
 }
+
 
 .botoes_fotos {
     display: flex;
@@ -94,9 +103,9 @@ section {
     width: 350px;    
 }
 
-.google_maps_img {
+/*.google_maps_img {
     border: 1px solid black;
-}
+}*/
 
 .texto_descricao_restaurante {
     width: 450px;
@@ -163,23 +172,29 @@ section {
 .titulo_barra, .titulo_barra b {
     margin: 0 0 50px 0;
     font-size: 19px;
+    text-shadow: 0px 2px 4px #00000040;
 }
 
 .link_restaurante {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    text-align: center;
+    text-align: center;    
 }
 
 .nome_restaurante {
     font-size: 17px;
+    width: 130px;
+}
+
+.imagem_box{
+    box-shadow: 4px 4px 9px #00000040;
 }
 
 .box_barra a {
     display: flex;
     flex-direction: row;
-    width: 240px;
+    width: 255px;
     height: 90px;
     gap: 10px;
     margin: 0 0 50px 0;  
@@ -188,7 +203,8 @@ section {
 }
 
 .box_barra a:hover, .indicar_restaurante a:hover{
-    font-weight:lighter;
+    font-weight:bolder;
+    text-shadow: 0px 1px 4px #00000040;
 }
 
 .indicar_restaurante {

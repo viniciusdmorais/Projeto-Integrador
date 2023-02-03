@@ -15,7 +15,7 @@ const receita = [
         iconeRestricao3: '',
         iconeRestricao4: '',
 
-        ingredientes: ['2 xícaras de farinha de trigo', '1/4 xícaras de amido de milho', '1/2 xícaras de cacau em pó', '1+1/2 xícaras de açucar', '1 colher de sopa de bicarbonato de sódio', '1/2 colher de sopa de fermento quimico', '1 pitada sal;', ' 1+1/2 xicaras de agua', '1/2 xicara de óleo', '1/4 xícara de café', '1 colher de sopa de vinagre'],
+        ingredientes: ['2 xícaras de farinha de trigo', '1/4 xícaras de amido de milho', '1/2 xícaras de cacau em pó', '1+1/2 xícaras de açúcar', '1 colher de sopa de bicarbonato de sódio', '1/2 colher de sopa de fermento quimico', '1 pitada sal;', ' 1+1/2 xícaras de agua', '1/2 xícara de óleo', '1/4 xícara de café', '1 colher de sopa de vinagre'],
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['Coloque o forno para pré aquecer em 200ºC.', 'Em uma vasilha misture todos os secos peneirados.', 'Em outro recipiente coloque todos os molhados e os despeje sobre os secos.', 'Misture todos os ingredientes até obter uma massa homogênea.', 'Despeje a massa na forma e a coloque no forno.', 'Após 10 minutos reduzir a temperatura para 180ºC.', 'Após assado retirar do forno.', 'Desenformar com o bolo frio ou morno mais para frio.'],
@@ -203,3 +203,84 @@ dicasRec.innerHTML = `
 const dicas = document.querySelector('div[class="dicas"]');
 
 dicas.appendChild(dicasRec);
+
+
+
+// populando Receitas da Barra lateral
+
+
+// receita 1
+const receitaBox1 = Object.assign(document.createElement('div'), {
+    classList: ['box_barra']
+ });
+
+receitaBox1.innerHTML = `
+<a title="${receita[0].nomeReceita}">
+    <img class="imagem_box" width=120px src="${receita[0].imagem}" alt="foto_receita" />
+    <div class="titulo_autor">
+        <p class="titulo_rec"> ${receita[0].nomeReceita}</p>
+        <p class="autor_rec">Por: ${receita[0].autor}</p>
+    </div>
+</a>
+`
+
+const boxBarra = document.querySelector('div[class="box_barras"]');
+
+boxBarra.appendChild(receitaBox1);
+
+
+
+// receita 2
+const receitaBox2 = Object.assign(document.createElement('div'), {
+    classList: ['box_barra']
+ });
+
+receitaBox2.innerHTML = `
+<a title="${receita[0].nomeReceita}">
+    <img class="imagem_box" width=120px src="${receita[0].imagem}" alt="foto_receita" />
+    <div class="titulo_autor">
+        <p class="titulo_rec"> ${receita[0].nomeReceita}</p>
+        <p class="autor_rec">Por: ${receita[0].autor}</p>
+    </div>
+</a>
+`
+
+boxBarra.appendChild(receitaBox2);
+
+
+
+// receita 3
+const receitaBox3 = Object.assign(document.createElement('div'), {
+    classList: ['box_barra']
+ });
+
+receitaBox3.innerHTML = `
+<a title="${receita[0].nomeReceita}">
+    <img class="imagem_box" width=120px src="${receita[0].imagem}" alt="foto_receita" />
+    <div class="titulo_autor">
+        <p class="titulo_rec"> ${receita[0].nomeReceita}</p>
+        <p class="autor_rec">Por: ${receita[0].autor}</p>
+    </div>
+</a>
+`
+
+boxBarra.appendChild(receitaBox3);
+
+
+
+// receita 4
+const receitaBox4 = Object.assign(document.createElement('div'), {
+    classList: ['box_barra']
+ });
+
+receitaBox4.innerHTML = `
+<a title="${receita[0].nomeReceita}">
+    <img class="imagem_box" width=120px src="${receita[0].imagem}" alt="foto_receita" />
+    <div class="titulo_autor">
+        <p class="titulo_rec"> ${receita[0].nomeReceita}</p>
+        <p class="autor_rec">Por: ${receita[0].autor}</p>
+    </div>
+</a>
+`
+
+boxBarra.appendChild(receitaBox4);
