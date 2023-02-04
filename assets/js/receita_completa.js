@@ -1,3 +1,10 @@
+import {
+    listaReceita,
+} from 'load_receitas.js';
+
+
+
+
 const receita = [
     {
         imagem: 'assets/images/img_reh/bolocacau.jpg',
@@ -31,7 +38,7 @@ const receita = [
     const imagemRec = document.createElement('div');
 
     imagemRec.innerHTML = `
-    <img class="imagem_receita" src="${receita[0].imagem}" alt="foto_receita" title="${receita[0].nomeReceita}"/>
+    <img class="imagem_receita" src="${listaReceita[0].imagem}" alt="foto_receita" title="${listaReceita[0].nomeReceita}"/>
     `
 
     const divImagemRec = document.querySelector('div[class="imagem_rec"]');

@@ -1,4 +1,4 @@
-const listaReceita = [
+export const listaReceita = [
     {
         idReceita: 1,
         nomeReceita: "Bolo de Chocolate",

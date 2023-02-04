@@ -166,13 +166,12 @@ section {
 
 .box_barra a {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     width: 255px;
     height: 90px;
     gap: 7px;
     margin: 0 0 50px 0;  
-    cursor: pointer;  
-    flex-direction: row-reverse;
+    cursor: pointer; 
 }
 
 .box_barra a:hover, .enviar_receita a:hover {    
@@ -183,19 +182,29 @@ section {
 .enviar_receita {
     display: flex;
     align-items: center;
-    justify-content: center;    
-    text-align: center;
-    width: 135px;
-    height: 75px;
-    margin: 80px 0 0 0;
+    justify-content:center;    
+    text-align: center; 
+    width: 150px;
 }
 
 .enviar_receita a {
     display: flex;
-    flex-direction: row;
-    cursor: pointer;  
     flex-direction: row-reverse;
+    width: 150px;
+    height: 75px; 
     gap: 10px;
+    margin: 80px 0 0 0;
+    cursor: pointer; 
+}
+
+.envie_rec {
+    width: 70px;
+ }
+
+
+.botao p:hover {
+    font-weight:bolder;
+    text-shadow: 0px 1px 4px #00000040;
 }
 
 
@@ -221,7 +230,21 @@ form {
 }
 
 .div_form {
-    margin: 0 0 20px 0; 
+    margin: 0 0 20px 0;
+}
+
+.div_form label {
+    display: flex;
+    width: 521px;
+    justify-content:space-between;
+}
+
+.div_form a {
+    display: flex; 
+}
+
+.div_form u {
+    width: 189px;
 }
 
 .div_avalie {
