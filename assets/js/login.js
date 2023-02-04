@@ -12,78 +12,22 @@ function estilizarInputIncorreto(input, helper) {
   input.classList.remove("correct");
 }
 
-//************************************************************LOGIN**************************************************************** */
 
-// -------------------------------------- VALIDAÇÃO EMAIL  ENTRAR  ---------------------------- //
-const emailInput = document.getElementById("email");
-const emailLabel = document.querySelector('label[for="email"]');
-const emailHelp = document.getElementById("email-helper");
 
-emailInput.addEventListener("blur", (e) => {
-  const value = e.target.value;
-  if (value === emailInputIn.value) {
-    estilizarInputCorreto(emailInput, emailHelp);
-    inputsCorretos1.senha1 = true;
-    
-  } else {
-    estilizarInputIncorreto(emailInput, emailHelp);
-    inputsCorretos1.senha1 = false;
-  }
-});
 
-// -------------------------------- VALIDAÇÃO SENHA ENTRAR --------------------- ---------- //
-
-const senhaInput = document.getElementById("senha");
-const senhaLabel = document.querySelector('label[for="senha"]');
-const senhaError = document.getElementById("senha-error");
-
-senhaInput.addEventListener("blur", (e) => {
-  const value = e.target.value;
- 
-  if (value === senhaInputIns.value) {
-    estilizarInputCorreto(senhaInput, senhaError);
-    inputsCorretos1.email1 = true;
-    
-  } else {
-    estilizarInputIncorreto(senhaInput, senhaError);
-
-    inputsCorretos1.email1 = false;
-  }
-});
-
-// -------------------------------------- VALIDAÇÃO BUTTON INCRERVER-----------  --------------------------- //
-
-const submitButtonEntrar = document.getElementById("button_login_entrar");
-const inputsCorretos1 = {
-  email1: false,
-  senha1: false,
-};
-
-submitButtonEntrar.addEventListener("click", (e) => {
-  e.preventDefault();
-  const values1 = Object.values(inputsCorretos1);
-  console.log(values1);
-  const filterFalse1 = values1.filter((value) => value === false);
-  if (!filterFalse1.length) {
-    alert("Formulário enviado com sucesso");
-    location.reload();
-  } else {
-    alert("Preencha todos os campos obrigatório!");
-    location.reload();
-  }
-});
 
 //************************************************************SIGN UP**************************************************************** */
 
 // -------------------------------- VALIDAÇÃO USERNAME ------------------------------------- //
 
 const nameInput = document.getElementById("name");
-const nameLabel = document.querySelector('label[for="name"]');
+const nameLabel = document.getAnimations("namelabel");
 const usernameError = document.getElementById("username-error");
 
 nameInput.addEventListener("blur", (e) => {
+  
   const value = e.target.value;
-  console.log(value);
+  
   if (value.length < 3) {
     estilizarInputIncorreto(nameInput, usernameError);
     inputsCorretos.usernameUP = false;
@@ -173,3 +117,72 @@ submitButton.addEventListener("click", (e) => {
     location.reload();
   }
 });
+
+
+//************************************************************LOGIN**************************************************************** */
+
+// -------------------------------------- VALIDAÇÃO EMAIL  ENTRAR  ---------------------------- //
+const emailInput = document.getElementById("email");
+const emailLabel = document.getElementById("email-login");
+const emailHelp = document.getElementById("email-helper");
+
+emailInput.addEventListener("blur", (e) => {
+  console.log(e)
+  const value = e.target.value;
+  console.log(value)
+  if (value === emailInputIn.value) {
+    estilizarInputCorreto(emailInput, emailHelp);
+    inputsCorretos1.email1 = true;
+    
+  } else {
+    estilizarInputIncorreto(emailInput, emailHelp);
+    inputsCorretos1.email1 = false;
+  }
+});
+
+
+// -------------------------------- VALIDAÇÃO SENHA ENTRAR --------------------- ---------- //
+
+const senhaInput = document.getElementById("senha");
+const senhaLabel = document.getElementById("senha-Label");
+const senhaError = document.getElementById("senha-error");
+
+senhaInput.addEventListener("blur", (e) => {
+  const value = e.target.value;
+ 
+  if (value === senhaInputIns.value) {
+    estilizarInputCorreto(senhaInput, senhaError);
+    inputsCorretos1.senha1= true;
+    
+  } else {
+    estilizarInputIncorreto(senhaInput, senhaError);
+
+    inputsCorretos1.senha1 = false;
+  }
+});
+
+// -------------------------------------- VALIDAÇÃO BUTTON ENTRAR ----------  --------------------------- //
+
+const submitButtonEntrar = document.getElementById("button_login_entrar");
+const inputsCorretos1 = {
+  email1: false,
+  senha1: false,
+};
+
+submitButtonEntrar.addEventListener("click", (e) => {
+  e.preventDefault();
+  const values1 = Object.values(inputsCorretos1);
+  console.log(values1);
+  const filterFalse1 = values1.filter((value) => value === false);
+  if (!filterFalse1.length) {
+    alert("Formulário enviado com sucesso");
+    location.reload();
+  } else {
+    alert("Preencha todos os campos obrigatório!");
+    location.reload();
+  }
+});
+
+
+
+ 
