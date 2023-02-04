@@ -1,6 +1,4 @@
-import {
-    listaReceita,
-} from 'load_receitas.js';
+
 
 
 
