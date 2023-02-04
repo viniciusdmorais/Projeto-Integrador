@@ -7,7 +7,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="assets/js/load_component.js"></script>
-    <script src="assets/js/login-contato.js" defer></script>
+    <script src="assets/js/login.js" defer></script>
 
     <link rel="stylesheet" href="assets/css/defaut_rt.css" />
     <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
@@ -27,7 +27,7 @@
                       </div>
                       <div class="login_content">
                         <div class="login-content-area">
-                            <label for="email">E-mail:</label>
+                            <label for="email" id="email-login">E-mail:</label>
                             <input
                               type="email"
                               id="email"
@@ -39,19 +39,19 @@
                             </span>
                         </div>
                         <div class="login-content-area">
-                              <label for="senha"> Senha:</label>
+                              <label for="senha" id="senhaLabel"> Senha:</label>
                               <input
                                 type="password"
                                 id="senha"
                                 placeholder="Digite sua senha"
-                                name="password"
+                                name="password" autocomplete="current-password"
                               />
                               <span id="senha-error" class="span-required">Senha inválida</span>
                         </div>
                     </div>
 
                     <a href="#" class="login_forgot">Esqueceu a senha?</a>
-                    <button class="button_login_entrar" type="submit" id="button_login_entrar">Entra </button>
+                    <button class="button_login_entrar" type="submit" id="button_login_entrar">ENTRAR </button>
                 </form>
 
             </section>
@@ -64,7 +64,7 @@
 
                       <div class="signup_content">
                           <div class="login-content-area">
-                              <label for="name">Nome:</label>
+                              <label for="name" id ="namelabel">Nome:</label>
                               <input
                                 type="text"
                                 id="name"
@@ -114,7 +114,7 @@
                           </div>
                       </div>
 
-                    <button class="button_login_inscrever"type="submit"id="submitButton">Inscrever-se</button>
+                    <button class="button_login_inscrever"type="submit"id="submitButton">INSCREVA-SE</button>
                 </form>
             </section>
         </main>
