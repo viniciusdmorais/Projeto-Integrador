@@ -218,18 +218,18 @@ const receitaBox1 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox1.innerHTML = `
-<a title="${listaReceita[i].nomeReceita}">
-    <img class="imagem_box" width=120px src="${listaReceita[i].imagem}" alt="foto_receita" />
+<a title="${listaReceita[i+1].nomeReceita}" target="_blank" href="#">
+    <img class="imagem_box" width=120px src="${listaReceita[i+1].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
-        <p class="titulo_rec"> ${listaReceita[i].nomeReceita}</p>
-        <p class="autor_rec">Por: ${listaReceita[i].autor}</p>
+        <p class="titulo_rec"> ${listaReceita[i+1].nomeReceita}</p>
+        <p class="autor_rec">Por: ${listaReceita[i+1].autor}</p>
     </div>
 </a>
 `
 
-const boxBarra = document.querySelector('div[class="box_barras"]');
+const boxBarraRec = document.querySelector('div[class="box_barras"]');
 
-boxBarra.appendChild(receitaBox1);
+boxBarraRec.appendChild(receitaBox1);
 
 
 
@@ -239,16 +239,16 @@ const receitaBox2 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox2.innerHTML = `
-<a title="${listaReceita[i].nomeReceita}">
-    <img class="imagem_box" width=120px src="${listaReceita[i].imagem}" alt="foto_receita" />
+<a title="${listaReceita[i+2].nomeReceita}" target="_blank" href="#">
+    <img class="imagem_box" width=120px src="${listaReceita[i+2].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
-        <p class="titulo_rec"> ${listaReceita[i].nomeReceita}</p>
-        <p class="autor_rec">Por: ${listaReceita[i].autor}</p>
+        <p class="titulo_rec"> ${listaReceita[i+2].nomeReceita}</p>
+        <p class="autor_rec">Por: ${listaReceita[i+2].autor}</p>
     </div>
 </a>
 `
 
-boxBarra.appendChild(receitaBox2);
+boxBarraRec.appendChild(receitaBox2);
 
 
 
@@ -258,16 +258,16 @@ const receitaBox3 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox3.innerHTML = `
-<a title="${listaReceita[i].nomeReceita}">
-    <img class="imagem_box" width=120px src="${listaReceita[i].imagem}" alt="foto_receita" />
+<a title="${listaReceita[i+3].nomeReceita}" target="_blank" href="#">
+    <img class="imagem_box" width=120px src="${listaReceita[i+3].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
-        <p class="titulo_rec"> ${listaReceita[i].nomeReceita}</p>
-        <p class="autor_rec">Por: ${listaReceita[i].autor}</p>
+        <p class="titulo_rec"> ${listaReceita[i+3].nomeReceita}</p>
+        <p class="autor_rec">Por: ${listaReceita[i+3].autor}</p>
     </div>
 </a>
 `
 
-boxBarra.appendChild(receitaBox3);
+boxBarraRec.appendChild(receitaBox3);
 
 
 
@@ -277,13 +277,13 @@ const receitaBox4 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox4.innerHTML = `
-<a title="${listaReceita[i].nomeReceita}">
-    <img class="imagem_box" width=120px src="${listaReceita[i].imagem}" alt="foto_receita" />
+<a title="${listaReceita[i+4].nomeReceita}" target="_blank" href="#">
+    <img class="imagem_box" width=120px src="${listaReceita[i+4].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
-        <p class="titulo_rec"> ${listaReceita[i].nomeReceita}</p>
-        <p class="autor_rec">Por: ${listaReceita[i].autor}</p>
+        <p class="titulo_rec"> ${listaReceita[i+4].nomeReceita}</p>
+        <p class="autor_rec">Por: ${listaReceita[i+4].autor}</p>
     </div>
 </a>
 `
 
-boxBarra.appendChild(receitaBox4);
+boxBarraRec.appendChild(receitaBox4);
