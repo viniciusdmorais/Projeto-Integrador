@@ -54,7 +54,6 @@ body {
 }
 
 
-
 .form_login,
 .form_sign_up {
   display: flex;
@@ -68,11 +67,6 @@ body {
   height: 510px;
 
 }
-
-
-
-
-
 
 .login-header {
   padding-bottom: 30px;
@@ -110,6 +104,19 @@ body {
   outline: none;
 }
 
+form input {
+  display: flex;
+  justify-content: center;
+  list-style-position: inside;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #0D3B66;
+  padding: 15px 15px 15px;
+  margin-top: 10px;
+}
+
+
 .login-footer {
   display: flex;
   flex-direction: column;
@@ -138,7 +145,7 @@ body {
   line-height: 50px;
   margin: 10px 0;
   position: relative;
-  top: 15px;
+  top: 18px;
   bottom: 40px;
 }
 
@@ -161,20 +168,16 @@ body {
 /*******************************  Mensagem de erro Login e Sign up *************************/
 
 span {
-
-
   visibility: hidden;
-  /* --->>> Depois, na hora de aparecer com o span, basta usar o "visibility: visible", ao invés do "display: block" */
   font-size: 12px;
   color: rgb(204, 1, 1);
   text-align: justify;
 
 }
 
-
-input.error {
-  border: solid 1px rgb(204, 1, 1);
-  background-color: #FEF9EF;
+input.error{
+  border:solid 1px rgb(204, 1, 1);
+  background-color:#FEF9EF;
 
 }
 
@@ -186,7 +189,6 @@ input.correct {
 
 .visible {
   visibility: visible;
-
 }
 
 
@@ -219,6 +221,8 @@ input.correct {
 
 .conta {
   text-align: center;
+  color: #000;
+  opacity: 0.8;
 }
 
 Div.foto {
@@ -232,7 +236,7 @@ Div.foto {
   height: 100%;
 }
 
-.form-contato {
+#form_contato {
   background-color: #FEF9EF;
   display: flex;
   flex-direction: column;
@@ -241,10 +245,13 @@ Div.foto {
   border: none;
   width: 30%;
   height: 40%;
+  border-radius: 10px;
+  margin: 5px 0px;
 }
 
-form input {
+#form_contato input {
   display: flex;
+  background: #FEF9EF;
   justify-content: center;
   list-style-position: inside;
   border-radius: 30px;
@@ -253,13 +260,15 @@ form input {
   border-bottom: 1px solid #0D3B66;
   padding: 5px 10px 1px;
   margin: 5px 0px;
+
 }
 
 #msg {
+  background: #FEF9EF;
   outline: none;
   border-color: #0D3B66;
   border-radius: 40px;
-  padding: 15px 15px 15px;
+  padding: 15px 15px 15px 15px;
   margin: 5px 0px 2px;
 }
 
@@ -281,15 +290,26 @@ form input {
 
 /***************mensagem de erro******************/
 .span-required {
-
-
   visibility: hidden;
   /* --->>> Depois, na hora de aparecer com o span, basta usar o "visibility: visible", ao invés do "display: block" */
-  font-size: 10px;
+  font-size: 12px;
   color: rgb(204, 1, 1);
   text-align: justify;
 
 }
+
+#form_contato input.error {
+  border: solid 1px rgb(204, 1, 1);
+  background-color: #FEF9EF;
+
+}
+
+#form_contato input.correct {
+  background-color: #FEF9EF;
+  border: solid 2px #17C3B2;
+  color: #000;
+}
+
 
 .visible {
   visibility: visible;
