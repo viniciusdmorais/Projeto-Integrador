@@ -149,11 +149,11 @@ const senhaError = document.getElementById("senha-error");
 
 senhaInput.addEventListener("blur", (e) => {
   const value = e.target.value;
- 
+  
   if (value === senhaInputIns.value) {
     estilizarInputCorreto(senhaInput, senhaError);
     inputsCorretos1.senha1= true;
-    
+  
   } else {
     estilizarInputIncorreto(senhaInput, senhaError);
 
