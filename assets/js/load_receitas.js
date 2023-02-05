@@ -376,7 +376,7 @@ function creatCardReceitas(listaReceita, i) {
     const newArticle = document.createElement("article");
 
     newArticle.innerHTML = `
-            <a href="receitas_prontas_tst.html?receitaID=${listaReceita[i].idReceita}">
+            <a href="receita_completa.html?receitaID=${listaReceita[i].idReceita}">
                 <img src="${listaReceita[i].imagem}" alt="Foto ${listaReceita[i].nomeReceita}" class="photoReceita" />
                 <h3>${listaReceita[i].nomeReceita}</h3>
             </a>
