@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/load_component.js"></script>
+    <script src="assets/js/load_receitas.js"></script>
+
+
+    <link rel="stylesheet" href="assets/css/defaut_rt.css" />
+    <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
+
+    <link rel="stylesheet" href="assets/css/rec_rest.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
+    <title>Bora Comer - Receitas</title>
+</head>
+
+<body>
+    <header></header>
+
+    <div class="container">
+        <main>
+            <section>
+                <div class="fundo">
+                    <img class="imagem_receita" src="#" alt="foto_receita" />
+                    <div class="total">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="fundo">
+                    <div class="lista_ingredientes">
+                        <h2>Ingredientes:</h2>
+                        <nav>
+                            <ul>
+                                <li>ingrediente 1</li>
+                                <li>ingrediente 2</li>
+                                <li>ingrediente 3</li>
+                                <li>ingrediente 4</li>
+                                <li>ingrediente 5</li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="texto_modo_preparo">
+                        <h2>Modo de preparo:</h2>
+                        <p>Descrição de todo o modo de preparo da receita.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section_form">
+                <div class="fundo_form">
+
+                    <form>
+                        <div class="div_form">
+                            <div class="div_avalie">
+                                <h3>Avalie essa receita</h3>
+                            </div>
+                            <div class="div_stars">
+                                <img width="40px" src="assets/images/star.png"
+                                    alt="avaliações_improvisada_com_imagem" />
+                                <img width="40px" src="assets/images/star.png"
+                                    alt="avaliações_improvisada_com_imagem" />
+                                <img width="40px" src="assets/images/star.png"
+                                    alt="avaliações_improvisada_com_imagem" />
+                                <img width="40px" src="assets/images/star.png"
+                                    alt="avaliações_improvisada_com_imagem" />
+                                <img width="40px" src="assets/images/star.png"
+                                    alt="avaliações_improvisada_com_imagem" />
+                            </div>
+
+                            <div>
+                                <h3>Deixe um comentário</h3>
+                            </div>
+
+                            <div>
+                                <textarea class="preencher_mensagem" maxlength="650" cols="60" rows="5" required
+                                    placeholder=" O que você achou dessa receita?"></textarea>
+                            </div>
+
+                            <div class="div_form">
+                                <label>
+                                    <input type="checkbox" checked />Concordo com condições e
+                                    termos da
+                                    <a target="_blank" href="em_construcao.html">Política de Privacidade</a>
+                                </label>
+                            </div>
+
+                            <div class="div_botao">
+                                <input class="botao" type="submit" value="Enviar Avaliação" class="send" />
+                            </div>
+
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer></footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        searchReceita(urlParams.get('receitaID'));
+    </script>
+</body>
+
+</html>
