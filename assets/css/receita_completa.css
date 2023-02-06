@@ -269,6 +269,12 @@ form {
 }
 
 
+/********* Display Invisível *********/
+.visible {
+    visibility: hidden;
+}
+
+
 
 /********* PARA AVALIAÇÃO COM ESTRELINHAS *********/
 

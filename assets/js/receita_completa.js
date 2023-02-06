@@ -105,29 +105,26 @@ const icone4 = Object.assign(document.createElement('div'), {
 
 const ingredientes = document.createElement('div');
 
-
 ingredientes.innerHTML = `
 <h2>Ingredientes:</h2>
 <nav>
-    <ul>  
-                                    
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[0]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[1]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[2]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[3]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[4]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[5]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[6]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[7]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[8]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[9]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[10]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[11]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[12]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[13]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[14]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[15]}</li>
-        
+    <ul>                                  
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[0]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[1]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[2]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[3]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[4]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[5]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[6]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[7]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[8]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[9]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[10]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[11]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[12]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[13]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[14]}</li>
+        <li>${listaReceita[0].bolinha} ${listaReceita[0].ingredientes[15]}</li>
     </ul>
 </nav>
 `
@@ -146,22 +143,22 @@ preparo.innerHTML = `
 <h2>Modo de preparo:</h2>
 <nav>
     <ul>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[0]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[1]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[2]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[3]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[4]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[5]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[6]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[7]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[8]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[9]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[10]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[11]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[12]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[13]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[14]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[15]}</li>        
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[0]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[1]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[2]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[3]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[4]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[5]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[6]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[7]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[8]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[9]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[10]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[11]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[12]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[13]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[14]}</li>
+        <li>${listaReceita[0].setinha} ${listaReceita[0].preparo[15]}</li>
     </ul>
 </nav>
 `
@@ -250,3 +247,6 @@ receitaBox4.innerHTML = `
 `
 
 boxBarraRec.appendChild(receitaBox4);
+
+
+

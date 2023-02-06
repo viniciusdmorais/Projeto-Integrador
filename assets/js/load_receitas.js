@@ -29,7 +29,6 @@ const listaReceita = [
         iconeRestricao2: '<img width="50px" height="50px" src="assets/images/icon_vegan-on.png" alt="vegano" title="Vegano"/>',
         iconeRestricao3: '',
         iconeRestricao4: '',
-
     },
     {
         idReceita: 2,
@@ -66,7 +65,7 @@ const listaReceita = [
         idReceita: 3,
         nomeReceita: "Batida de Coco",
         tempoPreparo: 5,
-        imagem: "https://minhasdelicias.com/wp-content/uploads/2021/12/Batida-De-Coco-Sensacional.jpg",
+        imagem: "https://img.cuisineaz.com/660x660/2013/12/20/i29767-batida-de-coco.webp",
         vegano: false,
         glutem: false,
         soja: false,
@@ -143,7 +142,7 @@ const listaReceita = [
         
         autor: 'Bora Comer',
         rendimento: '8 Pedaços',
-        dificuldade: 'Fácil',
+        dificuldade: 'Médio',
         iconeRestricao1: '<img width="50px" height="50px" src="assets/images/icon_milk.png" alt="contém_leite" title="Contém Leite"/>',
         iconeRestricao2: '',
         iconeRestricao3: '',
@@ -236,7 +235,7 @@ const listaReceita = [
         
         autor: 'Bora Comer',
         rendimento: '2 porções',
-        dificuldade: 'Fácil',
+        dificuldade: 'Médio',
         iconeRestricao1: '<img width="50px" height="50px" src="assets/images/icon_seafood.png" alt="contém_camarão" title="Contém Camarão"/>',
         iconeRestricao2: '',
         iconeRestricao3: '',
@@ -267,7 +266,7 @@ const listaReceita = [
     
         autor: 'Bora Comer',
         rendimento: '15 bolinhos pequenos',
-        dificuldade: 'Fácil',
+        dificuldade: 'Médio',
         iconeRestricao1: '<img width="50px" height="50px" src="assets/images/icon_peanut.png" alt="contém_amendoim" title="Contém Amendoim"/>',
         iconeRestricao2: '<img width="50px" height="50px" src="assets/images/icon_eggs.png" alt="contém_ovo" title="Contém Ovo"/>',
         iconeRestricao3: '',
@@ -298,7 +297,7 @@ const listaReceita = [
         
         autor: 'Bora Comer',
         rendimento: '8 porções',
-        dificuldade: 'Fácil',
+        dificuldade: 'Médio',
         iconeRestricao1: '<img width="50px" height="50px" src="assets/images/icon_vegan-on.png" alt="vegano" title="Vegano"/>',
         iconeRestricao2: '',
         iconeRestricao3: '',
@@ -329,7 +328,7 @@ const listaReceita = [
         
         autor: 'Bora Comer',
         rendimento: '4 porções',
-        dificuldade: 'Fácil',
+        dificuldade: 'Difícil',
         iconeRestricao1: '<img width="50px" height="50px" src="assets/images/icon_seafood.png" alt="contém camarão" title="Contém Camarão"/>',
         iconeRestricao2: '<img width="50px" height="50px" src="assets/images/icon_gluten.png" alt="contém glútem" title="Contém Glútem"/>',
         iconeRestricao3: '<img width="50px" height="50px" src="assets/images/icon_milk.png" alt="contém leite" title="Contém Leite"/>',
@@ -391,7 +390,7 @@ const listaReceita = [
         
         autor: 'Bora Comer',
         rendimento: '4 porções',
-        dificuldade: 'Fácil',
+        dificuldade: 'Médio',
         iconeRestricao1: '<img width="50px" height="50px" src="assets/images/icon_soy.png" alt="contém soja" title="Contém Soja"/>',
         iconeRestricao2: '<img width="50px" height="50px" src="assets/images/icon_vegan-on.png" alt="vegano" title="Vegano"/>',
         iconeRestricao3: '',
@@ -422,7 +421,7 @@ const listaReceita = [
         
         autor: 'Bora Comer',
         rendimento: '4 porções',
-        dificuldade: 'Fácil',
+        dificuldade: 'Difícil',
         iconeRestricao1: '<img width="50px" height="50px" src="assets/images/icon_soy.png" alt="contém soja" title="Contém Soja"/>',
         iconeRestricao2: '<img width="50px" height="50px" src="assets/images/icon_vegan-on.png" alt="vegano" title="Vegano"/>',
         iconeRestricao3: '',
@@ -631,7 +630,7 @@ function searchReceita(numID) {
             dados.innerHTML = `
                 <h1>${listaReceita[i].nomeReceita}</h1>
                 <p>${listaReceita[i].descricao}</p>
-                <p>Temo medio de preparo: ${listaReceita[i].tempoPreparo}min - 300 views</p>
+                <p>Tempo médio de preparo: ${listaReceita[i].tempoPreparo}min - 300 views</p>
             `;
 
             const detalhes = document.createElement("div");
@@ -639,7 +638,7 @@ function searchReceita(numID) {
             detalhes.innerHTML = `
                 <p><strong>Autor:</strong> Bora Comer</p>
                 <p><strong>Tempo de Preparo:</strong> ${listaReceita[i].tempoPreparo} min</p>
-                <p><strong>Rendimento:</strong> 6 porções</p>
+                <p><strong>Rendimento:</strong> ${listaReceita[i].rendimento}</p>
             `;
 
             const baseMain = document.querySelector(".total");
