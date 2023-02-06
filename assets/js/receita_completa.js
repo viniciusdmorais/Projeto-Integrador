@@ -38,7 +38,7 @@ const dados = document.createElement('div');
 dados.innerHTML = `
 <p><strong>Autor:</strong> ${listaReceita[i].autor}</p>
 <p><strong>Tempo de Preparo:</strong> ${listaReceita[i].tempoPreparo} min</p>
-<p><strong>Rendimento:</strong> ${listaReceita[i].rendimento} porções</p>
+<p><strong>Rendimento:</strong> ${listaReceita[i].rendimento}</p>
 <p><strong>Dificuldade:</strong> ${listaReceita[i].dificuldade}</p>
 `
 
@@ -122,6 +122,11 @@ ingredientes.innerHTML = `
         <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[8]}</li>
         <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[9]}</li>
         <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[10]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[11]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[12]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[13]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[14]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[15]}</li>
         
     </ul>
 </nav>
@@ -149,6 +154,14 @@ preparo.innerHTML = `
         <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[5]}</li>
         <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[6]}</li>
         <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[7]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[8]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[9]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[10]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[11]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[12]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[13]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[14]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[15]}</li>        
     </ul>
 </nav>
 `
@@ -156,28 +169,6 @@ preparo.innerHTML = `
 const textoModoPreparo = document.querySelector('div[class="preparo"]');
 
 textoModoPreparo.appendChild(preparo);
-
-
-
-// populando dicas
-
-const dicasRec = document.createElement('div');
-
-dicasRec.innerHTML = `
-<h3>Dicas:</h3>
-<nav>
-    <ul>
-        <li>${listaReceita[i].dicas[0]}</li>
-        <li>${listaReceita[i].dicas[1]}</li>
-        <li>${listaReceita[i].dicas[2]}</li>
-        <li>${listaReceita[i].dicas[3]}</li>
-    </ul>
-</nav>
-`
-
-const dicas = document.querySelector('div[class="dicas"]');
-
-dicas.appendChild(dicasRec);
 
 
 
