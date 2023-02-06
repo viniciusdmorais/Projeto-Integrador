@@ -1,116 +1,116 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="assets/js/load_component.js"></script>
-    <script src="assets/js/" defer></script>
+    <script defer src="assets/js/load_component.js" ></script>
 
     <link rel="stylesheet" href="assets/css/defaut_rt.css" />
     <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
-    <link rel="stylesheet" href="assets/css/envio-indicacao.css" />
+    <link rel="stylesheet" href="assets/css/envio_indicacoes.css">
+
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
-
-
-
-    <title>Bora Comer/Contatos</title>
+    <title>Envio Receitas</title>
 </head>
 <body>
-  <header></header>
-    <div class="Container">
-        <section class="receita-section">
-            <form action="">
-                <input type="text" id="text" placeholder="NOME DA RECEITA">
+    <header></header>
+    <main>
+        <div class="Container">
+            <section class="form-receita">
+                <form action="">
+                    <input type="text" id="text" placeholder="NOME DA RECEITA">
+                    
+                    <div class="box-add-foto">
+                        <label for="avatar">ADICIONAR FOTOS :
+                            <input type="file"
+                            id="foto" name="foto"
+                            accept="image/png, image/jpeg" class="input-foto">
+                        </label>     
+                    </div>           
+                    <label for="Receita">ESCOLHA UMA CATEGORIA    
+                        <select id="receita" name="receita">
+                            <option value="Bolo_Torta">BOLOS E TORTAS DOCES</option>
+                            <option value="BEBIDAS">BEBIDAS</option>
+                            <option value="MASSAS">MASSAS</option>
+                            <option value="MASSAS">SALADAS e MOLHOS </option>
+                            <option value="LANCHE">LANCHE </option>
+                        </select>
+                    </label>
+                    <div>
+                        <input type="checkbox" id="Vegana" name="Vegana" checked>
+                        <label for="scales">Vegana</label>
+                        <input type="checkbox" id="vegetariana" name="vegetariana" checked>
+                        <label for="vegetariana">vegetariana</label>
+                        <input type="checkbox" id="Glúten" name="Glúten" checked>
+                        <label for="Glúten">Sem Glúten</label>
+                        <input type="checkbox" id="Lactose" name="Lactose" checked>
+                        <label for="Lactose">Sem Lactose</label>
+                    </div>
+                    <label for="Ingrediente">Ingrediente:
+                        <input type="text" id="Ingrediente" name="Ingrediente" placeholder="EX:03 ovos" checked>
+                    </label>
+                    <div>
+                        <label for="preparo" class="preparo-modo">Modo de preparo: 
+                            <textarea name="preparo" id="preparo" cols="20" rows="2" placeholder="ex: bata todos ingrediente" checked></textarea>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-env-rec"> Enviar Receita </button>
+                </form>
                 
-                <input type="file"
-                    id="foto" name="foto"
-                    accept="image/png, image/jpeg">
-                <label for="avatar">ADICIONAR FOTOS :</label>
-                <label for="Receita">ESCOLHA UMA CATEGORIA</label>
-    
-    
-    
-                <select id="receita" name="receita">
-                    <option value="Bolo_Torta">BOLOS E TORTAS DOCES</option>
-                    <option value="BEBIDAS">BEBIDAS</option>
-                    <option value="MASSAS">MASSAS</option>
-                    <option value="MASSAS">SALADAS e MOLHOS </option>
-                    <option value="LANCHE">LANCHE </option>
-                </select>
                 
-                <input type="checkbox" id="Vegana" name="Vegana" checked>
-                <label for="scales">Vegana</label>
-                <input type="checkbox" id="vegetariana" name="vegetariana" checked>
-                <label for="vegetariana">vegetariana</label>
-                <input type="checkbox" id="Glúten" name="Glúten" checked>
-                <label for="Glúten">Sem Glúten</label>
-                <input type="checkbox" id="Lactose" name="Lactose" checked>
-                <label for="Lactose">Sem Lactose</label>
-                <label for="Ingrediente">Ingrediente:</label>
-                <input type="text" id="Ingrediente" name="Ingrediente" placeholder="EX:03 ovos" checked>
-                <label for="preparo">Modo de preparo: </label>
-                <input type="text" id="preparo" name="preparo" placeholder="ex: bata todos ingrediente" checked>
-                <button type="submit" > Enviar Receita </button>
-            </form>
+            </section>
+        
+        
+            <section class="form-locais">
+                <form action="">
+                    <input type="text" id="text" placeholder="NOME DO RESTAURANTE">
+                    <div>
+                        <label for="fotos">ADICIONAR FOTOS :</label>
+                        <input type="file"
+                        id="foto" name="foto"
+                        accept="image/png, image/jpeg">
+                    </div>
+                    
+                    <div>
+                        <label for="estado">ESTADO</label>
+                        <select id="ESTADO" name="ESTADO">
+                            <option value="SP">SP</option>
+                            <option value="MG">MG</option>
+                            <option value="RS">RS</option>
+                            <option value="RJ ">RJ </option>
+                            <option value="BA">BA</option>
+                        </select>
+                    </div>
             
-               
-        </section>
-    
-    
-        <section>
-            <form action="">
-                <input type="text" id="text" placeholder="NOME DO RESTAURANTE">
-                
-                <input type="file"
-                id="foto" name="foto"
-                accept="image/png, image/jpeg">
-                <label for="fotos">ADICIONAR FOTOS :</label>
-    
-                <label for="estado">ESTADO</label>
-                <select id="ESTADO" name="ESTADO">
-                    <option value="SP">SP</option>
-                    <option value="MG">MG</option>
-                    <option value="RS">RS</option>
-                    <option value="RJ ">RJ </option>
-                    <option value="BA">BA</option>
-                </select>
-        
-        
-        
-                <label for="CIDADE"> CIDADE: </label>
-                <select id="CIDADE" name="CIDADE">
-                    <option value="SÃO PAULO">SÃO PAULO</option>
-                    <option value="MONTES CLAROS">MONTES CLAROS</option>
-                    <option value="GRAMADO">GRAMADO</option>
-                    <option value="OLIMPIA ">OLIMPIA </option>
-                    <option value="RIO PRETO">RIO PRETO</option>
-                </select>
-    
-                <input type="checkbox" id="JAPONÊS" name="JAPONÊS" checked>
-                <label for="JAPONÊS">JAPONÊS</label>
-                <input type="checkbox" id="VEGETARIANO" name="VEGETARIANO" checked>
-                <label for="VEGETARIANO">VEGETARIANO</label>
-                <input type="checkbox" id="PIZARIA" name="PIZARIA" checked>
-                <label for="PIZARIA">PIZARIA</label>
-                <input type="checkbox" id="ITALIANO" name="ITALIANO" checked>
-                <label for="ITALIANO">ITALIANO</label>
-                <button type="submit" > Enviar  </button>
-                
-               
-        
-            </form>
-        </section>
-        
-           
             
-    
-       
-        
-        
-    </div>
+                    <label for="CIDADE"> CIDADE: </label>
+                    <select id="CIDADE" name="CIDADE">
+                        <option value="SÃO PAULO">SÃO PAULO</option>
+                        <option value="MONTES CLAROS">MONTES CLAROS</option>
+                        <option value="GRAMADO">GRAMADO</option>
+                        <option value="OLIMPIA ">OLIMPIA </option>
+                        <option value="RIO PRETO">RIO PRETO</option>
+                    </select>
+                    <div>
+                        <input type="checkbox" id="JAPONÊS" name="JAPONÊS" checked>
+                        <label for="JAPONÊS">JAPONÊS</label>
+                        <input type="checkbox" id="VEGETARIANO" name="VEGETARIANO" checked>
+                        <label for="VEGETARIANO">VEGETARIANO</label>
+                        <input type="checkbox" id="PIZARIA" name="PIZARIA" checked>
+                        <label for="PIZARIA">PIZARIA</label>
+                        <input type="checkbox" id="ITALIANO" name="ITALIANO" checked>
+                        <label for="ITALIANO">ITALIANO</label>
+                       
+                    </div>
+                    <button type="submit" class="btn-env-rec" > Enviar Restaurante </button>
+            
+                </form>
+            </section>                
+        </div>
+    </main>
     <footer></footer>
-    
 </body>
 </html>
+
