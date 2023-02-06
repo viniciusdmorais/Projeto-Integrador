@@ -146,7 +146,7 @@ const listaReceita = [
         mediaNota: 4.5,
 
         ingredientes:
-        "1 xícara de polvilho azedo; 1 xícara de polvilho doce; 3/4 xícara de óleo de coco; 1/2 xícara de leite vegetal; Sal a gosto",
+            "1 xícara de polvilho azedo; 1 xícara de polvilho doce; 3/4 xícara de óleo de coco; 1/2 xícara de leite vegetal; Sal a gosto",
         preparo:
         "Em uma tigela grande misture os polvilhos, o sal e o óleo de coco; Adicione o leite vegetal aos poucos, mexendo sempre até obter uma massa homogênea; Abra pequenas porções de massa com as mãos, formando os pães de queijo; Disponha-os em uma assadeira untada; Leve ao forno pré-aquecido a 200ºC por cerca de 25 minutos ou até dourar; Sirva quente como aperitivo ou petisco.",
        
@@ -169,7 +169,7 @@ const listaReceita = [
         mediaNota: 4.5,
 
         ingredientes:
-        "1 xícara de quinoa; 2 xícaras de água; 1/2 xícaras de cenoura ralada; 1/2 xícaras de vagem cortada em cubinhos; 1/2 xícaras de tomate cortado em cubinhos; 1/2 xícara de azeitona preta picada; 1 colher de sopa de salsinha picada; 1 colher de sopa de coentro picado; Sal e pimenta a gosto; Suco de 1/2 limão; 1 colher de sopa de azeite de oliva",
+            "1 xícara de quinoa; 2 xícaras de água; 1/2 xícaras de cenoura ralada; 1/2 xícaras de vagem cortada em cubinhos; 1/2 xícaras de tomate cortado em cubinhos; 1/2 xícara de azeitona preta picada; 1 colher de sopa de salsinha picada; 1 colher de sopa de coentro picado; Sal e pimenta a gosto; Suco de 1/2 limão; 1 colher de sopa de azeite de oliva",
         preparo:
         "Lave a quinoa e coloque-a numa panela com a água. Leve ao fogo médio, cubra e deixe cozinhar por cerca de 15 minutos ou até que toda a água seja absorvida; Enquanto a quinoa cozinha, prepare os legumes e as ervas; Em um recipiente grande, misture a quinoa cozida, cenoura ralada, vagem, tomate, azeitona, salsinha, coentro, sal, pimenta, suco de limão e azeite de oliva; Sirva a salada quente ou fria.",
         
@@ -192,7 +192,7 @@ const listaReceita = [
         mediaNota: 4.5,
 
         ingredientes:
-        "1 pacote de tortillas de milho; 400g de camarão cozido e descascado; 1/2 cebola picada; 2 tomates picados; 1/4 xícara de cilantro picado; Suco de 1/2 limão; Sal e pimenta a gosto; Óleo de soja para fritar as tostadas",
+            "1 pacote de tortillas de milho; 400g de camarão cozido e descascado; 1/2 cebola picada; 2 tomates picados; 1/4 xícara de cilantro picado; Suco de 1/2 limão; Sal e pimenta a gosto; Óleo de soja para fritar as tostadas",
         preparo:
         "Em uma tigela, misture o camarão cozido, a cebola, o tomate, o cilantro e o suco de limão; Tempere com sal e pimenta a gosto; Em uma frigideira, aqueça o óleo de soja e frite as tortillas até ficarem crocantes; Coloque as tortillas fritas em um prato forrado com papel toalha para absorver o excesso de óleo; Coloque uma porção generosa do recheio de camarão sobre cada tostada e sirva imediatamente",
         
@@ -215,7 +215,7 @@ const listaReceita = [
         mediaNota: 4,
 
         ingredientes:
-        "1 xícara de amendoim triturado; 2 ovos; 1/2 xícara de açúcar; 1 colher de sopa de farinha de trigo; 1 pitada de sal; Óleo para fritar",
+            "1 xícara de amendoim triturado; 2 ovos; 1/2 xícara de açúcar; 1 colher de sopa de farinha de trigo; 1 pitada de sal; Óleo para fritar",
         preparo:
         "Em uma tigela, misture o amendoim triturado, os ovos, o açúcar, a farinha de trigo e a pitada de sal; Misture bem até obter uma massa homogênea; Aqueça o óleo em uma panela; Com a ajuda de uma colher, faça bolinhos da massa e frite até ficarem dourados; Escorra os bolinhos em papel toalha; Sirva quente",
         
@@ -302,7 +302,7 @@ const listaReceita = [
         mediaNota: 4.5,
 
         ingredientes:
-        "1 pacote de soja texturizada; 1 cebola picada; 2 dentes de alho picados; 1 xícara de cenoura ralada; 1 xícara de cogumelos fatiados; 1 xícara de tomate pelado e picado; 2 colheres de sopa de farinha de trigo; 1 xícara de caldo de legumes; Sal e pimenta a gosto; 1/2 xícara de creme de soja; 1 colher de sopa de molho inglês; 2 colheres de sopa de azeite",
+            "1 pacote de soja texturizada; 1 cebola picada; 2 dentes de alho picados; 1 xícara de cenoura ralada; 1 xícara de cogumelos fatiados; 1 xícara de tomate pelado e picado; 2 colheres de sopa de farinha de trigo; 1 xícara de caldo de legumes; Sal e pimenta a gosto; 1/2 xícara de creme de soja; 1 colher de sopa de molho inglês; 2 colheres de sopa de azeite",
         preparo:
         "Em uma panela, aqueça o azeite e refogue a cebola, o alho e a cenoura por 5 minutos; Adicione os cogumelos e o tomate e refogue por mais 5 minutos; Adicione a farinha de trigo e misture bem, cozinhando por 1 minuto; Adicione o caldo de legumes e o creme de soja, mexa bem e cozinhe por 5 minutos ou até que a mistura engrosse; Adicione a soja texturizada e o molho inglês e misture bem; Tempere com sal e pimenta a gosto; Sirva sobre arroz branco ou massa",
         
@@ -325,7 +325,7 @@ const listaReceita = [
         mediaNota: 5,
 
         ingredientes:
-        "1/2 xícara de óleo de coco; 1 cebola média picada; 2 dentes de alho picados; 1 pimentão vermelho picado; 1 pimentão amarelo picado; 2 tomates picados; 1 banana da terra cortada em cubinhos; 1 xícara de proteína de soja hidratada e cortada em cubos; 1 xícara de leite de coco; sal e pimenta-do-reino a gosto; coentro e cebolinha picados a gosto",
+            "1/2 xícara de óleo de coco; 1 cebola média picada; 2 dentes de alho picados; 1 pimentão vermelho picado; 1 pimentão amarelo picado; 2 tomates picados; 1 banana da terra cortada em cubinhos; 1 xícara de proteína de soja hidratada e cortada em cubos; 1 xícara de leite de coco; sal e pimenta-do-reino a gosto; coentro e cebolinha picados a gosto",
         preparo:
         "Aqueça o óleo de coco em uma panela grande; Adicione a cebola, alho, pimentões, tomates e refogue por alguns minutos; Adicione a banana da terra, proteína de soja e misture; Adicione o leite de coco, tempere com sal e pimenta a gosto e misture; Deixe cozinhar por cerca de 10 minutos; Sirva com coentro e cebolinha picados por cima",
         
@@ -336,7 +336,7 @@ const listaReceita = [
 
 function creatCardReceitas(listaReceita, i) {
     let alergIcons = "";
-    
+
     if (listaReceita[i].amendoim) {
         alergIcons += `
             <img src="assets/images/icon_peanut.png" alt="Contem Amendoim" />
@@ -390,79 +390,100 @@ function creatCardReceitas(listaReceita, i) {
 
 function listReceitas(pg) {
     let filter = {
-        vegano: document.getElementById('ckb_veg').checked,
-        ovo: document.getElementById('ckb_ovo').checked,
-        soja: document.getElementById('ckb_soja').checked,
-        leite: document.getElementById('ckb_leite').checked,
-        glutem: document.getElementById('ckb_glutem').checked,
-        amendoim: document.getElementById('ckb_amendoim').checked,
-        crustaceo: document.getElementById('ckb_crustaceos').checked,
-        minTmp: Number(document.getElementById('tmp_min').value),
-        maxTmp: Number(document.getElementById('tmp_max').value)
+        vegano: document.getElementById("ckb_veg").checked,
+        ovo: document.getElementById("ckb_ovo").checked,
+        soja: document.getElementById("ckb_soja").checked,
+        leite: document.getElementById("ckb_leite").checked,
+        glutem: document.getElementById("ckb_glutem").checked,
+        amendoim: document.getElementById("ckb_amendoim").checked,
+        crustaceo: document.getElementById("ckb_crustaceos").checked,
+        minTmp: Number(document.getElementById("tmp_min").value),
+        maxTmp: Number(document.getElementById("tmp_max").value),
     };
 
     let limit = 12 * pg;
     let i = limit - 12;
-    (limit >= listaReceita.length && i < listaReceita.length)?limit=listaReceita.length:limit=12;
-    
-    if (Object.values(filter).filter((value) => value == true || value != 0).length == 0) {
-        for(i=0; i<=limit; i++) {
+    limit >= listaReceita.length && i < listaReceita.length
+        ? (limit = listaReceita.length)
+        : (limit = 12);
+
+    if (
+        Object.values(filter).filter((value) => value == true || value != 0)
+            .length == 0
+    ) {
+        for (i = 0; i <= limit; i++) {
             creatCardReceitas(listaReceita, i);
         }
     } else {
+        let objetoFiltro = new Object();
+        let arraylistafiltrada = [];
 
-    let objetoFiltro = new Object()
-    let arraylistafiltrada = []
-    
-    for(let [key, val] of Object.entries(filter)){
-        if(val == true){
-            objetoFiltro[key] = true
-        }
-    }
+        for (let [key, val] of Object.entries(filter)) {
+            if (val == true) {
+                objetoFiltro[key] = true;
+            }
 
-    if(objetoFiltro.hasOwnProperty("vegano")){
-        for(x = 0; x < listaReceita.length; x++){
-            if(listaReceita[x].vegano == true){
-                arraylistafiltrada.push(listaReceita[x])
+            if ((key == "minTmp" && val > 0) || (key == "maxTmp" && val > 0)) {
+                objetoFiltro[key] = val;
             }
         }
-        
-        delete objetoFiltro.vegano
-        filtroLista(arraylistafiltrada, objetoFiltro)
-    }else{
-        filtroLista(listaReceita, objetoFiltro)
-    }
 
-    }
-}
-
-function filtroLista(listaReceita, objetoFiltro){
-    let arraylistafiltrada = []
-
-    for(x = 0; x < listaReceita.length; x++){
-        let validador = true
-        
-        
-        for(let [key, val] of Object.entries(objetoFiltro)){
-
-                if (listaReceita[x][key] == true){
-                    validador = false
-                    break
+        if (objetoFiltro.hasOwnProperty("vegano")) {
+            for (x = 0; x < listaReceita.length; x++) {
+                if (listaReceita[x].vegano == true) {
+                    arraylistafiltrada.push(listaReceita[x]);
                 }
+            }
+
+            delete objetoFiltro.vegano;
+            filtroLista(arraylistafiltrada, objetoFiltro);
+        } else {
+            filtroLista(listaReceita, objetoFiltro);
+        }
+    }
+}
+
+function filtroLista(listaReceita, objetoFiltro) {
+    let arraylistafiltrada = [];
+
+    for (x = 0; x < listaReceita.length; x++) {
+        let validador = true;
+
+        for (let [key, val] of Object.entries(objetoFiltro)) {
+            if (listaReceita[x][key] == true) {
+                validador = false;
+            }
+        }
+
+        if (validador) {
+            if (objetoFiltro.hasOwnProperty("minTmp") && objetoFiltro.hasOwnProperty("maxTmp")) {
+                if (objetoFiltro.minTmp < objetoFiltro.maxTmp) {
+                    if (!(objetoFiltro.minTmp >= listaReceita[x].tempoPreparo) && !(listaReceita[x].tempoPreparo <= objetoFiltro.maxTmp)) {
+                        validador = false;
+                    }
+                } else {
+                    validador = false;
+                }
+            } else if (objetoFiltro.hasOwnProperty("minTmp")) {
+                if (objetoFiltro.minTmp > listaReceita[x].tempoPreparo) {
+                    validador = false;
+                }
+            } else if (objetoFiltro.hasOwnProperty("maxTmp")) {
+                if (listaReceita[x].tempoPreparo > objetoFiltro.maxTmp) {
+                    validador = false;
+                }
+            }
+        }
+
+        if (validador == true) {
+            arraylistafiltrada.push(listaReceita[x]);
+        }
     }
 
-    if(validador == true){
-        arraylistafiltrada.push(listaReceita[x])
+    for (pagina = 0; pagina < arraylistafiltrada.length; pagina++) {
+        creatCardReceitas(arraylistafiltrada, pagina);
     }
 }
-
-for (pagina = 0; pagina < arraylistafiltrada.length; pagina++){
-        creatCardReceitas(arraylistafiltrada, pagina)
-}
-
-
-}
-
 
 function searchReceita(numID) {
     for (let i = 0; i <= listaReceita.length; i++) {

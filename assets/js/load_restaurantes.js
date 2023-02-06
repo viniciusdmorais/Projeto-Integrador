@@ -106,4 +106,5 @@ const listaRestaurante = [
         
         mediaNota: 4,
     },
-]
+];
+
