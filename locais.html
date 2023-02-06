@@ -6,206 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bora Comer - Receitas</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/load_component.js"></script>
+    <script src="assets/js/load_receitas.js"></script>
+
+
+    <link rel="stylesheet" href="assets/css/defaut_rt.css" />
+    <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
+    <link rel="stylesheet" href="assets/css/receitas.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
+    <title>Bora Comer - Restaurantes</title>
 </head>
 
 <body>
-    <header>
-        <div>
-            <a href="index.html">
-                <img src="assets/images/logo_gb_claro.png" alt="Bora Comer Logo">
-            </a>
-        </div>
+    <header></header>
 
-        <nav>
-            <li><a href="locais.html">LOCAIS</a></li>
-            <li>|</li>
-            <li><a href="receitas.html">RECEITAS</a></li>
-            <li>
-                <input type="search" name="search" id="search">
-                <a href="#">
-                    <img src="assets/images/icon_lupa.svg" alt="Icone de pesquisa">
-                </a>
-            </li>
-            <li><a href="#"><img src="assets/images/icon_login.png" alt="Icone de login"></a></li>
-        </nav>
-    </header>
+    <div class="container">
+        <aside>
+            <h3>Filtros</h3>
 
-    <aside>
-        <input type="search" name="search_receita" id="search_receita">
-        <a href="#">Alternar para Mapa</a>
+            <form class="busca_locais">
+                <input class="busca_locais" id="search_locais" type="search" placeholder="Busca...">
+            </form>
 
-    </aside>
+            <form id="filt" action="#">
+                
+            </form>
+        </aside>
 
-    <main>
-        <section>
-            <img src="#" alt="Foto do estabelecimento">
-            <h2>Nome do estabelecimento</h2>
-            <p>Vila Madalena - São Paulo - SP</p>
-            <ul>
-                <li>estrela 1</li>
-                <li>estrela 2</li>
-                <li>estrela 3</li>
-                <li>estrela 4</li>
-                <li>estrela 5</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra odio metus, a accumsan dui.</p>
-        </section>
-        
-        <section>
-            <img src="#" alt="Foto do estabelecimento">
-            <h2>Nome do estabelecimento</h2>
-            <p>Vila Madalena - São Paulo - SP</p>
-            <ul>
-                <li>estrela 1</li>
-                <li>estrela 2</li>
-                <li>estrela 3</li>
-                <li>estrela 4</li>
-                <li>estrela 5</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra odio metus, a accumsan dui.</p>
-        </section>
-        
-        <section>
-            <img src="#" alt="Foto do estabelecimento">
-            <h2>Nome do estabelecimento</h2>
-            <p>Vila Madalena - São Paulo - SP</p>
-            <ul>
-                <li>estrela 1</li>
-                <li>estrela 2</li>
-                <li>estrela 3</li>
-                <li>estrela 4</li>
-                <li>estrela 5</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra odio metus, a accumsan dui.</p>
-        </section>
-        
-        <section>
-            <img src="#" alt="Foto do estabelecimento">
-            <h2>Nome do estabelecimento</h2>
-            <p>Vila Madalena - São Paulo - SP</p>
-            <ul>
-                <li>estrela 1</li>
-                <li>estrela 2</li>
-                <li>estrela 3</li>
-                <li>estrela 4</li>
-                <li>estrela 5</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra odio metus, a accumsan dui.</p>
-        </section>
-        
-        <section>
-            <img src="#" alt="Foto do estabelecimento">
-            <h2>Nome do estabelecimento</h2>
-            <p>Vila Madalena - São Paulo - SP</p>
-            <ul>
-                <li>estrela 1</li>
-                <li>estrela 2</li>
-                <li>estrela 3</li>
-                <li>estrela 4</li>
-                <li>estrela 5</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra odio metus, a accumsan dui.</p>
-        </section>
-        
-        <section>
-            <img src="#" alt="Foto do estabelecimento">
-            <h2>Nome do estabelecimento</h2>
-            <p>Vila Madalena - São Paulo - SP</p>
-            <ul>
-                <li>estrela 1</li>
-                <li>estrela 2</li>
-                <li>estrela 3</li>
-                <li>estrela 4</li>
-                <li>estrela 5</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra odio metus, a accumsan dui.</p>
-        </section>
-        
-        <section>
-            <img src="#" alt="Foto do estabelecimento">
-            <h2>Nome do estabelecimento</h2>
-            <p>Vila Madalena - São Paulo - SP</p>
-            <ul>
-                <li>estrela 1</li>
-                <li>estrela 2</li>
-                <li>estrela 3</li>
-                <li>estrela 4</li>
-                <li>estrela 5</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra odio metus, a accumsan dui.</p>
-        </section>
-        
-        <section>
-            <img src="#" alt="Foto do estabelecimento">
-            <h2>Nome do estabelecimento</h2>
-            <p>Vila Madalena - São Paulo - SP</p>
-            <ul>
-                <li>estrela 1</li>
-                <li>estrela 2</li>
-                <li>estrela 3</li>
-                <li>estrela 4</li>
-                <li>estrela 5</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra odio metus, a accumsan dui.</p>
-        </section>
-        
-        <section>
-            <img src="#" alt="Foto do estabelecimento">
-            <h2>Nome do estabelecimento</h2>
-            <p>Vila Madalena - São Paulo - SP</p>
-            <ul>
-                <li>estrela 1</li>
-                <li>estrela 2</li>
-                <li>estrela 3</li>
-                <li>estrela 4</li>
-                <li>estrela 5</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra odio metus, a accumsan dui.</p>
-        </section>
-    </main>
+        <main></main>
+    </div>
 
-    <footer>
-        <section>
-            <span>
-                Bora Comer
-            </span>
-            <a href="#">
-                <img src="assets/images/icon-instagram.png" alt="Link para Instagram Logo">
-            </a>
+    <footer></footer>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="quem_somos.html">QUEM SOMOS</a></li>
-                    <li><a href="locais.html">LOCAIS</a></li>
-                    <li><a href="receitas.html">RECEITAS</a></li>
-                    <li><a href="contato.html">CONTATO</a></li>
-                </ul>
-            </nav>
-
-            <span>
-                APOIO
-            </span>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="assets/images/PROZ-logo.png" alt="logo Proz">
-                    </a>
-                </li>
-                <li></li>
-                <a href="#">
-                    <img src="assets/images/AWS-logo.png" alt="logo AWS">
-                </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/images/Meta-Logo.png" alt="logo Meta">
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </footer>
+    <script></script>
 </body>
 
 </html>

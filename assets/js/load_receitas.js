@@ -56,8 +56,10 @@ const listaReceita = [
         doce: true,
         salgado: false,
         descricao: "Batida de Coco com base de Pinga",
-        ingredientes: "200ml de leite de coco;200ml de pinga;395g de leite condensado;100g coco ralado umido",
-        preparo: "No liquidificador colocar todos os ingredientes, apenas reservando uma pequena quantidade de coco ralado para finalizar o copo, e bata por 3min.;Após servir no copo basta colocar um pouco do coco ralado por cima da bebida. Servir gelado.",
+        ingredientes:
+            "200ml de leite de coco;200ml de pinga;395g de leite condensado;100g coco ralado umido",
+        preparo:
+            "No liquidificador colocar todos os ingredientes, apenas reservando uma pequena quantidade de coco ralado para finalizar o copo, e bata por 3min.;Após servir no copo basta colocar um pouco do coco ralado por cima da bebida. Servir gelado.",
         mediaNota: 0,
     },
     {
@@ -74,10 +76,13 @@ const listaReceita = [
         crustaceo: false,
         doce: false,
         salgado: true,
-        descricao: "Lasanha clássica com camadas de molho de carne, macarrão e molho branco cremoso.",
-        ingredientes: "12 folhas de lasanha; 500g de carne moída; 1 cebola picada; 2 dentes de alho picados; 1 lata de tomate pelado; 1 colher de sopa de açúcar; 1 colher de sopa de molho de tomate; Sal e pimenta a gosto; 200g de ricota; 200ml de creme de leite; 1 xícara de queijo ralado; 1 ovo; Noz-moscada a gosto",
-        preparo: "Pré-aqueça o forno a 180°C; Em uma panela, refogue a cebola, o alho e a carne moída até dourar; Adicione o tomate pelado, o açúcar, o molho de tomate, sal e pimenta e deixe cozinhar por 10 minutos; Em outra tigela, misture a ricota, o creme de leite, o ovo, o queijo ralado e a noz-moscada; Em uma forma refratária, monte as camadas da lasanha começando com um pouco de molho de carne, depois as folhas de lasanha, e por fim a mistura de ricota; Repita as camadas até acabar os ingredientes; Por último, cubra com o molho de carne restante e o queijo ralado; Leve ao forno por 35 minutos ou até que esteja dourado e crocante; Sirva quente.",
-        mediaNota: 4.5
+        descricao:
+            "Lasanha clássica com camadas de molho de carne, macarrão e molho branco cremoso.",
+        ingredientes:
+            "12 folhas de lasanha; 500g de carne moída; 1 cebola picada; 2 dentes de alho picados; 1 lata de tomate pelado; 1 colher de sopa de açúcar; 1 colher de sopa de molho de tomate; Sal e pimenta a gosto; 200g de ricota; 200ml de creme de leite; 1 xícara de queijo ralado; 1 ovo; Noz-moscada a gosto",
+        preparo:
+            "Pré-aqueça o forno a 180°C; Em uma panela, refogue a cebola, o alho e a carne moída até dourar; Adicione o tomate pelado, o açúcar, o molho de tomate, sal e pimenta e deixe cozinhar por 10 minutos; Em outra tigela, misture a ricota, o creme de leite, o ovo, o queijo ralado e a noz-moscada; Em uma forma refratária, monte as camadas da lasanha começando com um pouco de molho de carne, depois as folhas de lasanha, e por fim a mistura de ricota; Repita as camadas até acabar os ingredientes; Por último, cubra com o molho de carne restante e o queijo ralado; Leve ao forno por 35 minutos ou até que esteja dourado e crocante; Sirva quente.",
+        mediaNota: 4.5,
     },
     {
         idReceita: 5,
@@ -93,10 +98,13 @@ const listaReceita = [
         crustaceo: false,
         doce: false,
         salgado: true,
-        descricao: "Uma deliciosa pizza de calabresa com queijo e molho de tomate",
-        ingredientes: "Massa de pizza, calabresa fatiada, muzzarela, tomate, orégano, azeite, sal",
-        preparo: "Pré-aqueça o forno em 200°C. Abra a massa de pizza em uma forma untada e acrescente o molho de tomate. Adicione a calabresa fatiada, o queijo e o orégano. Tempere com um pouco de azeite e sal. Leve ao forno por 15 a 20 minutos ou até o queijo derreter e a massa estar dourada.",
-        mediaNota: 4.5
+        descricao:
+            "Uma deliciosa pizza de calabresa com queijo e molho de tomate",
+        ingredientes:
+            "Massa de pizza, calabresa fatiada, muzzarela, tomate, orégano, azeite, sal",
+        preparo:
+            "Pré-aqueça o forno em 200°C. Abra a massa de pizza em uma forma untada e acrescente o molho de tomate. Adicione a calabresa fatiada, o queijo e o orégano. Tempere com um pouco de azeite e sal. Leve ao forno por 15 a 20 minutos ou até o queijo derreter e a massa estar dourada.",
+        mediaNota: 4.5,
     },
     {
         nomeReceita: "Pão de Queijo Vegano",
@@ -111,11 +119,12 @@ const listaReceita = [
         crustaceo: false,
         doce: false,
         salgado: true,
-        descricao: "Pão de queijo vegano fofinho e crocante, sem produtos de origem animal",
+        descricao:
+            "Pão de queijo vegano fofinho e crocante, sem produtos de origem animal",
         ingredientes:
-        "1 xícara de polvilho azedo; 1 xícara de polvilho doce; 3/4 xícara de óleo de coco; 1/2 xícara de leite vegetal; Sal a gosto",
+            "1 xícara de polvilho azedo; 1 xícara de polvilho doce; 3/4 xícara de óleo de coco; 1/2 xícara de leite vegetal; Sal a gosto",
         preparo:
-        "Em uma tigela grande misture os polvilhos, o sal e o óleo de coco; Adicione o leite vegetal aos poucos, mexendo sempre até obter uma massa homogênea; Abra pequenas porções de massa com as mãos, formando os pães de queijo; Disponha-os em uma assadeira untada; Leve ao forno pré-aquecido a 200ºC por cerca de 25 minutos ou até dourar; Sirva quente como aperitivo ou petisco.",
+            "Em uma tigela grande misture os polvilhos, o sal e o óleo de coco; Adicione o leite vegetal aos poucos, mexendo sempre até obter uma massa homogênea; Abra pequenas porções de massa com as mãos, formando os pães de queijo; Disponha-os em uma assadeira untada; Leve ao forno pré-aquecido a 200ºC por cerca de 25 minutos ou até dourar; Sirva quente como aperitivo ou petisco.",
         mediaNota: 4.5,
     },
     {
@@ -132,11 +141,12 @@ const listaReceita = [
         crustaceo: false,
         doce: false,
         salgado: true,
-        descricao: "Uma salada saudável e completa com quinoa, legumes e ervas frescas",
+        descricao:
+            "Uma salada saudável e completa com quinoa, legumes e ervas frescas",
         ingredientes:
-        "1 xícara de quinoa; 2 xícaras de água; 1/2 xícaras de cenoura ralada; 1/2 xícaras de vagem cortada em cubinhos; 1/2 xícaras de tomate cortado em cubinhos; 1/2 xícara de azeitona preta picada; 1 colher de sopa de salsinha picada; 1 colher de sopa de coentro picado; Sal e pimenta a gosto; Suco de 1/2 limão; 1 colher de sopa de azeite de oliva",
+            "1 xícara de quinoa; 2 xícaras de água; 1/2 xícaras de cenoura ralada; 1/2 xícaras de vagem cortada em cubinhos; 1/2 xícaras de tomate cortado em cubinhos; 1/2 xícara de azeitona preta picada; 1 colher de sopa de salsinha picada; 1 colher de sopa de coentro picado; Sal e pimenta a gosto; Suco de 1/2 limão; 1 colher de sopa de azeite de oliva",
         preparo:
-        "Lave a quinoa e coloque-a numa panela com a água. Leve ao fogo médio, cubra e deixe cozinhar por cerca de 15 minutos ou até que toda a água seja absorvida; Enquanto a quinoa cozinha, prepare os legumes e as ervas; Em um recipiente grande, misture a quinoa cozida, cenoura ralada, vagem, tomate, azeitona, salsinha, coentro, sal, pimenta, suco de limão e azeite de oliva; Sirva a salada quente ou fria.",
+            "Lave a quinoa e coloque-a numa panela com a água. Leve ao fogo médio, cubra e deixe cozinhar por cerca de 15 minutos ou até que toda a água seja absorvida; Enquanto a quinoa cozinha, prepare os legumes e as ervas; Em um recipiente grande, misture a quinoa cozida, cenoura ralada, vagem, tomate, azeitona, salsinha, coentro, sal, pimenta, suco de limão e azeite de oliva; Sirva a salada quente ou fria.",
         mediaNota: 4.5,
     },
     {
@@ -153,11 +163,12 @@ const listaReceita = [
         crustaceo: true,
         doce: false,
         salgado: true,
-        descricao: "Tostadas crocantes recheadas com camarão cozido e temperados com ervas e limão",
+        descricao:
+            "Tostadas crocantes recheadas com camarão cozido e temperados com ervas e limão",
         ingredientes:
-        "1 pacote de tortillas de milho; 400g de camarão cozido e descascado; 1/2 cebola picada; 2 tomates picados; 1/4 xícara de cilantro picado; Suco de 1/2 limão; Sal e pimenta a gosto; Óleo de soja para fritar as tostadas",
+            "1 pacote de tortillas de milho; 400g de camarão cozido e descascado; 1/2 cebola picada; 2 tomates picados; 1/4 xícara de cilantro picado; Suco de 1/2 limão; Sal e pimenta a gosto; Óleo de soja para fritar as tostadas",
         preparo:
-        "Em uma tigela, misture o camarão cozido, a cebola, o tomate, o cilantro e o suco de limão; Tempere com sal e pimenta a gosto; Em uma frigideira, aqueça o óleo de soja e frite as tortillas até ficarem crocantes; Coloque as tortillas fritas em um prato forrado com papel toalha para absorver o excesso de óleo; Coloque uma porção generosa do recheio de camarão sobre cada tostada e sirva imediatamente",
+            "Em uma tigela, misture o camarão cozido, a cebola, o tomate, o cilantro e o suco de limão; Tempere com sal e pimenta a gosto; Em uma frigideira, aqueça o óleo de soja e frite as tortillas até ficarem crocantes; Coloque as tortillas fritas em um prato forrado com papel toalha para absorver o excesso de óleo; Coloque uma porção generosa do recheio de camarão sobre cada tostada e sirva imediatamente",
         mediaNota: 4.5,
     },
     {
@@ -176,9 +187,9 @@ const listaReceita = [
         salgado: false,
         descricao: "Bolinho de amendoim feito com ovo, fácil e rápido de fazer",
         ingredientes:
-        "1 xícara de amendoim triturado; 2 ovos; 1/2 xícara de açúcar; 1 colher de sopa de farinha de trigo; 1 pitada de sal; Óleo para fritar",
+            "1 xícara de amendoim triturado; 2 ovos; 1/2 xícara de açúcar; 1 colher de sopa de farinha de trigo; 1 pitada de sal; Óleo para fritar",
         preparo:
-        "Em uma tigela, misture o amendoim triturado, os ovos, o açúcar, a farinha de trigo e a pitada de sal; Misture bem até obter uma massa homogênea; Aqueça o óleo em uma panela; Com a ajuda de uma colher, faça bolinhos da massa e frite até ficarem dourados; Escorra os bolinhos em papel toalha; Sirva quente",
+            "Em uma tigela, misture o amendoim triturado, os ovos, o açúcar, a farinha de trigo e a pitada de sal; Misture bem até obter uma massa homogênea; Aqueça o óleo em uma panela; Com a ajuda de uma colher, faça bolinhos da massa e frite até ficarem dourados; Escorra os bolinhos em papel toalha; Sirva quente",
         mediaNota: 4,
     },
     {
@@ -195,10 +206,12 @@ const listaReceita = [
         crustaceo: false,
         doce: true,
         salgado: false,
-        descricao: "Torta de morango feita com massa vegana e recheio cremoso de morangos",
-        ingredientes: "Massa: 2 xícaras de farinha de trigo; 1/2 xícara de açúcar; 1/2 xícara de margarina vegana; 1 colher de sopa de fermento; 1 colher de chá de sal; Recheio:; 500g de morangos frescos; 1/2 xícara de açúcar; 1 colher de sopa de amido de milho; 1/2 xícara de água; 1 colher de sopa de suco de limão",
+        descricao:
+            "Torta de morango feita com massa vegana e recheio cremoso de morangos",
+        ingredientes:
+            "Massa: 2 xícaras de farinha de trigo; 1/2 xícara de açúcar; 1/2 xícara de margarina vegana; 1 colher de sopa de fermento; 1 colher de chá de sal; Recheio:; 500g de morangos frescos; 1/2 xícara de açúcar; 1 colher de sopa de amido de milho; 1/2 xícara de água; 1 colher de sopa de suco de limão",
         preparo:
-        "Pré aqueça o forno em 200°C; Em uma tigela misture a farinha de trigo, o açúcar, a margarina vegana, o fermento e o sal; Amasse a mistura até obter uma massa homogênea; Abra a massa com um rolo e forre uma forma de torta; Leve a massa ao forno por 15 minutos; Enquanto a massa cozinha, prepare o recheio cortando os morangos em pedaços pequenos; Em uma panela misture o açúcar, o amido de milho, a água e o suco de limão; Adicione os morangos e leve a mistura ao fogo; Cozinhe até obter uma consistência grossa; Retire a massa do forno e adicione o recheio; Leve a torta ao forno por mais 20 minutos; Sirva quente ou frio",
+            "Pré aqueça o forno em 200°C; Em uma tigela misture a farinha de trigo, o açúcar, a margarina vegana, o fermento e o sal; Amasse a mistura até obter uma massa homogênea; Abra a massa com um rolo e forre uma forma de torta; Leve a massa ao forno por 15 minutos; Enquanto a massa cozinha, prepare o recheio cortando os morangos em pedaços pequenos; Em uma panela misture o açúcar, o amido de milho, a água e o suco de limão; Adicione os morangos e leve a mistura ao fogo; Cozinhe até obter uma consistência grossa; Retire a massa do forno e adicione o recheio; Leve a torta ao forno por mais 20 minutos; Sirva quente ou frio",
         mediaNota: 4.5,
     },
     {
@@ -215,9 +228,12 @@ const listaReceita = [
         crustaceo: true,
         doce: false,
         salgado: true,
-        descricao: "Risoto de camarão com sabor e textura cremosa. Uma mistura perfeita de arroz arbóreo, caldo de camarão e camarões frescos.",
-        ingredientes: "1 cebola picada, 2 dentes de alho picados, 1 xícara de arroz arbóreo, 2 xícaras de caldo de camarão, 1 xícara de leite, 1/2 xícara de queijo parmesão ralado, 1/2 xícara de queijo provolone ralado, 1/2 xícara de requeijão, Sal e pimenta-do-reino a gosto, Azeite, 1/2 xícara de camarões limpos e descascados",
-        preparo: "Em uma panela, aqueça o azeite e frite a cebola e o alho até dourar. Adicione o arroz e misture bem. Adicione o caldo aos poucos, mexendo sempre, até o arroz estar al dente. Adicione o leite e os queijos, misturando até obter uma consistência cremosa. Tempere com sal e pimenta a gosto. Adicione os camarões e misture. Sirva quente.",
+        descricao:
+            "Risoto de camarão com sabor e textura cremosa. Uma mistura perfeita de arroz arbóreo, caldo de camarão e camarões frescos.",
+        ingredientes:
+            "1 cebola picada, 2 dentes de alho picados, 1 xícara de arroz arbóreo, 2 xícaras de caldo de camarão, 1 xícara de leite, 1/2 xícara de queijo parmesão ralado, 1/2 xícara de queijo provolone ralado, 1/2 xícara de requeijão, Sal e pimenta-do-reino a gosto, Azeite, 1/2 xícara de camarões limpos e descascados",
+        preparo:
+            "Em uma panela, aqueça o azeite e frite a cebola e o alho até dourar. Adicione o arroz e misture bem. Adicione o caldo aos poucos, mexendo sempre, até o arroz estar al dente. Adicione o leite e os queijos, misturando até obter uma consistência cremosa. Tempere com sal e pimenta a gosto. Adicione os camarões e misture. Sirva quente.",
         mediaNota: 4.5,
     },
     {
@@ -234,9 +250,12 @@ const listaReceita = [
         crustaceo: false,
         doce: false,
         salgado: true,
-        descricao: "Clássico e saboroso estrogonofe de carne, com cubinhos de carne suculentos e molho cremoso.",
-        ingredientes: "600g de carne cortada em cubinhos pequenos (alcatra ou filé mignon); 1 cebola picada; 3 dentes de alho picados; 1 xícara de caldo de carne; 1 xícara de vinho tinto; 2 colheres de sopa de mostarda; 1 colher de sopa de catchup; 1 colher de sopa de farinha de trigo; 1/2 xícara de creme de leite; sal e pimenta do reino a gosto",
-        preparo: "Em uma panela, aqueça um pouco de óleo e refogue a cebola e o alho até ficarem macios. Adicione a carne e refogue até dourar. Adicione o caldo de carne, o vinho tinto, a mostarda e o catchup e misture bem. Tempere com sal e pimenta a gosto. Adicione a farinha de trigo e mexa até engrossar. Adicione o creme de leite e misture bem. Sirva o estrogonofe com arroz branco ou macarrão.",
+        descricao:
+            "Clássico e saboroso estrogonofe de carne, com cubinhos de carne suculentos e molho cremoso.",
+        ingredientes:
+            "600g de carne cortada em cubinhos pequenos (alcatra ou filé mignon); 1 cebola picada; 3 dentes de alho picados; 1 xícara de caldo de carne; 1 xícara de vinho tinto; 2 colheres de sopa de mostarda; 1 colher de sopa de catchup; 1 colher de sopa de farinha de trigo; 1/2 xícara de creme de leite; sal e pimenta do reino a gosto",
+        preparo:
+            "Em uma panela, aqueça um pouco de óleo e refogue a cebola e o alho até ficarem macios. Adicione a carne e refogue até dourar. Adicione o caldo de carne, o vinho tinto, a mostarda e o catchup e misture bem. Tempere com sal e pimenta a gosto. Adicione a farinha de trigo e mexa até engrossar. Adicione o creme de leite e misture bem. Sirva o estrogonofe com arroz branco ou macarrão.",
         mediaNota: 5,
     },
     {
@@ -253,11 +272,12 @@ const listaReceita = [
         crustaceo: false,
         doce: false,
         salgado: true,
-        descricao: "Strogonoff de soja é uma opção vegana para o tradicional strogonoff de carne. É uma refeição fácil e rápida, perfeita para os dias de semana.",
+        descricao:
+            "Strogonoff de soja é uma opção vegana para o tradicional strogonoff de carne. É uma refeição fácil e rápida, perfeita para os dias de semana.",
         ingredientes:
-        "1 pacote de soja texturizada; 1 cebola picada; 2 dentes de alho picados; 1 xícara de cenoura ralada; 1 xícara de cogumelos fatiados; 1 xícara de tomate pelado e picado; 2 colheres de sopa de farinha de trigo; 1 xícara de caldo de legumes; Sal e pimenta a gosto; 1/2 xícara de creme de soja; 1 colher de sopa de molho inglês; 2 colheres de sopa de azeite",
+            "1 pacote de soja texturizada; 1 cebola picada; 2 dentes de alho picados; 1 xícara de cenoura ralada; 1 xícara de cogumelos fatiados; 1 xícara de tomate pelado e picado; 2 colheres de sopa de farinha de trigo; 1 xícara de caldo de legumes; Sal e pimenta a gosto; 1/2 xícara de creme de soja; 1 colher de sopa de molho inglês; 2 colheres de sopa de azeite",
         preparo:
-        "Em uma panela, aqueça o azeite e refogue a cebola, o alho e a cenoura por 5 minutos; Adicione os cogumelos e o tomate e refogue por mais 5 minutos; Adicione a farinha de trigo e misture bem, cozinhando por 1 minuto; Adicione o caldo de legumes e o creme de soja, mexa bem e cozinhe por 5 minutos ou até que a mistura engrosse; Adicione a soja texturizada e o molho inglês e misture bem; Tempere com sal e pimenta a gosto; Sirva sobre arroz branco ou massa",
+            "Em uma panela, aqueça o azeite e refogue a cebola, o alho e a cenoura por 5 minutos; Adicione os cogumelos e o tomate e refogue por mais 5 minutos; Adicione a farinha de trigo e misture bem, cozinhando por 1 minuto; Adicione o caldo de legumes e o creme de soja, mexa bem e cozinhe por 5 minutos ou até que a mistura engrosse; Adicione a soja texturizada e o molho inglês e misture bem; Tempere com sal e pimenta a gosto; Sirva sobre arroz branco ou massa",
         mediaNota: 4.5,
     },
     {
@@ -274,18 +294,19 @@ const listaReceita = [
         crustaceo: false,
         doce: false,
         salgado: true,
-        descricao: "Moqueca vegana com base de leite de coco, banana da terra e proteína de soja",
+        descricao:
+            "Moqueca vegana com base de leite de coco, banana da terra e proteína de soja",
         ingredientes:
-        "1/2 xícara de óleo de coco; 1 cebola média picada; 2 dentes de alho picados; 1 pimentão vermelho picado; 1 pimentão amarelo picado; 2 tomates picados; 1 banana da terra cortada em cubinhos; 1 xícara de proteína de soja hidratada e cortada em cubos; 1 xícara de leite de coco; sal e pimenta-do-reino a gosto; coentro e cebolinha picados a gosto",
+            "1/2 xícara de óleo de coco; 1 cebola média picada; 2 dentes de alho picados; 1 pimentão vermelho picado; 1 pimentão amarelo picado; 2 tomates picados; 1 banana da terra cortada em cubinhos; 1 xícara de proteína de soja hidratada e cortada em cubos; 1 xícara de leite de coco; sal e pimenta-do-reino a gosto; coentro e cebolinha picados a gosto",
         preparo:
-        "Aqueça o óleo de coco em uma panela grande; Adicione a cebola, alho, pimentões, tomates e refogue por alguns minutos; Adicione a banana da terra, proteína de soja e misture; Adicione o leite de coco, tempere com sal e pimenta a gosto e misture; Deixe cozinhar por cerca de 10 minutos; Sirva com coentro e cebolinha picados por cima",
+            "Aqueça o óleo de coco em uma panela grande; Adicione a cebola, alho, pimentões, tomates e refogue por alguns minutos; Adicione a banana da terra, proteína de soja e misture; Adicione o leite de coco, tempere com sal e pimenta a gosto e misture; Deixe cozinhar por cerca de 10 minutos; Sirva com coentro e cebolinha picados por cima",
         mediaNota: 5,
-    }
+    },
 ];
 
 function creatCardReceitas(listaReceita, i) {
     let alergIcons = "";
-    
+
     if (listaReceita[i].amendoim) {
         alergIcons += `
             <img src="assets/images/icon_peanut.png" alt="Contem Amendoim" />
@@ -339,79 +360,100 @@ function creatCardReceitas(listaReceita, i) {
 
 function listReceitas(pg) {
     let filter = {
-        vegano: document.getElementById('ckb_veg').checked,
-        ovo: document.getElementById('ckb_ovo').checked,
-        soja: document.getElementById('ckb_soja').checked,
-        leite: document.getElementById('ckb_leite').checked,
-        glutem: document.getElementById('ckb_glutem').checked,
-        amendoim: document.getElementById('ckb_amendoim').checked,
-        crustaceo: document.getElementById('ckb_crustaceos').checked,
-        minTmp: Number(document.getElementById('tmp_min').value),
-        maxTmp: Number(document.getElementById('tmp_max').value)
+        vegano: document.getElementById("ckb_veg").checked,
+        ovo: document.getElementById("ckb_ovo").checked,
+        soja: document.getElementById("ckb_soja").checked,
+        leite: document.getElementById("ckb_leite").checked,
+        glutem: document.getElementById("ckb_glutem").checked,
+        amendoim: document.getElementById("ckb_amendoim").checked,
+        crustaceo: document.getElementById("ckb_crustaceos").checked,
+        minTmp: Number(document.getElementById("tmp_min").value),
+        maxTmp: Number(document.getElementById("tmp_max").value),
     };
 
     let limit = 12 * pg;
     let i = limit - 12;
-    (limit >= listaReceita.length && i < listaReceita.length)?limit=listaReceita.length:limit=12;
-    
-    if (Object.values(filter).filter((value) => value == true || value != 0).length == 0) {
-        for(i=0; i<=limit; i++) {
+    limit >= listaReceita.length && i < listaReceita.length
+        ? (limit = listaReceita.length)
+        : (limit = 12);
+
+    if (
+        Object.values(filter).filter((value) => value == true || value != 0)
+            .length == 0
+    ) {
+        for (i = 0; i <= limit; i++) {
             creatCardReceitas(listaReceita, i);
         }
     } else {
+        let objetoFiltro = new Object();
+        let arraylistafiltrada = [];
 
-    let objetoFiltro = new Object()
-    let arraylistafiltrada = []
-    
-    for(let [key, val] of Object.entries(filter)){
-        if(val == true){
-            objetoFiltro[key] = true
-        }
-    }
+        for (let [key, val] of Object.entries(filter)) {
+            if (val == true) {
+                objetoFiltro[key] = true;
+            }
 
-    if(objetoFiltro.hasOwnProperty("vegano")){
-        for(x = 0; x < listaReceita.length; x++){
-            if(listaReceita[x].vegano == true){
-                arraylistafiltrada.push(listaReceita[x])
+            if ((key == "minTmp" && val > 0) || (key == "maxTmp" && val > 0)) {
+                objetoFiltro[key] = val;
             }
         }
-        
-        delete objetoFiltro.vegano
-        filtroLista(arraylistafiltrada, objetoFiltro)
-    }else{
-        filtroLista(listaReceita, objetoFiltro)
-    }
 
-    }
-}
-
-function filtroLista(listaReceita, objetoFiltro){
-    let arraylistafiltrada = []
-
-    for(x = 0; x < listaReceita.length; x++){
-        let validador = true
-        
-        
-        for(let [key, val] of Object.entries(objetoFiltro)){
-
-                if (listaReceita[x][key] == true){
-                    validador = false
-                    break
+        if (objetoFiltro.hasOwnProperty("vegano")) {
+            for (x = 0; x < listaReceita.length; x++) {
+                if (listaReceita[x].vegano == true) {
+                    arraylistafiltrada.push(listaReceita[x]);
                 }
+            }
+
+            delete objetoFiltro.vegano;
+            filtroLista(arraylistafiltrada, objetoFiltro);
+        } else {
+            filtroLista(listaReceita, objetoFiltro);
+        }
+    }
+}
+
+function filtroLista(listaReceita, objetoFiltro) {
+    let arraylistafiltrada = [];
+
+    for (x = 0; x < listaReceita.length; x++) {
+        let validador = true;
+
+        for (let [key, val] of Object.entries(objetoFiltro)) {
+            if (listaReceita[x][key] == true) {
+                validador = false;
+            }
+        }
+
+        if (validador) {
+            if (objetoFiltro.hasOwnProperty("minTmp") && objetoFiltro.hasOwnProperty("maxTmp")) {
+                if (objetoFiltro.minTmp < objetoFiltro.maxTmp) {
+                    if (!(objetoFiltro.minTmp >= listaReceita[x].tempoPreparo) && !(listaReceita[x].tempoPreparo <= objetoFiltro.maxTmp)) {
+                        validador = false;
+                    }
+                } else {
+                    validador = false;
+                }
+            } else if (objetoFiltro.hasOwnProperty("minTmp")) {
+                if (objetoFiltro.minTmp > listaReceita[x].tempoPreparo) {
+                    validador = false;
+                }
+            } else if (objetoFiltro.hasOwnProperty("maxTmp")) {
+                if (listaReceita[x].tempoPreparo > objetoFiltro.maxTmp) {
+                    validador = false;
+                }
+            }
+        }
+
+        if (validador == true) {
+            arraylistafiltrada.push(listaReceita[x]);
+        }
     }
 
-    if(validador == true){
-        arraylistafiltrada.push(listaReceita[x])
+    for (pagina = 0; pagina < arraylistafiltrada.length; pagina++) {
+        creatCardReceitas(arraylistafiltrada, pagina);
     }
 }
-
-for (pagina = 0; pagina < arraylistafiltrada.length; pagina++){
-        creatCardReceitas(arraylistafiltrada, pagina)
-}
-
-
-}
-
 
 function searchReceita(numID) {
     for (let i = 0; i <= listaReceita.length; i++) {

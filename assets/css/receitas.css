@@ -13,6 +13,9 @@ h6 {
 
 
 aside {
+    display: flex;
+    flex-direction: column;
+
     background-color: #17c3b2;
 
     width: 20%;
@@ -20,9 +23,12 @@ aside {
     padding: 5vh 3vh;
 }
 
-aside {
-    display: flex;
-    flex-direction: column;
+aside > *{
+    text-align: center;
+}
+
+aside h3 {
+    padding: 2vh;
 }
 
 input[type="search"] {
@@ -55,6 +61,11 @@ aside input[type="number"] {
 
 aside form input[type="checkbox"] {
     visibility: hidden;
+}
+
+aside button[type="reset"] {
+    padding: 1vh 1vw;
+    margin: 4vh auto;
 }
 
 aside form label {
