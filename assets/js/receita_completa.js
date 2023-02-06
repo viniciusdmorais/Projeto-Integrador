@@ -1,32 +1,4 @@
-/*const receita = [
-    {
-        imagem: 'assets/images/img_reh/bolocacau.jpg',
-
-        nomeReceita: 'Bolo de Chocolate',
-        descricao: 'Bolo de chocolate feito com cacau 100%, vegano, extremamente fofinho e gostoso!',
-
-        autor: 'Rodrigo Tormente',
-        tempoPreparo: '40 min',
-        rendimento: '12 porções',
-        dificuldade: 'Fácil',
-        mediaNota: 5,
-
-        iconeRestricao1: '<img width="50px" height="50px" src="assets/images/icon_gluten.png" alt="glutem" title="Contém Glútem"/>',
-        iconeRestricao2: '<img width="50px" height="50px" src="assets/images/icon_vegan-on.png" alt="vegano" title="Vegano"/>',
-        iconeRestricao3: '',
-        iconeRestricao4: '',
-
-        ingredientes: ['2 xícaras de farinha de trigo', '1/4 xícaras de amido de milho', '1/2 xícaras de cacau em pó', '1+1/2 xícaras de açúcar', '1 colher de sopa de bicarbonato de sódio', '1/2 colher de sopa de fermento quimico', '1 pitada sal;', ' 1+1/2 xícaras de agua', '1/2 xícara de óleo', '1/4 xícara de café', '1 colher de sopa de vinagre'],
-        bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
-
-        preparo: ['Coloque o forno para pré aquecer em 200ºC.', 'Em uma vasilha misture todos os secos peneirados.', 'Em outro recipiente coloque todos os molhados e os despeje sobre os secos.', 'Misture todos os ingredientes até obter uma massa homogênea.', 'Despeje a massa na forma e a coloque no forno.', 'Após 10 minutos reduzir a temperatura para 180ºC.', 'Após assado retirar do forno.', 'Desenformar com o bolo frio ou morno mais para frio.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
-        
-        dicas: ['Dê preferência a óleos neutros, como os de: girassol, canola e milho.', 'Caso não possua amido de milho basta usar a mesma quantidade de farinha de trigo, o amido de milho serve para deixar o bolo mais fofinho ainda.', 'Ao fazer o café faça ele forte, independente se é coado ou expresso, afinal, ele serve para destacar o sabor do cacau.', 'O vinagre de preferência para o de álcool ou de maçã, porém outros não costumam deixar sabor residual, ele serve para auxiliar no crescimento da massa.'],
-       
-    },    
-    ]*/
-let i = 0;
+let i = Number(new URLSearchParams(window.location.search).get('receitaID'))-1;
 
 // populando imagem da receita
 
