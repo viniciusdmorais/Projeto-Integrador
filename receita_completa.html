@@ -53,11 +53,21 @@
 
                     <div class="fundo">
 
-                        <div class="lista_ingredientes"></div>
+                        <div class="lista_ingredientes">
+                            <h2>Ingredientes:</h2>
+                            <nav>
+                                <ul id="ingredientes"></ul>
+                            </nav>
+                        </div>
 
                         <div class="texto_modo_preparo">
 
-                          <div class="preparo"></div>
+                          <div class="preparo">
+                            <h2>Modo de preparo:</h2>
+                                <nav>
+                                    <ul id="preparo"></ul>
+                                </nav>
+                          </div>
 
                           <div class="dicas"></div>
 
@@ -142,9 +152,7 @@
     <footer></footer>
 
     <script>
-
-        Number(new URLSearchParams(window.location.search).get('receitaID'));
-        
+        Number(new URLSearchParams(window.location.search).get('receitaID'));        
     </script>
 </body>
 

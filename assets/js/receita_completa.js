@@ -1,5 +1,6 @@
 let i = Number(new URLSearchParams(window.location.search).get('receitaID'))-1;
 
+
 // populando imagem da receita
 
     const imagemRec = document.createElement('div');
@@ -103,74 +104,29 @@ const icone4 = Object.assign(document.createElement('div'), {
 
 // populando Ingredientes
 
-const ingredientes = document.createElement('div');
-
-/*for (x=0; x < listaReceita[i].ingredientes.length; x++) {
-    <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[x]}</li>
-}*/
-
-ingredientes.innerHTML = `
-<h2>Ingredientes:</h2>
-<nav>
-    <ul>                                  
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[0]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[1]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[2]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[3]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[4]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[5]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[6]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[7]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[8]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[9]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[10]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[11]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[12]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[13]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[14]}</li>
-        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[15]}</li>
-    </ul>
-</nav>
-`
+const ulIngredientes = document.getElementById('ingredientes');
+const conteudoULingre = ulIngredientes.childNodes;
 
 
-const listaIngredientes = document.querySelector('div[class="lista_ingredientes"]');
-
-listaIngredientes.appendChild(ingredientes);
+for (x=0; x < listaReceita[i].ingredientes.length; x++) {
+    let li = document.createElement('li');
+    li.innerHTML = `${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[x]}`;
+    ulIngredientes.appendChild(li);
+}
 
 
 
 // populando modo de preparo
 
-const preparo = document.createElement('div');
+const ulPreparo = document.getElementById('preparo');
+const conteudoULprep = ulPreparo.childNodes;
 
-preparo.innerHTML = `
-<h2>Modo de preparo:</h2>
-<nav>
-    <ul>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[0]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[1]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[2]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[3]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[4]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[5]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[6]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[7]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[8]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[9]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[10]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[11]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[12]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[13]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[14]}</li>
-        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[15]}</li>
-    </ul>
-</nav>
-`
 
-const textoModoPreparo = document.querySelector('div[class="preparo"]');
-
-textoModoPreparo.appendChild(preparo);
+for (x=0; x < listaReceita[i].preparo.length; x++) {
+    let li = document.createElement('li');
+    li.innerHTML = `${listaReceita[i].setinha} ${listaReceita[i].preparo[x]}`;
+    ulPreparo.appendChild(li);
+}
 
 
 
