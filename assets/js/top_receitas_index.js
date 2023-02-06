@@ -481,7 +481,7 @@ function CriaTopReceitas() {
     // abaixo estou incluindo dentro do article um innerHTML com tags populadas pelo objeto rankReceitas
     elemRank.innerHTML = `
         <figure id="nome_receitas">
-            <a href="receitas_prontas_tst.html?receitaID=${rankReceitas[i].idReceita}">
+            <a href="receita_completa.html?receitaID=${rankReceitas[i].idReceita}">
                 <img src="${rankReceitas[i].imagem}" alt="${rankReceitas[i].nomeReceita}">
                 <figcaption> ${rankReceitas[i].nomeReceita} </figcaption>
             </a>
