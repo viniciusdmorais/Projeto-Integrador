@@ -9,7 +9,6 @@
   font-size: 16px;
 }
 
-
 /************* DEFAULT *****************/
 html,
 body,
@@ -23,6 +22,12 @@ label {
     padding: 0 5px;
     background-color: transparent;
     outline: none;
+}
+
+textarea {
+    resize: none;
+    width: 577px;
+    height: 109px;
 }
 
 .Container {
@@ -80,5 +85,5 @@ label {
 
 .btn-env-rec {
     padding: 15px;
-    margin: 10px 0px 10px 400px;
+    margin: 10px 0px 10px 440px;
 }
