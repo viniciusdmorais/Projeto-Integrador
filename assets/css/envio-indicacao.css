@@ -84,6 +84,9 @@ textarea {
 }
 
 .btn-env-rec {
+    background-color: #FE6D73;
+    border: none;
+    border-radius:20px ;
     padding: 15px;
     margin: 10px 0px 10px 440px;
 }
