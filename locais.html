@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="assets/css/defaut_rt.css" />
     <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
-    <link rel="stylesheet" href="assets/css/receitas.css" />
+    <link rel="stylesheet" href="assets/css/locais.css" />
 
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
     <title>Bora Comer - Restaurantes</title>
@@ -40,7 +40,17 @@
 
     <footer></footer>
 
-    <script></script>
+    <script>
+        let pagina = Number((new URLSearchParams(window.location.search)).get('pg'));
+        (pagina===0)?pagina=1:'';
+        
+        listarLocais(pagina);
+
+        document.getElementById('filt').addEventListener('change', (e) => {
+            document.querySelector('main').innerHTML = '';
+            listarLocais(pagina);
+        });
+    </script>
 </body>
 
 </html>

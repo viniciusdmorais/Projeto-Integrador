@@ -108,3 +108,35 @@ const listaRestaurante = [
     },
 ];
 
+function creatCardLocais(local) {
+    
+    const newArticle = document.createElement("article");
+
+    newArticle.innerHTML = `
+            <a href="restaurante_indicado.html?idRestaurante=${local.idRestaurante}">
+                <img src="${local.imagem}" alt="Foto ${local.nomeRestaurante}" class="photoLocal" />
+                <h3>${local.nomeRestaurante}</h3>
+            </a>
+            <h6>Preço: ${local.faixaPreco} - Avaliação: ${local.mediaNota}</h6>
+            <p>${local.descricao}</p>
+        `;
+
+    document.querySelector("main").appendChild(newArticle);
+}
+
+function filtarLocais () {
+
+    let listaFiltrada = listaRestaurante;
+
+    return listaFiltrada;
+}
+
+function listarLocais (pg) {
+
+    let lisaFiltradaLocais = filtarLocais();
+
+    for (let i=0; i<lisaFiltradaLocais.length; i++) {
+        console.log();
+        creatCardLocais(lisaFiltradaLocais[i]);
+    }
+}
