@@ -168,14 +168,6 @@ form input {
 
 /*******************************  Mensagem de erro Login e Sign up *************************/
 
-span {
-  visibility: hidden;
-  font-size: 12px;
-  color: rgb(204, 1, 1);
-  text-align: justify;
-
-}
-
 input.error{
   border:solid 1px rgb(204, 1, 1);
   background-color:#FEF9EF;
@@ -250,7 +242,7 @@ Div.foto {
   margin: 5px 0px;
 }
 
-#form_contato input {
+#form_contato input,select {
   display: flex;
   background: #FEF9EF;
   justify-content: center;
@@ -261,6 +253,15 @@ Div.foto {
   border-bottom: 1px solid #0D3B66;
   padding: 5px 10px 1px;
   margin: 5px 0px;
+  font-size:12px 
+
+}
+#form_contato select, option{
+  color:#000;
+  opacity: 0.8;
+  font-size:12px ;
+
+
 
 }
 
