@@ -98,11 +98,6 @@ OutrasInfos.innerHTML = `
     <p><strong>Faixa de Preço:</strong> ${listaRestaurante[i].faixaPreco}</p>
 </div>
 
-<div class="whatsapp" title="WhatsApp">
-    <img width="35px" height="35px" src="assets/images/img_reh/whatsapp1.png" alt="whatsapp" >
-    <p><strong>WhatsApp:</strong> ${listaRestaurante[i].whatsapp}</p>
-</div>
-
 <div class="telefone" title="Telefone">
     <img width="35px" height="35px" src="assets/images/img_reh/telefone1.png" alt="telefone" >
     <p><strong>Telefone:</strong> ${listaRestaurante[i].telefone}</p>
