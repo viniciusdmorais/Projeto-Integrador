@@ -125,11 +125,13 @@ nav {
   position: absolute;
   top: 220px;
   left: 20px;
-  font-size: 22px;
+  font-size: 15px;
   color: rgb(0, 0, 0);
-  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  text-shadow: 0px 0px 5px rgb(255 255 255);
   background-color: #FEF9EF;
   background-size: 5%;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 .section_main_2 img {
@@ -149,9 +151,11 @@ nav {
   position: absolute;
   top: 220px;
   left: 20px;
-  font-size: 22px;
+  font-size: 15px;
   color: rgb(0, 0, 0);
-  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  text-shadow: 0px 0px 5px rgb(255 255 255);
   background-color: #FEF9EF;
   background-size: 5%;
+  border-radius: 20px;
+  padding: 5px;
 }
