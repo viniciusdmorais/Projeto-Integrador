@@ -1,4 +1,4 @@
-const receita = [
+/*const receita = [
     {
         imagem: 'assets/images/img_reh/bolocacau.jpg',
 
@@ -9,6 +9,7 @@ const receita = [
         tempoPreparo: '40 min',
         rendimento: '12 porções',
         dificuldade: 'Fácil',
+        mediaNota: 5,
 
         iconeRestricao1: '<img width="50px" height="50px" src="assets/images/icon_gluten.png" alt="glutem" title="Contém Glútem"/>',
         iconeRestricao2: '<img width="50px" height="50px" src="assets/images/icon_vegan-on.png" alt="vegano" title="Vegano"/>',
@@ -24,14 +25,15 @@ const receita = [
         dicas: ['Dê preferência a óleos neutros, como os de: girassol, canola e milho.', 'Caso não possua amido de milho basta usar a mesma quantidade de farinha de trigo, o amido de milho serve para deixar o bolo mais fofinho ainda.', 'Ao fazer o café faça ele forte, independente se é coado ou expresso, afinal, ele serve para destacar o sabor do cacau.', 'O vinagre de preferência para o de álcool ou de maçã, porém outros não costumam deixar sabor residual, ele serve para auxiliar no crescimento da massa.'],
        
     },    
-    ]
+    ]*/
+let i = 0;
 
 // populando imagem da receita
 
     const imagemRec = document.createElement('div');
 
     imagemRec.innerHTML = `
-    <img class="imagem_receita" src="${receita[0].imagem}" alt="foto_receita" title="${receita[0].nomeReceita}"/>
+    <img class="imagem_receita" src="${listaReceita[i].imagem}" alt="foto_receita" title="${listaReceita[i].nomeReceita}"/>
     `
 
     const divImagemRec = document.querySelector('div[class="imagem_rec"]');
@@ -47,8 +49,8 @@ const receita = [
     });
     
     textoDescricaoReceita.innerHTML = `
-    <h1>${receita[0].nomeReceita}</h1>
-    <p>${receita[0].descricao}</p>    
+    <h1>${listaReceita[i].nomeReceita}</h1>
+    <p>${listaReceita[i].descricao}</p>    
     `    
 
     const divTituloReceita = document.querySelector('div[class="titulo_receita"]');
@@ -62,10 +64,10 @@ const receita = [
 const dados = document.createElement('div');
 
 dados.innerHTML = `
-<p><strong>Autor:</strong> ${receita[0].autor}</p>
-<p><strong>Tempo de Preparo:</strong> ${receita[0].tempoPreparo}</p>
-<p><strong>Rendimento:</strong> ${receita[0].rendimento}</p>
-<p><strong>Dificuldade:</strong> ${receita[0].dificuldade}</p>
+<p><strong>Autor:</strong> ${listaReceita[i].autor}</p>
+<p><strong>Tempo de Preparo:</strong> ${listaReceita[i].tempoPreparo} min</p>
+<p><strong>Rendimento:</strong> ${listaReceita[i].rendimento} porções</p>
+<p><strong>Dificuldade:</strong> ${listaReceita[i].dificuldade}</p>
 `
 
 const dadosReceita = document.querySelector('div[class="dados_receita"]');
@@ -82,7 +84,7 @@ const icone1 = Object.assign(document.createElement('div'), {
  });
 
  icone1.innerHTML = `
- ${receita[0].iconeRestricao1}
+ ${listaReceita[i].iconeRestricao1}
  `
 
  const iconesRestricao = document.querySelector('div[class="icones_restricao"]');
@@ -96,7 +98,7 @@ const icone2 = Object.assign(document.createElement('div'), {
  });
 
  icone2.innerHTML = `
- ${receita[0].iconeRestricao2}
+ ${listaReceita[i].iconeRestricao2}
  `
 
  iconesRestricao.appendChild(icone2);
@@ -108,7 +110,7 @@ const icone3 = Object.assign(document.createElement('div'), {
  });
 
  icone3.innerHTML = `
- ${receita[0].iconeRestricao3}
+ ${listaReceita[i].iconeRestricao3}
  `
 
  iconesRestricao.appendChild(icone3);
@@ -120,7 +122,7 @@ const icone4 = Object.assign(document.createElement('div'), {
  });
 
  icone4.innerHTML = `
- ${receita[0].iconeRestricao4}
+ ${listaReceita[i].iconeRestricao4}
  `
 
  iconesRestricao.appendChild(icone4);
@@ -131,23 +133,24 @@ const icone4 = Object.assign(document.createElement('div'), {
 
 const ingredientes = document.createElement('div');
 
+
 ingredientes.innerHTML = `
 <h2>Ingredientes:</h2>
 <nav>
-    <ul>                                  
-        <h3>Secos:</h3>
-        <li>${receita[0].bolinha} ${receita[0].ingredientes[0]}</li>
-        <li>${receita[0].bolinha} ${receita[0].ingredientes[1]}</li>
-        <li>${receita[0].bolinha} ${receita[0].ingredientes[2]}</li>
-        <li>${receita[0].bolinha} ${receita[0].ingredientes[3]}</li>
-        <li>${receita[0].bolinha} ${receita[0].ingredientes[4]}</li>
-        <li>${receita[0].bolinha} ${receita[0].ingredientes[5]}</li>
-        <li>${receita[0].bolinha} ${receita[0].ingredientes[6]}</li>
-        <h3>Molhados:</h3>
-        <li>${receita[0].bolinha} ${receita[0].ingredientes[7]}</li>
-        <li>${receita[0].bolinha} ${receita[0].ingredientes[8]}</li>
-        <li>${receita[0].bolinha} ${receita[0].ingredientes[9]}</li>
-        <li>${receita[0].bolinha} ${receita[0].ingredientes[10]}</li>
+    <ul>  
+                                    
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[0]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[1]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[2]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[3]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[4]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[5]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[6]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[7]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[8]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[9]}</li>
+        <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[10]}</li>
+        
     </ul>
 </nav>
 `
@@ -166,14 +169,14 @@ preparo.innerHTML = `
 <h2>Modo de preparo:</h2>
 <nav>
     <ul>
-        <li>${receita[0].setinha} ${receita[0].preparo[0]}</li>
-        <li>${receita[0].setinha} ${receita[0].preparo[1]}</li>
-        <li>${receita[0].setinha} ${receita[0].preparo[2]}</li>
-        <li>${receita[0].setinha} ${receita[0].preparo[3]}</li>
-        <li>${receita[0].setinha} ${receita[0].preparo[4]}</li>
-        <li>${receita[0].setinha} ${receita[0].preparo[5]}</li>
-        <li>${receita[0].setinha} ${receita[0].preparo[6]}</li>
-        <li>${receita[0].setinha} ${receita[0].preparo[7]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[0]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[1]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[2]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[3]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[4]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[5]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[6]}</li>
+        <li>${listaReceita[i].setinha} ${listaReceita[i].preparo[7]}</li>
     </ul>
 </nav>
 `
@@ -192,10 +195,10 @@ dicasRec.innerHTML = `
 <h3>Dicas:</h3>
 <nav>
     <ul>
-        <li>${receita[0].dicas[0]}</li>
-        <li>${receita[0].dicas[1]}</li>
-        <li>${receita[0].dicas[2]}</li>
-        <li>${receita[0].dicas[3]}</li>
+        <li>${listaReceita[i].dicas[0]}</li>
+        <li>${listaReceita[i].dicas[1]}</li>
+        <li>${listaReceita[i].dicas[2]}</li>
+        <li>${listaReceita[i].dicas[3]}</li>
     </ul>
 </nav>
 `
@@ -215,18 +218,18 @@ const receitaBox1 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox1.innerHTML = `
-<a title="${receita[0].nomeReceita}">
-    <img class="imagem_box" width=120px src="${receita[0].imagem}" alt="foto_receita" />
+<a title="${listaReceita[i+1].nomeReceita}" target="_blank" href="#">
+    <img class="imagem_box" width=120px src="${listaReceita[i+1].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
-        <p class="titulo_rec"> ${receita[0].nomeReceita}</p>
-        <p class="autor_rec">Por: ${receita[0].autor}</p>
+        <p class="titulo_rec"> ${listaReceita[i+1].nomeReceita}</p>
+        <p class="autor_rec">Por: ${listaReceita[i+1].autor}</p>
     </div>
 </a>
 `
 
-const boxBarra = document.querySelector('div[class="box_barras"]');
+const boxBarraRec = document.querySelector('div[class="box_barras"]');
 
-boxBarra.appendChild(receitaBox1);
+boxBarraRec.appendChild(receitaBox1);
 
 
 
@@ -236,16 +239,16 @@ const receitaBox2 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox2.innerHTML = `
-<a title="${receita[0].nomeReceita}">
-    <img class="imagem_box" width=120px src="${receita[0].imagem}" alt="foto_receita" />
+<a title="${listaReceita[i+2].nomeReceita}" target="_blank" href="#">
+    <img class="imagem_box" width=120px src="${listaReceita[i+2].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
-        <p class="titulo_rec"> ${receita[0].nomeReceita}</p>
-        <p class="autor_rec">Por: ${receita[0].autor}</p>
+        <p class="titulo_rec"> ${listaReceita[i+2].nomeReceita}</p>
+        <p class="autor_rec">Por: ${listaReceita[i+2].autor}</p>
     </div>
 </a>
 `
 
-boxBarra.appendChild(receitaBox2);
+boxBarraRec.appendChild(receitaBox2);
 
 
 
@@ -255,16 +258,16 @@ const receitaBox3 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox3.innerHTML = `
-<a title="${receita[0].nomeReceita}">
-    <img class="imagem_box" width=120px src="${receita[0].imagem}" alt="foto_receita" />
+<a title="${listaReceita[i+3].nomeReceita}" target="_blank" href="#">
+    <img class="imagem_box" width=120px src="${listaReceita[i+3].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
-        <p class="titulo_rec"> ${receita[0].nomeReceita}</p>
-        <p class="autor_rec">Por: ${receita[0].autor}</p>
+        <p class="titulo_rec"> ${listaReceita[i+3].nomeReceita}</p>
+        <p class="autor_rec">Por: ${listaReceita[i+3].autor}</p>
     </div>
 </a>
 `
 
-boxBarra.appendChild(receitaBox3);
+boxBarraRec.appendChild(receitaBox3);
 
 
 
@@ -274,13 +277,13 @@ const receitaBox4 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox4.innerHTML = `
-<a title="${receita[0].nomeReceita}">
-    <img class="imagem_box" width=120px src="${receita[0].imagem}" alt="foto_receita" />
+<a title="${listaReceita[i+4].nomeReceita}" target="_blank" href="#">
+    <img class="imagem_box" width=120px src="${listaReceita[i+4].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
-        <p class="titulo_rec"> ${receita[0].nomeReceita}</p>
-        <p class="autor_rec">Por: ${receita[0].autor}</p>
+        <p class="titulo_rec"> ${listaReceita[i+4].nomeReceita}</p>
+        <p class="autor_rec">Por: ${listaReceita[i+4].autor}</p>
     </div>
 </a>
 `
 
-boxBarra.appendChild(receitaBox4);
+boxBarraRec.appendChild(receitaBox4);

@@ -20,6 +20,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     height: 51.4px;
+    position: relative;
 }
 
 header ul {
@@ -35,8 +36,9 @@ header nav {
 }
 
 header .logo_bora_comer {
-    height: 52px;
-    
+    height: 63px;
+    position: absolute;
+    bottom: -4px;    
 }
 
 .icon_header {
@@ -79,4 +81,12 @@ footer .container {
 
 footer .logo_bora_comer {
     height: 100px;
+}
+
+footer .container a {
+    width: 261px;
+}
+
+footer .container nav {
+    width: 130px;
 }

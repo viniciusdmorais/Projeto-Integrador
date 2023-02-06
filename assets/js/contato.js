@@ -14,6 +14,7 @@ function estilizarInputCorreto(input, helper) {
   
   
 /*************************CONTATOS******************************************* */
+// -------------------------------- VALIDAÇÃO USERNAME --------------------- ---------- //
 
 const nameInputCont = document.getElementById("name-contatos");
 const usernameCont = document.getElementById("username-error-contatos");
@@ -32,7 +33,7 @@ nameInputCont.addEventListener("blur", (e) =>{
   }
 });
 
-
+// -------------------------------- VALIDAÇÃO EMAIL --------------------- ---------- //
 
 const emailInputCo = document.getElementById("email-contatos");
 const emailHelpCon = document.getElementById("email-helper-cont");
@@ -51,7 +52,7 @@ emailInputCo.addEventListener("blur", (e) => {
 });
 
 
-
+// -------------------------------- VALIDAÇÃO ASSUNTO --------------------- ---------- //
 const assuntoInput = document.getElementById("assunto");
 const assuntoHelp = document.getElementById("assunt-helper-cont");
 
@@ -69,7 +70,7 @@ assuntoInput .addEventListener("blur", (e) => {
   }
 });
 
-
+// -------------------------------- VALIDAÇÃO MSG --------------------- ---------- //
 const msgInput = document.getElementById("msg");
 const msgHelp = document.getElementById("msg-helper-cont");
 
@@ -88,7 +89,7 @@ msgInput.addEventListener("blur", (e) => {
 });
 
 
-
+// -------------------------------- VALIDAÇÃO FORMULARIO CONTATOS  --------------------- ---------- //
 
 const submitButtonEnviar = document.getElementById("button_enviar");
 const inputsCorretos2 = {
