@@ -79,6 +79,7 @@ section {
     display: flex;
     position:absolute;
     bottom: 0px;
+    visibility: hidden; /*  INVISIVEL ATÉ EU SABER COMO ADD MAIS FOTOS  */
 }
 
 .botoes_seta {
