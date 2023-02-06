@@ -105,6 +105,10 @@ const icone4 = Object.assign(document.createElement('div'), {
 
 const ingredientes = document.createElement('div');
 
+/*for (x=0; x < listaReceita[i].ingredientes.length; x++) {
+    <li>${listaReceita[i].bolinha} ${listaReceita[i].ingredientes[x]}</li>
+}*/
+
 ingredientes.innerHTML = `
 <h2>Ingredientes:</h2>
 <nav>
@@ -200,7 +204,7 @@ const receitaBox2 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox2.innerHTML = `
-<a title="${listaReceita[i+2].nomeReceita}" href="/receita_completa.html?receitaID=${listaReceita[i+1].idReceita}">
+<a title="${listaReceita[i+2].nomeReceita}" href="/receita_completa.html?receitaID=${listaReceita[i+2].idReceita}">
     <img class="imagem_box" width=120px src="${listaReceita[i+2].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
         <p class="titulo_rec"> ${listaReceita[i+2].nomeReceita}</p>
@@ -219,7 +223,7 @@ const receitaBox3 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox3.innerHTML = `
-<a title="${listaReceita[i+3].nomeReceita}" href="/receita_completa.html?receitaID=${listaReceita[i+1].idReceita}">
+<a title="${listaReceita[i+3].nomeReceita}" href="/receita_completa.html?receitaID=${listaReceita[i+3].idReceita}">
     <img class="imagem_box" width=120px src="${listaReceita[i+3].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
         <p class="titulo_rec"> ${listaReceita[i+3].nomeReceita}</p>
@@ -227,6 +231,8 @@ receitaBox3.innerHTML = `
     </div>
 </a>
 `
+
+
 
 boxBarraRec.appendChild(receitaBox3);
 
@@ -238,7 +244,7 @@ const receitaBox4 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox4.innerHTML = `
-<a title="${listaReceita[i+4].nomeReceita}" href="/receita_completa.html?receitaID=${listaReceita[i+1].idReceita}">
+<a title="${listaReceita[i+4].nomeReceita}" href="/receita_completa.html?receitaID=${listaReceita[i+4].idReceita}">
     <img class="imagem_box" width=120px src="${listaReceita[i+4].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
         <p class="titulo_rec"> ${listaReceita[i+4].nomeReceita}</p>
