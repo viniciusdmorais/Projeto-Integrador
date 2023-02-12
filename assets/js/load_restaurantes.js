@@ -136,7 +136,6 @@ function listarLocais (pg) {
     let lisaFiltradaLocais = filtarLocais();
 
     for (let i=0; i<lisaFiltradaLocais.length; i++) {
-        console.log();
         creatCardLocais(lisaFiltradaLocais[i]);
     }
 }

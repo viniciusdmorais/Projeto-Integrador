@@ -1,4 +1,4 @@
-let i = Number(new URLSearchParams(window.location.search).get('restauranteID'))-1;
+let i = Number(new URLSearchParams(window.location.search).get('idRestaurante'))-1;
 
 
 // populando o título e sub título
