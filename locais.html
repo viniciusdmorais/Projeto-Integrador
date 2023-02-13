@@ -50,6 +50,20 @@
             document.querySelector('main').innerHTML = '';
             listarLocais(pagina);
         });
+
+        
+        document.getElementById('search_locais').addEventListener('change', (e) => {
+            document.querySelector('main').innerHTML = '';
+            listarLocais(pagina);
+        });
+
+        document.addEventListener("keydown", function(e) {
+            if(e.keyCode === 13) {
+                e.preventDefault();
+                document.querySelector('main').innerHTML = '';
+                listarLocais(pagina);
+            }
+        });
     </script>
 </body>
 

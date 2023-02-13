@@ -125,15 +125,39 @@ function creatCardLocais(local) {
 }
 
 function filtarLocais () {
+    let busca = document.getElementById("search_locais").value;
+    let listaFiltrada = [];
 
-    let listaFiltrada = listaRestaurante;
+    if (busca.length == 0) {
+
+        listaFiltrada = listaRestaurante;
+
+    } else {
+        
+        for (let i=0; i < listaRestaurante.length; i++) {
+            let validador = true;
+
+            if (listaRestaurante[i].nomeRestaurante.toLowerCase().indexOf(busca.toLowerCase()) < 0) {
+                validador = false;
+            }
+
+            if (validador == true) {
+                listaFiltrada.push(listaRestaurante[i]);
+            }
+
+        }
+    }
+    
 
     return listaFiltrada;
 }
 
 function listarLocais (pg) {
+    let lisaFiltradaLocais;
 
-    let lisaFiltradaLocais = filtarLocais();
+
+    lisaFiltradaLocais = filtarLocais();
+
 
     for (let i=0; i<lisaFiltradaLocais.length; i++) {
         creatCardLocais(lisaFiltradaLocais[i]);

@@ -614,10 +614,8 @@ function filtroLista(listaReceita, objetoFiltro) {
         }
 
         if (busca) {
-            for(let y=0; y < listaReceita.length; y++) {
-                if (listaReceita[x].nomeReceita.toLowerCase().indexOf(busca.toLowerCase()) < 0) {
-                    validador = false;
-                }
+            if (listaReceita[x].nomeReceita.toLowerCase().indexOf(busca.toLowerCase()) < 0) {
+                validador = false;
             }
         }
 
