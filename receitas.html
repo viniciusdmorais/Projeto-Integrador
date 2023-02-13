@@ -77,6 +77,19 @@
             document.querySelector('main').innerHTML = '';
             listReceitas(pagina);
         });
+
+        document.getElementById('search_receita').addEventListener('change', (e) => {
+            document.querySelector('main').innerHTML = '';
+            listReceitas(pagina);
+        });
+
+        document.addEventListener("keydown", function(e) {
+            if(e.keyCode === 13) {
+                e.preventDefault();
+                document.querySelector('main').innerHTML = '';
+                listReceitas(pagina);
+            }
+        });
     </script>
 </body>
 

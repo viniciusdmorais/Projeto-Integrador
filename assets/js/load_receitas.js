@@ -523,6 +523,7 @@ function creatCardReceitas(listaReceita, i) {
 }
 
 function listReceitas(pg) {
+    let busca = document.getElementById("search_receita").value;
     let filter = {
         vegano: document.getElementById("ckb_veg").checked,
         ovo: document.getElementById("ckb_ovo").checked,
@@ -537,13 +538,15 @@ function listReceitas(pg) {
 
     let limit = 14 * pg;
     let i = limit - 14;
-    limit >= listaReceita.length && i < listaReceita.length
+    (limit >= listaReceita.length && i < listaReceita.length)
         ? (limit = listaReceita.length)
         : (limit = 14);
 
+    
     if (
-        Object.values(filter).filter((value) => value == true || value != 0)
-            .length == 0
+        Object.values(filter).filter((value) => value == true || value != 0).length == 0
+        &&
+        busca.length == 0
     ) {
         for (i = 0; i <= limit; i++) {
             creatCardReceitas(listaReceita, i);
@@ -578,6 +581,7 @@ function listReceitas(pg) {
 }
 
 function filtroLista(listaReceita, objetoFiltro) {
+    let busca = document.getElementById("search_receita").value;
     let arraylistafiltrada = [];
 
     for (x = 0; x < listaReceita.length; x++) {
@@ -604,6 +608,14 @@ function filtroLista(listaReceita, objetoFiltro) {
                 }
             } else if (objetoFiltro.hasOwnProperty("maxTmp")) {
                 if (listaReceita[x].tempoPreparo > objetoFiltro.maxTmp) {
+                    validador = false;
+                }
+            }
+        }
+
+        if (busca) {
+            for(let y=0; y < listaReceita.length; y++) {
+                if (listaReceita[x].nomeReceita.toLowerCase().indexOf(busca.toLowerCase()) < 0) {
                     validador = false;
                 }
             }
