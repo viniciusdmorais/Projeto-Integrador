@@ -3,6 +3,7 @@ html,
 body,
 header {
   background: #FEF9EF;
+  overflow-x: hidden;
 }
 
 a {
