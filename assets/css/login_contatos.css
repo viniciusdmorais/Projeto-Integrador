@@ -26,11 +26,15 @@ body {
 .main_login {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, #0D3B66, #0D3B66, #FEF9EF);
+ 
+ /* background: radial-gradient(circle, rgba(23,195,178,1) 44%, rgba(254,249,239,1) 100%);*/
+ /* background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);*/
+  background-image: linear-gradient(to bottom right,  #FEF9EF,  #17C3B2, #FEF9EF); 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  
 
 }
 
@@ -45,6 +49,7 @@ body {
   border-radius: 30px;
   margin: 0;
   padding: 5% 0 0 0;
+
 
 }
 
@@ -62,9 +67,14 @@ body {
   background-color: #FEF9EF;
   border-style: none;
   padding: 40px;
-  border-radius: 2px;
+  border-radius:40px;
+  
   width: 280px;
   height: 510px;
+  box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+  -webkit-box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+  -moz-box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+
 
 }
 
@@ -165,7 +175,10 @@ form input {
   background-color: #17C3B2;
   color: #FEF9EF;
 }
-
+.hide{
+  display: none;
+  
+}
 /*******************************  Mensagem de erro Login e Sign up *************************/
 
 input.error{
@@ -198,7 +211,8 @@ input.correct {
 .main_contato {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, #0D3B66, #0D3B66, #FEF9EF);
+  /*background-image: linear-gradient(to bottom right, #0D3B66, #0D3B66, #FEF9EF);*/
+  background-image: linear-gradient(to bottom right,  #FEF9EF,  #17C3B2, #FEF9EF); 
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -240,6 +254,10 @@ Div.foto {
   height: 40%;
   border-radius: 10px;
   margin: 5px 0px;
+  box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+  -webkit-box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+  -moz-box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+
 }
 
 #form_contato input,select {

@@ -13,12 +13,35 @@ function estilizarInputIncorreto(input, helper) {
 }
 
 
+//****************FUNÇÃO OCULTAR FORMULÁRIO *****************************************/
+const formSign= document.getElementById("form_sign")
+const formLogin= document.getElementById("form_log")
+
+formSign.addEventListener('click', function() {
+    formLogin.classList.add("hide");
+    formSign.style.display = 'visible';    
+    
+
+
+  });
+
+  formLogin.addEventListener('click', function() {
+    formSign.classList.add("hide");
+    formLogin.style.display = 'visible';
+    
+    
+  });
+
+
+
+
 
 
 
 //************************************************************SIGN UP**************************************************************** */
 
 // -------------------------------- VALIDAÇÃO USERNAME ------------------------------------- //
+
 
 const nameInput = document.getElementById("name");
 const nameLabel = document.getAnimations("namelabel");
@@ -61,8 +84,7 @@ emailInputIn.addEventListener("blur", (e) => {
 const senhaInputIns = document.getElementById("senha1");
 const senhaLabelIns = document.getElementById("senha1_ins");
 const senhaErrorIns = document.getElementById("senha-helper-ins");
-const regexsenha =
-  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])(?:([0-9a-zA-Z$*&@#])(?!\1)){8,}$/;
+
 
 senhaInputIns.addEventListener("blur", (e) => {
   const value = e.target.value;
@@ -122,23 +144,34 @@ submitButton.addEventListener("click", (e) => {
 //************************************************************LOGIN**************************************************************** */
 
 // -------------------------------------- VALIDAÇÃO EMAIL  ENTRAR  ---------------------------- //
+
+
 const emailInput = document.getElementById("email");
 const emailLabel = document.getElementById("email-login");
 const emailHelp = document.getElementById("email-helper");
+const regexEmail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
 
 emailInput.addEventListener("blur", (e) => {
-  console.log(e)
   const value = e.target.value;
-  console.log(value)
-  if (value === emailInputIn.value) {
-    estilizarInputCorreto(emailInput, emailHelp);
+
+  if (value.match(regexEmail)) {
+    estilizarInputCorreto(emailInput,  emailHelp);
     inputsCorretos1.email1 = true;
     
   } else {
-    estilizarInputIncorreto(emailInput, emailHelp);
+    estilizarInputIncorreto(emailInput,  emailHelp);
     inputsCorretos1.email1 = false;
   }
 });
+
+
+
+
+
+
+
+
+
 
 
 // -------------------------------- VALIDAÇÃO SENHA ENTRAR --------------------- ---------- //
@@ -149,17 +182,29 @@ const senhaError = document.getElementById("senha-error");
 
 senhaInput.addEventListener("blur", (e) => {
   const value = e.target.value;
-  
-  if (value === senhaInputIns.value) {
+  console.log(value);
+  if (value.length < 8) {
+    estilizarInputIncorreto(senhaInput, senhaError);
+    inputsCorretos1.senha1 = false;
+  } else {
     estilizarInputCorreto(senhaInput, senhaError);
     inputsCorretos1.senha1= true;
-  
-  } else {
-    estilizarInputIncorreto(senhaInput, senhaError);
-
-    inputsCorretos1.senha1 = false;
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // -------------------------------------- VALIDAÇÃO BUTTON ENTRAR ----------  --------------------------- //
 
