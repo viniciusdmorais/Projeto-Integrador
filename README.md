@@ -22,7 +22,7 @@ Para visualizar o projeto [entre aqui](https://viniciusdmorais.github.io/Projeto
 * Paleta de cores - [Coolors.co](https://cutt.ly/aM3166s)
 * Logo - [Canvas](https://cutt.ly/4M30fTZ)
 * Layout - [Figma](https://cutt.ly/A1bVEfo)
-* Data Base:
+* Database:
     * [MER](https://github.com/viniciusdmorais/Projeto-Integrador/blob/Dev/assets/sql/MER.pdf) 
     * [DER](https://github.com/viniciusdmorais/Projeto-Integrador/blob/Dev/assets/sql/DER.pdf)
     * [Scrip SQL](https://github.com/viniciusdmorais/Projeto-Integrador/blob/Dev/assets/sql/create.sql)
