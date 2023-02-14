@@ -3,6 +3,7 @@ html,
 body,
 header {
   background: #FEF9EF;
+  overflow-x: hidden;
 }
 
 a {
@@ -91,7 +92,7 @@ nav {
 .flechas-slider {
     width: 40px;
     height: 40px;
-    padding: 200px 140px
+    padding: 200px 100px
 }
 .flechas-slider:hover {
     cursor: pointer;
@@ -103,7 +104,7 @@ nav {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0px 400px;
+  padding: 0px 200px;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
