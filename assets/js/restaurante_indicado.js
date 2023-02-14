@@ -119,7 +119,7 @@ const restauranteBox1 = Object.assign(document.createElement('div'), {
  });
 
  restauranteBox1.innerHTML = `
- <a title="${listaRestaurante[i+1].nomeRestaurante}" href="/restaurante_indicado.html?restauranteID=${listaRestaurante[i+1].idRestaurante}">
+ <a title="${listaRestaurante[i+1].nomeRestaurante}"  href="restaurante_indicado.html?idRestaurante=${listaRestaurante[i+1].idRestaurante}">
     <img class="imagem_box" width=120px src="${listaRestaurante[i+1].imagem}" alt="foto_restaurante"/>
     <div class="link_restaurante">
         <p class="nome_restaurante">${listaRestaurante[i+1].nomeRestaurante}</p>        
@@ -138,7 +138,7 @@ const restauranteBox2 = Object.assign(document.createElement('div'), {
  });
 
 restauranteBox2.innerHTML = `
-<a title="${listaRestaurante[i+2].nomeRestaurante}" href="/restaurante_indicado.html?restauranteID=${listaRestaurante[i+2].idRestaurante}">
+<a title="${listaRestaurante[i+2].nomeRestaurante}"  href="restaurante_indicado.html?idRestaurante=${listaRestaurante[i+2].idRestaurante}">
     <img class="imagem_box" width=120px src="${listaRestaurante[i+2].imagem}" alt="foto_restaurante"/>
     <div class="link_restaurante">
         <p class="nome_restaurante">${listaRestaurante[i+2].nomeRestaurante}</p>        
@@ -155,7 +155,7 @@ const restauranteBox3 = Object.assign(document.createElement('div'), {
  });
 
 restauranteBox3.innerHTML = `
-<a title="${listaRestaurante[i+3].nomeRestaurante}" href="/restaurante_indicado.html?restauranteID=${listaRestaurante[i+3].idRestaurante}">
+<a title="${listaRestaurante[i+3].nomeRestaurante}"   href="restaurante_indicado.html?idRestaurante=${listaRestaurante[i+3].idRestaurante}">
     <img class="imagem_box" width=120px src="${listaRestaurante[i+3].imagem}" alt="foto_restaurante"/>
     <div class="link_restaurante">
         <p class="nome_restaurante">${listaRestaurante[i+3].nomeRestaurante}</p>        
@@ -173,7 +173,7 @@ const restauranteBox4 = Object.assign(document.createElement('div'), {
  });
 
 restauranteBox4.innerHTML = `
-<a title="${listaRestaurante[i+4].nomeRestaurante}" href="/restaurante_indicado.html?restauranteID=${listaRestaurante[i+4].idRestaurante}">
+<a title="${listaRestaurante[i+4].nomeRestaurante}"  href="restaurante_indicado.html?idRestaurante=${listaRestaurante[i+4].idRestaurante}">
     <img class="imagem_box" width=120px src="${listaRestaurante[i+4].imagem}" alt="foto_restaurante"/>
     <div class="link_restaurante">
         <p class="nome_restaurante">${listaRestaurante[i+4].nomeRestaurante}</p>        
