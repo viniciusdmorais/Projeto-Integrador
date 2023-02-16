@@ -87,6 +87,10 @@ footer .container a {
     width: 261px;
 }
 
+footer .container span p a {
+    display: inline;
+}
+
 footer .container nav {
     width: 130px;
 }
