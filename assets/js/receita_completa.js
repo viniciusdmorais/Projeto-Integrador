@@ -48,7 +48,6 @@ const dadosReceita = document.querySelector('div[class="dados_receita"]');
 dadosReceita.appendChild(dados);
 
 
-
 // populando estrelas de média.nota
 
 const mediaNota = document.createElement('nav');
