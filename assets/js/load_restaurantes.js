@@ -14,7 +14,7 @@ const listaRestaurante = [
         faixaPreco: '$ $ $ $ $',
         telefone: '(11) 97891-6149',
 
-        mediaNota: 5,    
+        mediaNota: 4.5,    
     },
 
     {
@@ -32,7 +32,7 @@ const listaRestaurante = [
         faixaPreco: '$ $ $ $',
         telefone: '(11) 99701-6827',
         
-        mediaNota: 5,
+        mediaNota: 4.5,
     },
         
     {

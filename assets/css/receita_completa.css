@@ -85,15 +85,11 @@ section {
     align-items: flex-end;
 }
 
-/********************************** A MEDIA NOTA COM ESTRELINHAS  *******************************/
-
 .estrelinhas li, .estrelinhas nav {
     align-items: center;
     justify-content: center;
     font-size: 33px;
-    pointer-events: none;
-   /* visibility: visible;   **************DEIXAREI HIDDEN CASO NAO DÊ TEMPO DE FAZER***************/
-    
+    pointer-events: none;    
 }
 
 .icones_restricao {

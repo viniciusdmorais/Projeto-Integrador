@@ -85,23 +85,12 @@ const OutrasInfos = Object.assign(document.createElement('div'), {
 });
 
 
-
-//********************************** A MEDIA NOTA COM ESTRELINHAS  *******************************
 OutrasInfos.innerHTML = `
 <h2>Outras informações:</h2>
 
 <div class="estrelinhas" title="Nota">
     <img width="35px" height="35px" src="assets/images/img_reh/estrela1.png" alt="preço" >
     <p><strong>Nota do Local:</strong> ${listaRestaurante[i].mediaNota}</p>
-    <nav>
-         <ul class="avaliacao">
-            <li class="star-icon"></li>
-            <li class="star-icon"></li>
-            <li class="star-icon"></li>
-            <li class="star-icon"></li>
-            <li class="star-icon"></li>
-        </ul>
-    </nav>
 </div>
 
 <div class="faixa_preco" title="Preço">

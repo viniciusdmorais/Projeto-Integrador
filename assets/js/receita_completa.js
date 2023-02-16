@@ -49,20 +49,12 @@ dadosReceita.appendChild(dados);
 
 
 
-// populando estrelas de média.nota *********************************************
-
-//********************************** A MEDIA NOTA COM ESTRELINHAS  *******************************
+// populando estrelas de média.nota
 
 const mediaNota = document.createElement('nav');
 
-mediaNota.innerHTML = `
-<ul class="avaliacao">
-    <li class="star-icon"></li>
-    <li class="star-icon"></li>
-    <li class="star-icon"></li>
-    <li class="star-icon"></li>
-    <li class="star-icon"></li>
-</ul>
+mediaNota.innerHTML =`
+${listaReceita[i].stars}
 `
 
 const estrelinhas = document.querySelector('div[class="estrelinhas"]');
@@ -159,11 +151,11 @@ const receitaBox1 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox1.innerHTML = `
-<a title="${listaReceita[4].nomeReceita}" href="receita_completa.html?receitaID=${listaReceita[4].idReceita}">
-    <img class="imagem_box" width=120px src="${listaReceita[4].imagem}" alt="foto_receita" />
+<a title="${listaReceita[8].nomeReceita}" href="receita_completa.html?receitaID=${listaReceita[8].idReceita}">
+    <img class="imagem_box" width=120px src="${listaReceita[8].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
-        <p class="titulo_rec"> ${listaReceita[4].nomeReceita}</p>
-        <p class="autor_rec">Por: ${listaReceita[4].autor}</p>
+        <p class="titulo_rec"> ${listaReceita[8].nomeReceita}</p>
+        <p class="autor_rec">Por: ${listaReceita[8].autor}</p>
     </div>
 </a>
 `
@@ -180,11 +172,11 @@ const receitaBox2 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox2.innerHTML = `
-<a title="${listaReceita[7].nomeReceita}" href="receita_completa.html?receitaID=${listaReceita[7].idReceita}">
-    <img class="imagem_box" width=120px src="${listaReceita[7].imagem}" alt="foto_receita" />
+<a title="${listaReceita[14].nomeReceita}" href="receita_completa.html?receitaID=${listaReceita[14].idReceita}">
+    <img class="imagem_box" width=120px src="${listaReceita[14].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
-        <p class="titulo_rec"> ${listaReceita[7].nomeReceita}</p>
-        <p class="autor_rec">Por: ${listaReceita[7].autor}</p>
+        <p class="titulo_rec"> ${listaReceita[14].nomeReceita}</p>
+        <p class="autor_rec">Por: ${listaReceita[14].autor}</p>
     </div>
 </a>
 `
@@ -199,11 +191,11 @@ const receitaBox3 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox3.innerHTML = `
-<a title="${listaReceita[9].nomeReceita}" href="receita_completa.html?receitaID=${listaReceita[9].idReceita}">
-    <img class="imagem_box" width=120px src="${listaReceita[9].imagem}" alt="foto_receita" />
+<a title="${listaReceita[13].nomeReceita}" href="receita_completa.html?receitaID=${listaReceita[13].idReceita}">
+    <img class="imagem_box" width=120px src="${listaReceita[13].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
-        <p class="titulo_rec"> ${listaReceita[9].nomeReceita}</p>
-        <p class="autor_rec">Por: ${listaReceita[9].autor}</p>
+        <p class="titulo_rec"> ${listaReceita[13].nomeReceita}</p>
+        <p class="autor_rec">Por: ${listaReceita[13].autor}</p>
     </div>
 </a>
 `
@@ -220,11 +212,11 @@ const receitaBox4 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox4.innerHTML = `
-<a title="${listaReceita[6].nomeReceita}" href="receita_completa.html?receitaID=${listaReceita[6].idReceita}">
-    <img class="imagem_box" width=120px src="${listaReceita[6].imagem}" alt="foto_receita" />
+<a title="${listaReceita[3].nomeReceita}" href="receita_completa.html?receitaID=${listaReceita[3].idReceita}">
+    <img class="imagem_box" width=120px src="${listaReceita[3].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
-        <p class="titulo_rec"> ${listaReceita[6].nomeReceita}</p>
-        <p class="autor_rec">Por: ${listaReceita[6].autor}</p>
+        <p class="titulo_rec"> ${listaReceita[3].nomeReceita}</p>
+        <p class="autor_rec">Por: ${listaReceita[3].autor}</p>
     </div>
 </a>
 `

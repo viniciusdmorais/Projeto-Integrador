@@ -3,7 +3,7 @@ const listaReceita = [
         idReceita: 1,
         nomeReceita: "Bolo de Chocolate",
         tempoPreparo: 40,
-        imagem: "https://www.vaisefood.com/wp-content/uploads/2012/11/bolocacau.jpg",
+        imagem: "https://bakespot.com.br/wp-content/uploads/2018/11/C%C3%B3pia-de-Bolo-Tradicional-de-Chocolate-sem-calda-1.jpg",
         vegano: true,
         glutem: true,
         soja: false,
@@ -29,7 +29,18 @@ const listaReceita = [
         iconeRestricao2: '<img width="50px" height="50px" src="assets/images/icon_vegan-on.png" alt="vegano" title="Vegano"/>',
         iconeRestricao3: '',
         iconeRestricao4: '',
+
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,
     },
+
     {
         idReceita: 2,
         nomeReceita: "Batata bolinha ao Missô",
@@ -59,8 +70,18 @@ const listaReceita = [
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['Cozinhe as batatas deixando-as firmes, no mesmo ponto de batata para vinagrete e reserve em um recipiente que tenha tampa.', 'Em outro recipiente coloque os todos os outros ingredientes, com exceção  da salsinha e misture até formar um molho homogêneo.', 'Faça furos nas batatas para o molho penetrar melhor.', 'Coloque o molho e a salsinha picada sobre as batatas e misture até envolver as batatas.', 'Deixe descansando na geladeira por pelo menos 20 min, porém o ideal é deixar até 8hrs para o molho entrar melhor na batata.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',                
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,                
     },
+
     {
         idReceita: 3,
         nomeReceita: "Batida de Coco",
@@ -76,7 +97,7 @@ const listaReceita = [
         doce: true,
         salgado: false,
         descricao: "Batida de Coco com base de Pinga.",
-        mediaNota: 0,
+        mediaNota: 3,
 
         autor: 'Bora Comer',
         rendimento: '6 porções',
@@ -90,13 +111,22 @@ const listaReceita = [
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['No liquidificador, colocar todos os ingredientes, apenas reservando uma pequena quantidade de coco ralado para finalizar o copo, e bata por 3 min.','Após servir no copo basta colocar um pouco do coco ralado por cima da bebida.', 'Servir gelado.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',                
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+        
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,
     },
+
     {
         idReceita: 4,
-        nomeReceita: "Lasanha",
+        nomeReceita: "Lasanha de Carne Moída",
         tempoPreparo: 90,
-        imagem: "https://img.itdg.com.br/tdg/images/recipes/000/138/558/352650/352650_original.jpg?mode=crop&width=710&height=400",
+        imagem: "https://receitascluboficial.com.br/wp-content/uploads/2022/06/lasanha-com-carne-moida.webp",
         vegano: false,
         glutem: false,
         soja: false,
@@ -121,8 +151,18 @@ const listaReceita = [
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['Pré-aqueça o forno a 180°C;','Em uma panela, refogue a cebola, o alho e a carne moída até dourar;','Adicione o tomate pelado, o açúcar, o molho de tomate, sal e pimenta e deixe cozinhar por 10 minutos;','Em outra tigela, misture a ricota, o creme de leite, o ovo, o queijo ralado e a noz-moscada;','Em uma forma refratária, monte as camadas da lasanha começando com um pouco de molho de carne, depois as folhas de lasanha, e por fim a mistura de ricota;','Repita as camadas até acabar os ingredientes;','Por último, cubra com o molho de carne restante e o queijo ralado;','Leve ao forno por 35 minutos ou até que esteja dourado e crocante;','Sirva quente.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',                
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+        
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,
     },
+
     {
         idReceita: 5,
         nomeReceita: "Pizza de Calabresa",
@@ -152,13 +192,23 @@ const listaReceita = [
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['Pré-aqueça o forno em 200°C;','Abra a massa de pizza em uma forma untada e acrescente o molho de tomate;','Adicione a calabresa fatiada, o queijo e o orégano;','Tempere com um pouco de azeite e sal;','Leve ao forno por 15 a 20 minutos ou até o queijo derreter e a massa estar dourada.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',                
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+        
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,
     },
+
     {
         idReceita: 6,
         nomeReceita: "Pão de Queijo Vegano",
         tempoPreparo: 35,
-        imagem: "https://img.itdg.com.br/tdg/images/recipes/000/175/624/198508/198508_original.jpg",
+        imagem: "https://www.tempodecozimento.com/wp-content/uploads/2017/06/receita_pao_de_queijo_mandioquinha.jpg",
         vegano: true,
         glutem: false,
         soja: false,
@@ -183,8 +233,18 @@ const listaReceita = [
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['Em uma tigela grande misture os polvilhos, o sal e o óleo de coco;','Adicione o leite vegetal aos poucos, mexendo sempre até obter uma massa homogênea;','Abra pequenas porções de massa com as mãos, formando os pães de queijo;','Disponha-os em uma assadeira untada;','Leve ao forno pré-aquecido a 200ºC por cerca de 25 minutos ou até dourar;','Sirva quente, como aperitivo ou petisco.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',                
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+        
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,
     },
+
     {
         idReceita: 7,
         nomeReceita: "Salada de Quinoa Vegana",
@@ -214,8 +274,18 @@ const listaReceita = [
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['Lave a quinoa e coloque-a numa panela com a água;','Leve ao fogo médio, cubra e deixe cozinhar por cerca de 15 minutos ou até que toda a água seja absorvida;','Enquanto a quinoa cozinha, prepare os legumes e as ervas;','Em um recipiente grande, misture a quinoa cozida, cenoura ralada, vagem, tomate, azeitona, salsinha, coentro, sal, pimenta, suco de limão e azeite de oliva;','Sirva a salada quente ou fria.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',                
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+        
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,
     },
+
     {
         idReceita: 8,
         nomeReceita: "Tostadas de Camarão",
@@ -231,7 +301,7 @@ const listaReceita = [
         doce: false,
         salgado: true,
         descricao: "Tostadas crocantes recheadas com camarão cozido e temperados com ervas e limão.",
-        mediaNota: 4.5,
+        mediaNota: 5,
         
         autor: 'Bora Comer',
         rendimento: '2 porções',
@@ -245,8 +315,19 @@ const listaReceita = [
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['Em uma tigela, misture o camarão cozido, a cebola, o tomate, o cilantro e o suco de limão;','Tempere com sal e pimenta a gosto;','Em uma frigideira, aqueça o óleo de soja e frite as tortillas até ficarem crocantes;','Coloque as tortillas fritas em um prato forrado com papel toalha para absorver o excesso de óleo;','Coloque uma porção generosa do recheio de camarão sobre cada tostada e sirva imediatamente.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',                
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+        
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,
     },
+
     {
         idReceita: 9,
         nomeReceita: "Bolinho de amendoim com ovo",
@@ -276,8 +357,18 @@ const listaReceita = [
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['Em uma tigela, misture o amendoim triturado, os ovos, o açúcar, a farinha de trigo e a pitada de sal;','Misture bem até obter uma massa homogênea;','Aqueça o óleo em uma panela;','Com a ajuda de uma colher, faça bolinhos da massa e frite até ficarem dourados;','Escorra os bolinhos em papel toalha;','Sirva quente.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',                
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+        
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,
     },
+
     {
         idReceita: 10,
         nomeReceita: "Torta de Morango Vegana",
@@ -293,7 +384,7 @@ const listaReceita = [
         doce: true,
         salgado: false,
         descricao: "Torta de morango feita com massa vegana e recheio cremoso de morangos",
-        mediaNota: 4.5,
+        mediaNota: 5,
         
         autor: 'Bora Comer',
         rendimento: '8 porções',
@@ -307,8 +398,19 @@ const listaReceita = [
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['Pré aqueça o forno em 200°C;','Em uma tigela misture a farinha de trigo, o açúcar, a margarina vegana, o fermento e o sal;','Amasse a mistura até obter uma massa homogênea;','Abra a massa com um rolo e forre uma forma de torta;','Leve a massa ao forno por 15 minutos;','Enquanto a massa cozinha, prepare o recheio cortando os morangos em pedaços pequenos;','Em uma panela misture o açúcar, o amido de milho, a água e o suco de limão;','Adicione os morangos e leve a mistura ao fogo;','Cozinhe até obter uma consistência grossa;','Retire a massa do forno e adicione o recheio;','Leve a torta ao forno por mais 20 minutos;','Sirva quente ou frio.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',                
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+        
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,
     },
+
     {
         idReceita: 11,
         nomeReceita: "Risoto de Camarão",
@@ -338,13 +440,23 @@ const listaReceita = [
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['Em uma panela, aqueça o azeite e frite a cebola e o alho até dourar;','Adicione o arroz e misture bem;','Adicione o caldo aos poucos, mexendo sempre, até o arroz estar al dente.','Adicione o leite e os queijos, misturando até obter uma consistência cremosa;','Tempere com sal e pimenta a gosto;','Adicione os camarões e misture;','Sirva quente.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',                
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+        
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,
     },
+
     {
         idReceita: 12,
         nomeReceita: "Estrogonofe de Carne",
         tempoPreparo: 40,
-        imagem: "https://img.itdg.com.br/tdg/images/recipes/000/053/915/88625/88625_original.jpg",
+        imagem: "https://claudia.abril.com.br/wp-content/uploads/2020/02/receita-estrogonofe-de-carne.jpg?quality=85",
         vegano: false,
         glutem: true,
         soja: false,
@@ -355,7 +467,7 @@ const listaReceita = [
         doce: false,
         salgado: true,
         descricao: "Clássico e saboroso estrogonofe de carne, com cubinhos de carne suculentos e molho cremoso.",
-        mediaNota: 5,
+        mediaNota: 4.5,
         
         autor: 'Bora Comer',
         rendimento: '4 porções',
@@ -369,8 +481,18 @@ const listaReceita = [
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['Em uma panela, aqueça um pouco de óleo e refogue a cebola e o alho até ficarem macios;','Adicione a carne e refogue até dourar;','Adicione o caldo de carne, o vinho tinto, a mostarda e o catchup e misture bem;','Tempere com sal e pimenta a gosto;','Adicione a farinha de trigo e mexa até engrossar;','Adicione o creme de leite e misture bem;','Sirva o estrogonofe com arroz branco ou macarrão.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',                
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+        
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,
     },
+
     {
         idReceita: 13,
         nomeReceita: "Strogonoff de Soja",
@@ -400,8 +522,18 @@ const listaReceita = [
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['Em uma panela, aqueça o azeite e refogue a cebola, o alho e a cenoura por 5 minutos;','Adicione os cogumelos e o tomate e refogue por mais 5 minutos;','Adicione a farinha de trigo e misture bem, cozinhando por 1 minuto;','Adicione o caldo de legumes e o creme de soja, mexa bem e cozinhe por 5 minutos ou até que a mistura engrosse;','Adicione a soja texturizada e o molho inglês e misture bem;','Tempere com sal e pimenta a gosto;','Sirva sobre arroz branco ou massa.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',                
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+        
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,
     },
+
     {
         idReceita: 14,
         nomeReceita: "Moqueca Vegana de Soja e Banana da Terra",
@@ -417,7 +549,7 @@ const listaReceita = [
         doce: false,
         salgado: true,
         descricao: "Moqueca vegana com base de leite de coco, banana da terra e proteína de soja.",
-        mediaNota: 5,
+        mediaNota: 4.5,
         
         autor: 'Bora Comer',
         rendimento: '4 porções',
@@ -431,8 +563,18 @@ const listaReceita = [
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['Aqueça o óleo de coco em uma panela grande;','Adicione a cebola, alho, pimentões, tomates e refogue por alguns minutos;','Adicione a banana da terra, proteína de soja e misture;','Adicione o leite de coco, tempere com sal e pimenta a gosto e misture;','Deixe cozinhar por cerca de 10 minutos;','Sirva com coentro e cebolinha picados por cima.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',                
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+        
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,
     },
+
     {
         idReceita: 15,
         nomeReceita: "Limonada com Framboesa",
@@ -462,7 +604,17 @@ const listaReceita = [
         bolinha: '<img width="11px" height="11px" src="assets/images/img_reh/circuloamarelo1.png"/>',
 
         preparo: ['No liquidificador, junte o caldo de limão, a framboesa, a água, o açúcar e gelo — cerca de 2 xícaras (chá) são suficientes para deixar a limonada gelada e refrescante;','Bata bem até triturar todo o gelo e a framboesa;','Sobre uma jarra, passe o suco por uma peneira para tirar as sementes da framboesa.','Sirva a seguir em copos com rodelas de limão e cubos de gelo.'],
-        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',                    
+        setinha: '<img width="15px" height="15px" src="assets/images/img_reh/setaamarela1.png"/>',
+        
+        stars: `
+        <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+        `,
     },
 ];
 
