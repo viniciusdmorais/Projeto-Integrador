@@ -142,7 +142,7 @@ section {
     font-size: 16px;     
 }
 
-.faixa_preco, .horario, .telefone, .endereco {
+.faixa_preco, .horario, .telefone, .estrelinhas, .endereco {
     display: flex;
     justify-content:flex-start;
     align-items: center;
