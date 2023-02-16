@@ -69,8 +69,6 @@ const estrelinhas = document.querySelector('div[class="estrelinhas"]');
 
 estrelinhas.appendChild(mediaNota);
 
-
-
 // populando ícones de restrição
 
 //ícone 1

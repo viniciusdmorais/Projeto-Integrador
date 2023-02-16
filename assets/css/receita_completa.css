@@ -91,7 +91,9 @@ section {
     align-items: center;
     justify-content: center;
     font-size: 33px;
-    visibility: visible;   /***************DEIXAREI HIDDEN CASO NAO DÊ TEMPO DE FAZER***************/
+    pointer-events: none;
+   /* visibility: visible;   **************DEIXAREI HIDDEN CASO NAO DÊ TEMPO DE FAZER***************/
+    
 }
 
 .icones_restricao {
@@ -296,6 +298,7 @@ form {
     cursor: pointer;
     color: #fccc53;
     font-size: 45px;
+    
 }
 
 
@@ -314,3 +317,4 @@ form {
 .star-icon:hover ~ .star-icon::before {
     content: "\2606";
 }
+
