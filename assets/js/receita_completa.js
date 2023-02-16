@@ -51,6 +51,8 @@ dadosReceita.appendChild(dados);
 
 // populando estrelas de média.nota *********************************************
 
+//********************************** A MEDIA NOTA COM ESTRELINHAS  *******************************
+
 const mediaNota = document.createElement('nav');
 
 mediaNota.innerHTML = `

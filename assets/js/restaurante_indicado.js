@@ -83,7 +83,10 @@ divDescRestaurante.appendChild(descrCompleta);
 const OutrasInfos = Object.assign(document.createElement('div'), {
     classList: ['outras_informacoes']
 });
-    
+
+
+
+//********************************** A MEDIA NOTA COM ESTRELINHAS  *******************************
 OutrasInfos.innerHTML = `
 <h2>Outras informações:</h2>
 

@@ -152,11 +152,14 @@ section {
     height: 35px;
 }
 
+
+/********************************** A MEDIA NOTA COM ESTRELINHAS  *******************************/
+
 .estrelinhas li, .estrelinhas nav {
     align-items: center;
     justify-content: center;
     font-size: 33px;
-    visibility: hidden;   /* **************DEIXEI HIDDEN CASO NAO DÊ TEMPO DE FAZER**************  */
+    visibility: visible;   /***************DEIXAREI HIDDEN CASO NAO DÊ TEMPO DE FAZER***************/
 }
 
 
