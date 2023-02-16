@@ -60,7 +60,7 @@ h2{
 #equipe{
     width: 100%;
     
-    background-image:url("assets/images/equipe_bg.png");
+    background-image: url(../images/equipe_bg.png);
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,7 +75,7 @@ h2{
 #equipe div{
     width: 48%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #equipe span{
