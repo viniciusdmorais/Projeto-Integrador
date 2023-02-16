@@ -435,7 +435,7 @@ const listaReceita = [
     },
     {
         idReceita: 15,
-        nomeReceita: "LIMONADA COM FRAMBOESA",
+        nomeReceita: "Limonada com Framboesa",
         tempoPreparo: 5,
         imagem: "https://www.allrecipes.com/thmb/xs0t2iB6woUb-P-dFHub0jvmf_A=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/445924-ce4cbb28927b4f15a8682f0548b94896.jpg",
         vegano: true,

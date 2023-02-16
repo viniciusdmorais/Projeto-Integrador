@@ -12,5 +12,3 @@ document.addEventListener('click',function(e){
         console.log(e.target.getAttribute('data-avaliacao'));
     }
 });
-
-/* O clique nas estrelinhas não está funcionando, e uma vez que clica em uma delas, o 'ativo' não sai mais. :( */

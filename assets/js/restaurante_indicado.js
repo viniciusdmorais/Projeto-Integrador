@@ -119,10 +119,10 @@ const restauranteBox1 = Object.assign(document.createElement('div'), {
  });
 
  restauranteBox1.innerHTML = `
- <a title="${listaRestaurante[i+1].nomeRestaurante}"  href="restaurante_indicado.html?idRestaurante=${listaRestaurante[i+1].idRestaurante}">
-    <img class="imagem_box" width=120px src="${listaRestaurante[i+1].imagem}" alt="foto_restaurante"/>
+ <a title="${listaRestaurante[2].nomeRestaurante}"  href="restaurante_indicado.html?idRestaurante=${listaRestaurante[2].idRestaurante}">
+    <img class="imagem_box" width=120px src="${listaRestaurante[2].imagem}" alt="foto_restaurante"/>
     <div class="link_restaurante">
-        <p class="nome_restaurante">${listaRestaurante[i+1].nomeRestaurante}</p>        
+        <p class="nome_restaurante">${listaRestaurante[2].nomeRestaurante}</p>        
     </div>
  </a>
 `
@@ -138,10 +138,10 @@ const restauranteBox2 = Object.assign(document.createElement('div'), {
  });
 
 restauranteBox2.innerHTML = `
-<a title="${listaRestaurante[i+2].nomeRestaurante}"  href="restaurante_indicado.html?idRestaurante=${listaRestaurante[i+2].idRestaurante}">
-    <img class="imagem_box" width=120px src="${listaRestaurante[i+2].imagem}" alt="foto_restaurante"/>
+<a title="${listaRestaurante[3].nomeRestaurante}"  href="restaurante_indicado.html?idRestaurante=${listaRestaurante[3].idRestaurante}">
+    <img class="imagem_box" width=120px src="${listaRestaurante[3].imagem}" alt="foto_restaurante"/>
     <div class="link_restaurante">
-        <p class="nome_restaurante">${listaRestaurante[i+2].nomeRestaurante}</p>        
+        <p class="nome_restaurante">${listaRestaurante[3].nomeRestaurante}</p>        
     </div>
  </a>
 `
@@ -155,10 +155,10 @@ const restauranteBox3 = Object.assign(document.createElement('div'), {
  });
 
 restauranteBox3.innerHTML = `
-<a title="${listaRestaurante[i+3].nomeRestaurante}"   href="restaurante_indicado.html?idRestaurante=${listaRestaurante[i+3].idRestaurante}">
-    <img class="imagem_box" width=120px src="${listaRestaurante[i+3].imagem}" alt="foto_restaurante"/>
+<a title="${listaRestaurante[4].nomeRestaurante}"   href="restaurante_indicado.html?idRestaurante=${listaRestaurante[4].idRestaurante}">
+    <img class="imagem_box" width=120px src="${listaRestaurante[4].imagem}" alt="foto_restaurante"/>
     <div class="link_restaurante">
-        <p class="nome_restaurante">${listaRestaurante[i+3].nomeRestaurante}</p>        
+        <p class="nome_restaurante">${listaRestaurante[4].nomeRestaurante}</p>        
     </div>
  </a>
 `
@@ -173,10 +173,10 @@ const restauranteBox4 = Object.assign(document.createElement('div'), {
  });
 
 restauranteBox4.innerHTML = `
-<a title="${listaRestaurante[i+4].nomeRestaurante}"  href="restaurante_indicado.html?idRestaurante=${listaRestaurante[i+4].idRestaurante}">
-    <img class="imagem_box" width=120px src="${listaRestaurante[i+4].imagem}" alt="foto_restaurante"/>
+<a title="${listaRestaurante[5].nomeRestaurante}"  href="restaurante_indicado.html?idRestaurante=${listaRestaurante[5].idRestaurante}">
+    <img class="imagem_box" width=120px src="${listaRestaurante[5].imagem}" alt="foto_restaurante"/>
     <div class="link_restaurante">
-        <p class="nome_restaurante">${listaRestaurante[i+4].nomeRestaurante}</p>        
+        <p class="nome_restaurante">${listaRestaurante[5].nomeRestaurante}</p>        
     </div>
  </a>
 `
