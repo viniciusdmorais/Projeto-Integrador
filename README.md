@@ -33,8 +33,6 @@ Para visualizar o projeto [entre aqui](https://viniciusdmorais.github.io/Projeto
 
 Keiler Trindade [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/keilertrindade)](https://github.com/keilertrindade)
 
-Moisés Rocha  [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/)](https://github.com/)
-
 Renata de Paula  [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/rehffv)](https://github.com/rehffv)
 
 Rodrigo Tormente  [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/RTormente)](https://github.com/RTormente)
