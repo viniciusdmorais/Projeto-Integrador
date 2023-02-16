@@ -49,6 +49,26 @@ dadosReceita.appendChild(dados);
 
 
 
+// populando estrelas de média.nota *********************************************
+
+const mediaNota = document.createElement('nav');
+
+mediaNota.innerHTML = `
+<ul class="avaliacao">
+    <li class="star-icon"></li>
+    <li class="star-icon"></li>
+    <li class="star-icon"></li>
+    <li class="star-icon"></li>
+    <li class="star-icon"></li>
+</ul>
+`
+
+const estrelinhas = document.querySelector('div[class="estrelinhas"]');
+
+estrelinhas.appendChild(mediaNota);
+
+
+
 // populando ícones de restrição
 
 //ícone 1

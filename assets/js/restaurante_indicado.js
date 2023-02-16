@@ -87,14 +87,28 @@ const OutrasInfos = Object.assign(document.createElement('div'), {
 OutrasInfos.innerHTML = `
 <h2>Outras informações:</h2>
 
-<div class="horario" title="Horário">
-    <img width="35px" height="35px" src="assets/images/img_reh/relogio1.png" alt="horário" >
-    <p><strong>Horários:</strong> ${listaRestaurante[i].horarios}</p>
+<div class="estrelinhas" title="Nota">
+    <img width="35px" height="35px" src="assets/images/img_reh/estrela1.png" alt="preço" >
+    <p><strong>Nota do Local:</strong> ${listaRestaurante[i].mediaNota}</p>
+    <nav>
+         <ul class="avaliacao">
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+            <li class="star-icon"></li>
+        </ul>
+    </nav>
 </div>
 
 <div class="faixa_preco" title="Preço">
     <img width="35px" height="35px" src="assets/images/img_reh/sifrao1.png" alt="preço" >
     <p><strong>Faixa de Preço:</strong> ${listaRestaurante[i].faixaPreco}</p>
+</div>
+
+<div class="horario" title="Horário">
+    <img width="35px" height="35px" src="assets/images/img_reh/relogio1.png" alt="horário" >
+    <p><strong>Horários:</strong> ${listaRestaurante[i].horarios}</p>
 </div>
 
 <div class="telefone" title="Telefone">
