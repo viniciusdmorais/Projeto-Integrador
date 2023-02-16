@@ -139,7 +139,7 @@ const receitaBox1 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox1.innerHTML = `
-<a title="${listaReceita[i+1].nomeReceita}" href="/receita_completa.html?receitaID=${listaReceita[i+1].idReceita}">
+<a title="${listaReceita[i+1].nomeReceita}" href="receita_completa.html?receitaID=${listaReceita[i+1].idReceita}">
     <img class="imagem_box" width=120px src="${listaReceita[i+1].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
         <p class="titulo_rec"> ${listaReceita[i+1].nomeReceita}</p>
@@ -160,7 +160,7 @@ const receitaBox2 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox2.innerHTML = `
-<a title="${listaReceita[i+2].nomeReceita}" href="/receita_completa.html?receitaID=${listaReceita[i+2].idReceita}">
+<a title="${listaReceita[i+2].nomeReceita}" href="receita_completa.html?receitaID=${listaReceita[i+2].idReceita}">
     <img class="imagem_box" width=120px src="${listaReceita[i+2].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
         <p class="titulo_rec"> ${listaReceita[i+2].nomeReceita}</p>
@@ -179,7 +179,7 @@ const receitaBox3 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox3.innerHTML = `
-<a title="${listaReceita[i+3].nomeReceita}" href="/receita_completa.html?receitaID=${listaReceita[i+3].idReceita}">
+<a title="${listaReceita[i+3].nomeReceita}" href="receita_completa.html?receitaID=${listaReceita[i+3].idReceita}">
     <img class="imagem_box" width=120px src="${listaReceita[i+3].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
         <p class="titulo_rec"> ${listaReceita[i+3].nomeReceita}</p>
@@ -200,7 +200,7 @@ const receitaBox4 = Object.assign(document.createElement('div'), {
  });
 
 receitaBox4.innerHTML = `
-<a title="${listaReceita[i+4].nomeReceita}" href="/receita_completa.html?receitaID=${listaReceita[i+4].idReceita}">
+<a title="${listaReceita[i+4].nomeReceita}" href="receita_completa.html?receitaID=${listaReceita[i+4].idReceita}">
     <img class="imagem_box" width=120px src="${listaReceita[i+4].imagem}" alt="foto_receita" />
     <div class="titulo_autor">
         <p class="titulo_rec"> ${listaReceita[i+4].nomeReceita}</p>
