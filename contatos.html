@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/load_component.js"></script>
+    <script src="assets/js/contato.js" defer></script>
+
+    <link rel="stylesheet" href="assets/css/defaut_rt.css" />
+    <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
+    <link rel="stylesheet" href="assets/css/login_contatos.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
+    <title>Bora Comer/Contatos</title>
+  </head>
+  <body>
+    <header></header>
+    <div class="container_contato">
+      <main class="main_contato">
+        <section class="section_contato">
+          <div class="foto">
+            <img src="assets/images/contatos-1.svg" alt="" />
+          </div>
+          <form class="form-contato" action="" id="form_contato">
+            <h2 class="conta">Contate-nos</h2>
+
+            <input
+              type="text"
+              id="name-contatos"
+              placeholder="Nome Completo"
+              name="name"
+            />
+            <span id="username-error-contatos" class="span-required"
+              >Seu nome precisa ter 3 ou mais caracteres</span
+            >
+
+            <input
+              type="email"
+              id="email-contatos"
+              placeholder="E-mail"
+              name="email"
+            />
+            <span id="email-helper-cont" class="span-required"
+              > Digite um email valido </span>
+            
+             
+            <select id="assunto" name="assunto">
+              <option value="Assunto">Assunto:</option>
+              <option value="ELOGIO">ELOGIO</option>
+              <option value="RECLAMAÇÃO">RECLAMAÇÃO</option>
+              <option value="SUGESTÃO ">SUGESTÃO</option>
+                 
+            </select>
+            <span id="assunt-helper-cont" class="span-required"
+              >Digite o Assunto!
+            </span>
+            <textarea
+              cols="30"
+              rows="15"
+              id="msg"
+              placeholder=" Escreva aqui sua dúvida!"
+              required
+              style="resize: none"
+            ></textarea>
+            <span id="msg-helper-cont" class="span-required"
+              >Digite sua duvida!
+            </span>
+            <!-- style="resize: none" é para trancar o tamanho da caixa de texto! -->
+
+            <button class="button_enviar_contato" id="button_enviar"type=" submit">Enviar </button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+/************* DEFAULT *****************/
+html,
+body,
+header {
+  background: #FEF9EF;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
+
+a:hover {
+  color: #fe6d73;
+  transition: all 0.4s ease-in-out; /* transição para mudar a cor do link de forma suave */
+  cursor: pointer;   /* efeito muda o mouse para mãozinha */
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  scale: 1.1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  padding: 0px 7.1%;
+}
+
+::-webkit-input-placeholder {
+  color: gray;
+}
+
+:-ms-input-placeholder {
+  color: gray;
+}
+
+::placeholder {
+  color: gray;
+}
+
+/************  SLIDER SECTION **************/
+
+.slider_section {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+#sliders {   /**Definiremos as configurações do Container do slide **/	
+  list-style: none;          /*Remove o bullet*/
+  position: relative;	       /* Define que position:relative porque os * elementos filhos usarão absolute	 */
+  width: 800px;		           /*Define a largura*/
+  height:500px;             /*Define uma altura*/
+  margin:0 auto;	          /*Centralizar na horizontal*/
+  overflow: hidden;         /*Oculta os elementos que ultrapassarem * as dimensões definidas	*/
+}
+
+#sliders li{                                  /*Configuremos os itens do slide*/
+	position: absolute;                     	/*Definimos como posição absoluta, seguindo o elemento pai*/
+	top:0;	                                 	/*Define que ficará encostado no topo*/
+	left:0;                                 /*Define que ficará enconstado do lado esquerdo*/	
+	opacity: 0;	                            /*Coloca a opacidade zero, pra ocultar*/
+	z-index: 0;	                           /*Define ordenação relacionados os elementos*/
+	-webkit-transition: opacity 2s;
+	-moz-transition: opacity 2s;
+	transition: opacity 2s;               /*Cria uma transição da opacidade com 1 segundo*/
+}
+
+ #sliders li.slider-active{             /* Agora defiremos uma classe  * que mostrar o item atual */	
+	z-index: 0;                           /*Ordena que ficará a frente dos itens*/	
+	opacity: 1;                           /*Mostra o slide atual*/
+}
+
+#sliders img {
+  width: 1000px;
+  height: 500px;
+}
+
+.flechas-slider {
+    width: 40px;
+    height: 40px;
+    padding: 200px 100px
+}
+.flechas-slider:hover {
+    cursor: pointer;
+} 
+
+/*** SECTIONS ***/
+
+.section_main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 200px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.section_main_2 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+#nome_receitas {
+  display: inline-block;
+  position: relative;  
+}
+
+#nome_receitas figcaption {
+  position: absolute;
+  top: 220px;
+  left: 20px;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 5px rgb(255 255 255);
+  background-color: #FEF9EF;
+  background-size: 5%;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.section_main_2 img {
+  height: 250px;
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+
+#nome_restaurantes {
+  display: inline-block;
+  position: relative;  
+}
+#nome_restaurantes figcaption {
+  position: absolute;
+  top: 220px;
+  left: 20px;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 5px rgb(255 255 255);
+  background-color: #FEF9EF;
+  background-size: 5%;
+  border-radius: 20px;
+  padding: 5px;
+}

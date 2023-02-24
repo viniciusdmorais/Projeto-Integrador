@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/load_component.js"></script>
+    <script src="assets/js/load_restaurantes.js"></script>
+    
+    <script src="assets/js/avaliacao_star.js" defer></script>
+    <script src="assets/js/restaurante_indicado.js" defer></script>
+
+    <link rel="stylesheet" href="assets/css/defaut_rt.css" />
+    <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
+
+    <link rel="stylesheet" href="assets/css/restaurante_indicado.css" />
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
+    <title>Bora Comer - Restaurantes</title>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <main>
+            <section class="section_backgrounds">
+                <div class="dois_fundos">
+                    <div class="fundo">
+
+                        <div class="descricao_restaurante">
+                            <div class="titulo_restaurante"></div>
+
+                            <div class="imgBotoes"> </div>
+
+                        </div>
+
+                        <div class="localizacao"></div>                   
+                    </div>
+
+                    <div class="fundo"> 
+                        <div class="texto_descricao"></div>
+
+                        <div class="informacoes"></div>
+                    </div>                   
+      
+                </div>
+
+                <div class="fundo_barra">
+                    <div class="titulo_barra">
+                      <p><b>Veja mais Restaurantes</b></p>
+                    </div>
+                    
+                    
+                    <div class="box_barras"></div>
+
+                    <div class="div_botao">
+                      <button class="botao"><a target="_blank" href="locais.html"><p>Ver mais Restaurantes</p></a></button>
+                    </div>
+
+                    <div class="indicar_restaurante">
+                        <a title="Indique um Restaurante" target="_blank" href="envio_receita.html#:~:text=NOME%20DO%20RESTAURANTE-,ADICIONAR%20FOTOS,-%3A">
+                          <div>
+                            <p class="indique_res" >Indique <br>um Restaurante</p>
+                          </div>
+                          <img width="75px" height="75px" src="assets/images/img_reh/indiquerestaurante1.png" alt="indicar_restaurante"/>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section_form">
+                <div class="fundo_form">
+
+                    <form>
+                        <div class="div_form">
+                            <div class="div_avalie">                                
+                                <h3>Avalie esse restaurante</h3>
+                            </div>
+                            <nav>
+                              <ul class="avaliacao">
+                                  <li class="star-icon ativo" data-avaliacao="1"></li>
+                                  <li class="star-icon" data-avaliacao="2"></li>
+                                  <li class="star-icon" data-avaliacao="3"></li>
+                                  <li class="star-icon" data-avaliacao="4"></li>
+                                  <li class="star-icon" data-avaliacao="5"></li>
+                              </ul>
+                            </nav>
+
+                            <div>
+                                <h3>Deixe um comentário</h3>
+                            </div>
+
+                            <div>
+                                <textarea class="preencher_mensagem" style="resize: none" maxlength="1000" cols="60" rows="5" required placeholder=" O que você achou desse restaurante?"></textarea>
+                            </div>
+
+                            <div class="div_form">
+                                <label>
+                                    <input type="checkbox" checked />Concordo com condições e termos da <a target="_blank" href="#"><u>Política de Privacidade</u></a></label>
+                            </div>
+
+                            <div class="div_botao">
+                                <button class="botao"><p>Enviar Avaliação</p></button>
+                            </div>
+
+                    </form>
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <footer></footer>
+
+    <script>
+        Number(new URLSearchParams(window.location.search).get('restauranteID'));        
+    </script>
+</body>
+</html>

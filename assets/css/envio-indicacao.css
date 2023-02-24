@@ -1,0 +1,106 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+/************* DEFAULT *****************/
+html,
+body,
+header {
+  background: #FEF9EF;
+}
+
+label {
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0 5px;
+    background-color: transparent;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    width: 577px;
+    height: 109px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.envio_receita{
+    background-image: linear-gradient(to bottom right,  #FEF9EF,  #17C3B2, #FEF9EF); 
+}
+.Container {
+    
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+#text {
+    text-align: center;
+    border-radius: 20px;
+    color: #000;;
+    opacity: 0.8;
+    font-size: 16px;
+    background-color: #e7e7e7;
+    border: 0;
+    padding: 0px 200px;
+}
+
+
+.form-receita {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* width: 100%; */
+    font-size: 20px;
+    padding: 20px;
+    background-color: #FEF9EF;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    line-height: 40px;
+    box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+    -webkit-box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+    -moz-box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+  }
+
+.box-add-foto {
+    display: flex;
+}
+
+.form-locais {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    font-size: 20px;
+    padding: 15px;
+    background-color: #FEF9EF;
+    border-radius: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    line-height: 40px;
+    box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+    -webkit-box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+    -moz-box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+}
+
+.preparo-modo {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-env-rec {
+    background-color: #FE6D73;
+    border: none;
+    border-radius:20px ;
+    padding: 15px;
+    margin: 10px 0px 10px 440px;
+}

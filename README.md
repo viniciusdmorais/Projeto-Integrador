@@ -12,22 +12,26 @@ Assim temos 2 principais serviços:
 
 2- Procurar aquela receitinha pra calar de vez as lombrigas, pra impressionar alguém e até pra aprender a fazer seu primeiro ovo frito
 
+Para visualizar o projeto [entre aqui](https://viniciusdmorais.github.io/Projeto-Integrador/index.html)
 
 
 
-## Construção Visual
+
+## Construção
 
 * Paleta de cores - [Coolors.co](https://cutt.ly/aM3166s)
 * Logo - [Canvas](https://cutt.ly/4M30fTZ)
 * Layout - [Figma](https://cutt.ly/A1bVEfo)
+* Database:
+    * [MER](https://github.com/viniciusdmorais/Projeto-Integrador/blob/Dev/assets/sql/MER.pdf) 
+    * [DER](https://github.com/viniciusdmorais/Projeto-Integrador/blob/Dev/assets/sql/DER.pdf)
+    * [Scrip SQL](https://github.com/viniciusdmorais/Projeto-Integrador/blob/Dev/assets/sql/create.sql)
 
 
 
 ## Equipe
 
 Keiler Trindade [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/keilertrindade)](https://github.com/keilertrindade)
-
-Moisés Rocha  [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/)](https://github.com/)
 
 Renata de Paula  [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/rehffv)](https://github.com/rehffv)
 

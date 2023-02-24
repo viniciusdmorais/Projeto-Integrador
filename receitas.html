@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/load_component.js"></script>
+    <script src="assets/js/load_receitas.js"></script>
+
+
+    <link rel="stylesheet" href="assets/css/defaut_rt.css" />
+    <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
+    <link rel="stylesheet" href="assets/css/receitas.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
+    <title>Bora Comer - Receitas</title>
+</head>
+
+<body>
+    <header></header>
+
+    <div class="container">
+        <aside>
+            <h3>Filtros</h3>
+
+            <form class="busca_receita">
+                <input class="busca_receita" id="search_receita" type="search" placeholder="Busca...">
+            </form>
+
+            <form id="filt" action="#">
+                <div id="filterCkb">
+                    <input type="checkbox" name="ckb_veg" id="ckb_veg">
+                    <label for="ckb_veg"></label>
+
+                    <input type="checkbox" name="ckb_glutem" id="ckb_glutem">
+                    <label for="ckb_glutem"></label>
+
+                    <input type="checkbox" name="ckb_soja" id="ckb_soja">
+                    <label for="ckb_soja"></label>
+
+                    <input type="checkbox" name="ckb_amendoim" id="ckb_amendoim">
+                    <label for="ckb_amendoim"></label>
+
+                    <input type="checkbox" name="ckb_ovo" id="ckb_ovo">
+                    <label for="ckb_ovo"></label>
+
+                    <input type="checkbox" name="ckb_leite" id="ckb_leite">
+                    <label for="ckb_leite"></label>
+
+                    <input type="checkbox" name="ckb_crustaceos" id="ckb_crustaceos">
+                    <label for="ckb_crustaceos"></label>
+                </div>
+
+                <h3>Tempo</h3>
+                <p>De <input type="number" name="tmp_min" id="tmp_min"> até
+                <input type="number" name="tmp_max" id="tmp_max"> min</p>
+
+                <button type="reset">Limpar</button>
+            </form>
+        </aside>
+
+        <main></main>
+    </div>
+
+    <footer></footer>
+
+    <script>
+        let pagina = Number((new URLSearchParams(window.location.search)).get('pg'));
+        (pagina===0)?pagina=1:'';
+        
+        listReceitas(pagina);
+
+        document.getElementById('filt').addEventListener('change', (e) => {
+            document.querySelector('main').innerHTML = '';
+            listReceitas(pagina);
+        });
+
+        document.getElementById('search_receita').addEventListener('change', (e) => {
+            document.querySelector('main').innerHTML = '';
+            listReceitas(pagina);
+        });
+
+        document.addEventListener("keydown", function(e) {
+            if(e.keyCode === 13) {
+                e.preventDefault();
+                document.querySelector('main').innerHTML = '';
+                listReceitas(pagina);
+            }
+        });
+    </script>
+</body>
+
+</html>

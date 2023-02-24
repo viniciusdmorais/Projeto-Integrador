@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/load_component.js"></script>
+    <script src="assets/js/load_receitas.js" defer></script>
+
+    <script src="assets/js/avaliacao_star.js" defer></script>
+    <script src="assets/js/receita_completa.js" defer></script>
+
+    <link rel="stylesheet" href="assets/css/defaut_rt.css" />
+    <link rel="stylesheet" href="assets/css/header_footer_rt.css" />
+
+    <link rel="stylesheet" href="assets/css/receita_completa.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg">
+    <title>Bora Comer - Receitas</title>
+</head>
+
+<body>
+    <header></header>
+    <div class="container">
+        <main>
+
+            <section class="section_backgrounds">                
+
+                <div class="dois_fundos">
+
+                    <div class="fundo">
+
+                        <div class="imagem_rec"></div>
+                        
+                        <div class="descricao_receita">                        
+
+                            <div class="titulo_receita"></div>
+
+                            <div class="dados_icones">
+
+                              <div class="dados_receita"></div>
+                              
+                                <div>
+                                    <div class="estrelinhas" title="Nota"></div>
+
+                                    <div class="icones_restricao"></div>
+                                </div>
+
+                            </div> <!-- Dados ícones -->
+
+                        </div> <!-- Descrição Receita -->
+
+                    </div> <!-- Fundo 1 -->
+
+                    <div class="fundo">
+
+                        <div class="lista_ingredientes">
+                            <h2>Ingredientes:</h2>
+                            <nav>
+                                <ul id="ingredientes"></ul>
+                            </nav>
+                        </div>
+
+                        <div class="texto_modo_preparo">
+
+                          <div class="preparo">
+                            <h2>Modo de preparo:</h2>
+                                <nav>
+                                    <ul id="preparo"></ul>
+                                </nav>
+                          </div>
+
+                          <div class="dicas"></div>
+
+                        </div> <!-- Texto modo Preparo -->
+
+                    </div> <!-- Fundo 2 -->
+
+                </div> <!-- Dois Fundos -->
+
+                <div class="fundo_barra">
+                  <div class="titulo_barra">
+                    <p><b>Veja mais Receitas</b></p>
+                  </div>                  
+                  
+                  <div class="box_barras"></div>                                     
+                  
+                  <div class="div_botao">
+                    <button class="botao"><a href="receitas.html"><p>Ver mais Receitas</p></a></button>
+                  </div>
+
+                  <div class="enviar_receita">
+                    
+                        <a title="Envie uma Receita" target="_blank" href="envio_receita.html">
+                            <div>
+                                <p class="envie_rec">Envie <br>uma Receita</p>
+                            </div>   
+                            <img width="70px" height="70px" src="assets/images/img_reh/indiquereceita1.png" alt="enviar_receita"/>                                                 
+                        </a>
+                   
+                  </div>
+
+
+                </div> <!-- Fundo Barra -->
+
+
+            </section> <!-- Section Backgrounds -->
+
+            <section class="section_form">
+                <div class="fundo_form">
+
+                    <form>
+                        <div class="div_form">
+                            <div class="div_avalie">
+                                <h3>Avalie essa receita</h3>
+                            </div>
+                            <nav>
+                              <ul class="avaliacao">
+                                  <li class="star-icon ativo" data-avaliacao="1"></li>
+                                  <li class="star-icon" data-avaliacao="2"></li>
+                                  <li class="star-icon" data-avaliacao="3"></li>
+                                  <li class="star-icon" data-avaliacao="4"></li>
+                                  <li class="star-icon" data-avaliacao="5"></li>
+                              </ul>
+                            </nav>
+
+                            <div>
+                                <h3>Deixe um comentário</h3>
+                            </div>
+
+                            <div>
+                                <textarea class="preencher_mensagem" style="resize: none" maxlength="1000" cols="60" rows="5" required
+                                    placeholder=" O que você achou dessa receita?"></textarea>
+                            </div>
+
+                            <div class="div_form">
+                                <label>
+                                    <input type="checkbox" checked />Concordo com condições e
+                                    termos da 
+                                    <a target="_blank" href="#"><u>Política de Privacidade</u></a>
+                                </label>
+                            </div>
+
+                            <div class="div_botao">
+                                <button class="botao"><p>Enviar Avaliação</p></button>
+                            </div>
+
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer></footer>
+
+    <script>
+        Number(new URLSearchParams(window.location.search).get('receitaID'));        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+/*********************************DEFAUT****************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+/************************************LOGIN************************************************/
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.container_login {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.main_login {
+  width: 100%;
+  height: 100vh;
+ 
+ /* background: radial-gradient(circle, rgba(23,195,178,1) 44%, rgba(254,249,239,1) 100%);*/
+ /* background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);*/
+  background-image: linear-gradient(to bottom right,  #FEF9EF,  #17C3B2, #FEF9EF); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+
+}
+
+.area_login,
+.area_sign_up {
+  display: flex;
+  justify-content: space-around;
+  /*section*/
+  align-items: center;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 30px;
+  margin: 0;
+  padding: 5% 0 0 0;
+
+
+}
+
+.area_login {
+  padding-right: 10%;
+
+}
+
+
+.form_login,
+.form_sign_up {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #FEF9EF;
+  border-style: none;
+  padding: 40px;
+  border-radius:40px;
+  
+  width: 280px;
+  height: 510px;
+  box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+  -webkit-box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+  -moz-box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+
+
+}
+
+.login-header {
+  padding-bottom: 30px;
+  opacity: 0.8;
+}
+
+.login-header ::after {
+  background-color: #FE6D73;
+  content: "";
+  width: 70px;
+  height: 1px;
+  display: block;
+  margin-left: -5px;
+}
+
+.login_content label,.signup_content label{
+  color: #000;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+
+.login-content-area {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 10px 0;
+}
+
+.login-content-area input {
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 0 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #0D3B66;
+  outline: none;
+}
+
+form input {
+  display: flex;
+  justify-content: center;
+  list-style-position: inside;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #0D3B66;
+  padding: 15px 15px 15px;
+  margin-top: 10px;
+}
+
+
+.login-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.button_login_entrar,
+.button_login_inscrever {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FE6D73;
+  border: none;
+  font-size: 15px;
+  color: #000;
+  margin: 10px 0;
+  border-radius: 30px;
+  cursor: grab;
+  position: relative;
+  top: 30px;
+  bottom: 30%;
+}
+
+.button_login_inscrever {
+  line-height: 50px;
+  margin: 10px 0;
+  position: relative;
+  top: 18px;
+  bottom: 40px;
+}
+
+.login_forgot {
+  text-align: left;
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  bottom: 50px;
+  left: 60%;
+}
+
+.button_login_entrar:focus,
+.button_login_inscrever:focus {
+  background-color: #17C3B2;
+  color: #FEF9EF;
+}
+.hide{
+  display: none;
+  
+}
+/*******************************  Mensagem de erro Login e Sign up *************************/
+
+input.error{
+  border:solid 1px rgb(204, 1, 1);
+  background-color:#FEF9EF;
+
+}
+
+input.correct {
+  background-color: #FEF9EF;
+  border: solid 2px #17C3B2;
+  color: #000;
+}
+
+.visible {
+  visibility: visible;
+}
+
+
+/***************************************************CONTATOS********************************************************************************************/
+
+.container_contato {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main_contato {
+  width: 100%;
+  height: 100vh;
+  /*background-image: linear-gradient(to bottom right, #0D3B66, #0D3B66, #FEF9EF);*/
+  background-image: linear-gradient(to bottom right,  #FEF9EF,  #17C3B2, #FEF9EF); 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section_contato {
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conta {
+  text-align: center;
+  color: #000;
+  opacity: 0.8;
+}
+
+Div.foto {
+  width: 30%;
+  height: 50vw;
+
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+}
+
+#form_contato {
+  background-color: #FEF9EF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px 20px;
+  border: none;
+  width: 30%;
+  height: 40%;
+  border-radius: 10px;
+  margin: 5px 0px;
+  box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+  -webkit-box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+  -moz-box-shadow: -1px 6px 29px -1px rgba(13,59,102,0.87) inset;
+
+}
+
+#form_contato input,select {
+  display: flex;
+  background: #FEF9EF;
+  justify-content: center;
+  list-style-position: inside;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #0D3B66;
+  padding: 5px 10px 1px;
+  margin: 5px 0px;
+  font-size:12px 
+
+}
+#form_contato select, option{
+  color:#000;
+  opacity: 0.8;
+  font-size:12px ;
+
+
+
+}
+
+#msg {
+  background: #FEF9EF;
+  outline: none;
+  border-color: #0D3B66;
+  border-radius: 40px;
+  padding: 15px 15px 15px 15px;
+  margin: 5px 0px 2px;
+}
+
+.button_enviar_contato {
+  width: 60%;
+  cursor: grab;
+  background-color: #FE6D73;
+  border: none;
+  color: #000;
+  padding: 10px 15px 0px;
+  margin: 20px 20% 0px;
+  border-radius: 30px;
+}
+
+.button_enviar_contato:focus {
+  background-color: #17C3B2;
+  color: #FEF9EF;
+}
+
+/***************mensagem de erro******************/
+.span-required {
+  visibility: hidden;
+  /* --->>> Depois, na hora de aparecer com o span, basta usar o "visibility: visible", ao invés do "display: block" */
+  font-size: 12px;
+  color: rgb(204, 1, 1);
+  text-align: justify;
+
+}
+
+#form_contato input.error {
+  border: solid 1px rgb(204, 1, 1);
+  background-color: #FEF9EF;
+
+}
+
+#form_contato input.correct {
+  background-color: #FEF9EF;
+  border: solid 2px #17C3B2;
+  color: #000;
+}
+
+
+.visible {
+  visibility: visible;
+
+}
